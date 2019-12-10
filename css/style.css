@@ -8,6 +8,9 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
+  /* font-family: 'IBM Plex Serif', serif; */
 }
 
 body {
