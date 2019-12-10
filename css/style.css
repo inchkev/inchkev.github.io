@@ -1,8 +1,8 @@
-/* * *,
+* *,
 *::before,
 *::after {
   box-sizing: inherit;
-} */
+}
 
 html {
   font-size: 62.5%;
@@ -29,12 +29,13 @@ a:hover {
 h1 {
   font-weight: 700;
   font-style: normal;
-  font-size: 12em;
+  font-size: 10em;
+  line-height: 1em;
 }
 
 p, li {
   font-weight: 200;
   font-style: normal;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
