@@ -1,19 +1,37 @@
-/* *,
+/* * *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: inherit;
 } */
 
 html {
   font-size: 62.5%;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-family: 'IBM Plex Mono', monospace;
-  /* font-family: 'IBM Plex Serif', serif; */
+  box-sizing: border-box;
 }
 
 body {
-  box-sizing: border-box;
-  font-size: 1.6rem;
+  background-color: #ffffff;
+  margin: 5em;
+  font-family: 'Roboto', sans-serif;
+  /* letter-spacing: 0em; */
 }
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  background-color: #000000;
+  color: white;
+  transition: 0.2s;
+}
+
+h1 {
+  font-size: 10em;
+  padding-bottom: rem;
+}
+
+p, li {
+  font-size: 3em;
+}
+
