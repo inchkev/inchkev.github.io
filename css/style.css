@@ -12,7 +12,7 @@ html {
 body {
   background-color: #ffffff;
   margin: 5em;
-  font-family: 'Roboto', sans-serif;
+  font-family: neue-haas-grotesk-display, sans-serif;
   /* letter-spacing: 0em; */
 }
 
@@ -27,11 +27,14 @@ a:hover {
 }
 
 h1 {
-  font-size: 10em;
-  padding-bottom: rem;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12em;
 }
 
 p, li {
+  font-weight: 200;
+  font-style: normal;
   font-size: 3em;
 }
 
