@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  background-color: #e0c35c;
+  background-color: #2d2922;
   color: #f2f0e6;
   transition: 0.2s;
 }
@@ -34,9 +34,23 @@ h1 {
   line-height: 1em;
 }
 
-p, li {
+p, ul li {
   font-weight: 200;
   font-style: normal;
   font-size: 2.5em;
+}
+
+ul li {
+  padding-bottom: 0.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: '\2022';
+  padding-right: 0.5em;
+  margin-left: -1em;
 }
 
