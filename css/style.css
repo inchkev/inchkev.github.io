@@ -10,19 +10,20 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #f2f0e6;
+  color: #2d2922;
   margin: 5em;
   font-family: neue-haas-grotesk-display, sans-serif;
   /* letter-spacing: 0em; */
 }
 
 a {
-  color: #000000;
+  color: #2d2922;
 }
 
 a:hover {
-  background-color: #000000;
-  color: white;
+  background-color: #e0c35c;
+  color: #f2f0e6;
   transition: 0.2s;
 }
 
