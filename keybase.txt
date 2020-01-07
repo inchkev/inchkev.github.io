@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/k3vnchen
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://k3vnchen.github.io
+  * I am k3vnchen (https://keybase.io/k3vnchen) on keybase.
+  * I have a public key ASBE55A7y5qtsGd1IJHOqbyQ_9i95iyCcq81kOJxNABL9Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101998d04d91483ed2a2cba7a67f5f7b3a6f28bbd1d7d8735be3365c6622d4fbee50a",
+      "host": "keybase.io",
+      "kid": "012044e7903bcb9aadb067752091cea9bc90ffd8bde62c8272af3590e27134004bf40a",
+      "uid": "a21de83d8d7e14bccd4b041028dd0319",
+      "username": "k3vnchen"
+    },
+    "merkle_root": {
+      "ctime": 1578433235,
+      "hash": "6de30489302b4da79a03ac9b58b429945e58fbefdb7a035c4c49d2e7d57c65a8e73a4a65caedf62dc6f25c042c5919584fa5943cf295e786e619af0c6437a992",
+      "hash_meta": "3eba7798d5441563550a61cb57da867444d5fdb1733a1d053da292dab12f8b1c",
+      "seqno": 14128835
+    },
+    "service": {
+      "entropy": "j6pEpiPGIZRguh4xAB4tvxOf",
+      "hostname": "k3vnchen.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1578433240,
+  "expire_in": 504576000,
+  "prev": "dd980c9adb0315415fcf9bc32d6beb5da953d16086157f0535d151fa3c733e94",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgROeQO8uarbBndSCRzqm8kP/YveYsgnKvNZDicTQAS/QKp3BheWxvYWTESpcCB8Qg3ZgMmtsDFUFfz5vDLWvrXalT0WCGFX8FNdFR+jxzPpTEIHkHqqwi+7IkblcRYJZuWzKW61ouo4P0NkRM8dk+XwoZAgHCo3NpZ8RA4K4ZhHVAtIYoKbZ9a+UsJYyuTGFoWEGUKXm+PeVUuUZ7zl3ljyM4mqmM06f7K+MRytdM7K42zNqmpb+m6qJPAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOKNXdImrMREIL12rL+5Hxz6UHG3JAlKhyB4JXoVjsFho3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/k3vnchen
+
+==================================================================
