@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-  background-color: #2d2922;
+  background-color: #f8f9fa;
   color: #f2f0e6;
   transition: 0.2s;
 }
