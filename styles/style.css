@@ -1,0 +1,52 @@
+@import "fonts.css";
+
+* *,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #2d2922;
+
+  font-family: FoundersGrotesk, sans-serif;
+  font-style: normal;
+}
+
+a {
+  color: #2d2922;
+}
+
+a:hover {
+  background-color: #2d2922;
+  color: #f8f9fa;
+  transition: 0.3s;
+}
+
+#intro {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5em 5em 5em 5em;
+  max-width: 90em;
+}
+
+#intro h1 {
+  font-size: 5em;
+  font-weight: 500;
+  line-height: 0.75em;
+  letter-spacing: -0.02em;
+}
+
+#intro p {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: -1.25em;
+}
