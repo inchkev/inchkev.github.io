@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #2d2922;
+  background-color: #000000;
   color: #f8f9fa;
 
   font-family: FoundersGrotesk, sans-serif;
@@ -28,8 +28,12 @@ a {
 
 a:hover {
   background-color: #f8f9fa;
-  color: #2d2922;
+  color: #000000;
   transition: 0.3s;
+}
+
+#three {
+  filter: blur(10px);
 }
 
 #intro {
@@ -56,7 +60,7 @@ a:hover {
 }
 
 #intro p {
-  font-size: 1.75em;
+  font-size: 1.8em;
   font-weight: 300;
   line-height: 1em;
   margin-top: -1em;

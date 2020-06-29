@@ -6,8 +6,8 @@ module.exports = {
     main: './src/main.js',
   },
   output: {
-    path: __dirname + '/src/',
-    filename: '[name].min.js',
+    path: __dirname + '/js/',
+    filename: '[name].js',
   },
   module: {
     rules: [
