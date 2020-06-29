@@ -12,20 +12,23 @@ html {
 }
 
 body {
-  background-color: #f8f9fa;
-  color: #2d2922;
+  background-color: #2d2922;
+  color: #f8f9fa;
 
   font-family: FoundersGrotesk, sans-serif;
   font-style: normal;
+
+  /* margin: 0px; */
+  overflow: hidden;
 }
 
 a {
-  color: #2d2922;
+  color: #f8f9fa;
 }
 
 a:hover {
-  background-color: #2d2922;
-  color: #f8f9fa;
+  background-color: #f8f9fa;
+  color: #2d2922;
   transition: 0.3s;
 }
 
@@ -57,4 +60,10 @@ a:hover {
   font-weight: 300;
   line-height: 1em;
   margin-top: -1em;
+}
+
+#scene-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
