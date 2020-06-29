@@ -6,7 +6,7 @@ module.exports = {
     main: './src/scripts/main.js',
   },
   output: {
-    path: __dirname + '/docs/',
+    path: __dirname + '/public/',
     filename: 'scripts/[name].js',
   },
   module: {
