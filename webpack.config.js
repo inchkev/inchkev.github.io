@@ -3,11 +3,11 @@ var webpack = require('webpack');
 module.exports = {
   mode: 'production',
   entry: {
-    main: './src/scripts/main.js',
+    main: './src/main.js',
   },
   output: {
-    path: __dirname + '/public/',
-    filename: 'scripts/[name].js',
+    path: __dirname + '/js/',
+    filename: '[name].js',
   },
   module: {
     rules: [

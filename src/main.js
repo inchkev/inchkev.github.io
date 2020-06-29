@@ -47,8 +47,9 @@ function init() {
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
 
-    var geometry = new THREE.BoxGeometry();
+    var geometry = new THREE.BoxGeometry( 2, 2, 2 );
     var material = new THREE.MeshBasicMaterial( { color: 0x2d2922 } );
+
     cube = new THREE.Mesh( geometry, material );
     scene.add( cube );
 
