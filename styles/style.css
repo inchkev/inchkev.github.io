@@ -55,5 +55,6 @@ a:hover {
 #intro p {
   font-size: 1.75em;
   font-weight: 300;
+  line-height: 1em;
   margin-top: -1em;
 }
