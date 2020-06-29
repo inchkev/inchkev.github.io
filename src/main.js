@@ -1,8 +1,13 @@
 import 'normalize.css';
 import * as THREE from 'three';
-import image360 from '../assets/images/dlmfvr.png';
+import image360 from '../assets/images/dlmfvr_1.jpg';
 
-var camera, scene, renderer, mesh;
+
+var camera, scene, renderer;
+var mouseX = 0, mouseY = 0;
+var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;
+var target = new THREE.Vector3(0, 0, 800);
 
 window.addEventListener('DOMContentLoaded', main);
 
@@ -17,6 +22,7 @@ function init() {
     console.log(container)
 
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1100);
+    camera.lookAt(target)
     scene = new THREE.Scene();
 
     var geometry = new THREE.SphereBufferGeometry(100, 60, 40);
@@ -25,7 +31,7 @@ function init() {
     var texture = new THREE.TextureLoader().load(image360)
     var material = new THREE.MeshBasicMaterial({map: texture});
 
-    mesh = new THREE.Mesh(geometry, material);
+    var mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
 
     renderer = new THREE.WebGLRenderer();
@@ -33,25 +39,26 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     container.appendChild(renderer.domElement);
 
-    // document.addEventListener('mousemove', onPointerMove, false);
+    document.addEventListener('mousemove', onDocumentMouseMove, false);
     window.addEventListener('resize', onWindowResize, false);
+}
+
+function onDocumentMouseMove() {
+    mouseX = event.clientX - windowHalfX;
+    mouseY = event.clientY - windowHalfY;
 }
 
 function animate() {
     requestAnimationFrame(animate);
-    update();
+    console.log(target);
+    target.x += (-mouseX - target.x) * 0.015;
+    target.y += (-mouseY - target.y) * 0.015;
+    camera.lookAt(target);
+
+    render();
 }
 
-function update() {
-    // lat = Math.max(- 85, Math.min(85, lat));
-    // phi = THREE.MathUtils.degToRad(90 - lat);
-    // theta = THREE.MathUtils.degToRad(lon);
-
-    // camera.target.x = 500 * Math.sin(phi) * Math.cos(theta);
-    // camera.target.y = 500 * Math.cos(phi);
-    // camera.target.z = 500 * Math.sin(phi) * Math.sin(theta);
-    // camera.lookAt(camera.target);
-
+function render() {
     renderer.render(scene, camera);
 }
 
@@ -59,4 +66,7 @@ function onWindowResize(){
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+
+    windowHalfX = window.innerWidth / 2;
+    windowHalfY = window.innerHeight / 2;
 }

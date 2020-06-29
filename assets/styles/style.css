@@ -33,7 +33,7 @@ a:hover {
 }
 
 #three {
-  filter: blur(10px);
+  filter: blur(0.75em);
 }
 
 #intro {
