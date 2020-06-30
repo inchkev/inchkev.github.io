@@ -51,8 +51,8 @@ function onDocumentMouseMove() {
 function animate() {
     requestAnimationFrame(animate);
     console.log(target);
-    target.x += (-mouseX - target.x) * 0.015;
-    target.y += (-mouseY - target.y) * 0.015;
+    target.x += (-mouseX - target.x) * 0.02;
+    target.y += (-mouseY - target.y) * 0.02;
     camera.lookAt(target);
 
     render();
