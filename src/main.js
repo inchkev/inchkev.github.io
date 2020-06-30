@@ -18,8 +18,6 @@ function main() {
 
 function init() {
     var container = document.getElementById('three')
-    console.log("hello")
-    console.log(container)
 
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1100);
     camera.lookAt(target)
@@ -50,7 +48,6 @@ function onDocumentMouseMove() {
 
 function animate() {
     requestAnimationFrame(animate);
-    console.log(target);
     target.x += (-mouseX - target.x) * 0.02;
     target.y += (-mouseY - target.y) * 0.02;
     camera.lookAt(target);
