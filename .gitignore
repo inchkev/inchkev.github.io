@@ -2,5 +2,6 @@
 *~
 *.log
 *.js.meta
+*.swp
 node_modules/
 build/
