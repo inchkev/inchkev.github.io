@@ -1,6 +1,3 @@
-import 'normalize.css';
-import './style.css';
-
 import * as THREE from 'three';
 import image360 from './assets/dlmfvr_1.jpg';
 
