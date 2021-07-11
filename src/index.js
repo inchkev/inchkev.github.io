@@ -9,7 +9,7 @@ var mouseX = 0;
 var mouseY = 0;
 const windowHalfX = window.innerWidth / 2;
 const windowHalfY = window.innerHeight / 2;
-var target = new THREE.Vector3(0, 0, 800);
+var target = new THREE.Vector3(0, 0, 1000);
 
 window.addEventListener('DOMContentLoaded', main);
 
@@ -21,7 +21,7 @@ function main() {
 function init() {
   camera.lookAt(target)
 
-  const geometry = new THREE.SphereBufferGeometry(100, 60, 40);
+  const geometry = new THREE.SphereGeometry(100, 8, 8);
   geometry.scale(-1.0, 1.0, 1.0);
 
   const texture = new THREE.TextureLoader().load(image360)
@@ -61,6 +61,6 @@ function onWindowResize(){
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 
-  windowHalfX = window.innerWidth / 2;
-  windowHalfY = window.innerHeight / 2;
+  windowHalfX = window.innerWidth / 2.0;
+  windowHalfY = window.innerHeight / 2.0;
 }

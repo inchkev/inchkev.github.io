@@ -7,6 +7,8 @@
 }
 
 html {
+  margin: 0;
+  height: 100%;
   font-size: 100%;
   box-sizing: border-box;
 }
@@ -18,8 +20,21 @@ body {
   font-family: FoundersGrotesk, sans-serif;
   font-style: normal;
 
-  /* margin: 0px; */
+  margin: 0;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  #intro {
+    font-size: 75%;
+    padding: 2.5em 2.5em 2.5em 2.5em;
+  }
+}
+
+p {
+  font-size: 1.8em;
+  line-height: 1.0em;
+  font-weight: 400;
 }
 
 a {
@@ -34,40 +49,33 @@ a:hover {
 
 #three {
   filter: blur(0.75em);
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 #intro {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 5em 5em 5em 5em;
-}
-
-@media only screen and (max-width: 600px) {
-  #intro {
-    font-size: 75%;
-    padding: 2.5em 2.5em 2.5em 2.5em;
-  }
+  position: relative;
+  padding: 10% 4em 2em 4em;
 }
 
 #intro h1 {
   font-size: 4.5em;
-  font-weight: 500;
-  line-height: 0.8em;
-  letter-spacing: -0.01em;
+  font-weight: 400;
+  line-height: 0.9em;
   max-width: 17em;
 }
 
 #intro p {
-  font-size: 1.8em;
-  font-weight: 300;
-  line-height: 1em;
   margin-top: -1em;
 }
 
-#scene-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.work {
+  position: relative;
+  padding: 2em 4em 2em 4em;
+}
+
+.work p {
+  margin-top: -1em;
 }
