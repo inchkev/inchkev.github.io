@@ -17,7 +17,7 @@ body {
   background-color: #000000;
   color: #f8f9fa;
 
-  font-family: FoundersGrotesk, sans-serif;
+  font-family: "FoundersGrotesk", sans-serif;
   font-style: normal;
 
   margin: 0;
@@ -31,8 +31,25 @@ body {
   }
 }
 
+a {
+  color: #f8f9fa;
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.13em;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+p {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 0;
+}
+
 .landing {
-  padding: 10% 4em 2em 4em;
+  padding: 7% 4em 2em 4em;
 }
 
 .row {
@@ -41,32 +58,16 @@ body {
 }
 
 .landing h1 {
-  font-size: 4.5em;
-  font-weight: 400;
-  line-height: 0.9em;
-  max-width: 17em;
-  margin-bottom: 0.25em;
-}
-
-p {
-  font-size: 1.8em;
-  line-height: 1.2em;
-  font-weight: 400;
-  margin: 0;
-}
-
-a {
-  color: #f8f9fa;
-  text-decoration-thickness: 0.05em;
-  text-underline-offset: 0.15em;
-}
-
-a:hover {
-  opacity: 0.8;
+  font-family: "freight-big-pro", serif;
+  font-size: 6.25em;
+  font-weight: 300;
+  line-height: 0.94em;
+  max-width: 15em;
+  margin-bottom: 0.3em;
 }
 
 #three {
-  filter: blur(0.75em);
+  filter: blur(1.0em);
   opacity: 0.8;
   position: absolute;
   display: block;
