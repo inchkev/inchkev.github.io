@@ -21,7 +21,7 @@ body {
   font-style: normal;
 
   margin: 0;
-  overflow: hidden;
+  overflow: overlay;
 }
 
 @media only screen and (max-width: 600px) {
