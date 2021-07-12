@@ -21,7 +21,10 @@ body {
   font-style: normal;
 
   margin: 0;
-  overflow: overlay;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media only screen and (max-width: 600px) {
