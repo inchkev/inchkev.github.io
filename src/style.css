@@ -18,6 +18,7 @@ body {
   color: #f8f9fa;
 
   font-family: "FoundersGrotesk", sans-serif;
+  font-weight: 400;
   font-style: normal;
 
   margin: 0;
@@ -47,7 +48,6 @@ a:hover {
 p {
   font-size: 1.5em;
   line-height: 1.25em;
-  font-weight: 400;
   margin: 0;
 }
 
@@ -61,11 +61,12 @@ p {
 }
 
 .landing h1 {
-  font-family: "freight-big-pro", serif;
-  font-size: 5.75em;
+  font-family: "sectra-display", serif;
+  font-size: 5.4em;
   font-weight: 300;
-  line-height: 0.94em;
-  max-width: 15em;
+  line-height: 1.0em;
+  letter-spacing: -0.01em;
+  max-width: 17em;
   margin-bottom: 0.3em;
 }
 
