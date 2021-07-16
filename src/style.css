@@ -30,7 +30,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .landing {
-    font-size: 75%;
+    font-size: 80%;
     padding: 2em 2em 2em 2em;
   }
 }
@@ -46,13 +46,13 @@ a:hover {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.375em;
   line-height: 1.25em;
   margin: 0;
 }
 
 .landing {
-  padding: 7% 6em 2em 6em;
+  padding: 10% 5em 2em 5em;
 }
 
 .row {
@@ -62,7 +62,7 @@ p {
 
 .landing h1 {
   font-family: "sectra-display", serif;
-  font-size: 5.4em;
+  font-size: 5em;
   font-weight: 300;
   line-height: 1.0em;
   letter-spacing: -0.01em;
