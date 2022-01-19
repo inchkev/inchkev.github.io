@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import image360 from './assets/dlmfvr_1.jpg';
+import image360 from './assets/dlmfvr_inverted.jpg';
 
 const scene = new THREE.Scene();
 const renderer = new THREE.WebGLRenderer();

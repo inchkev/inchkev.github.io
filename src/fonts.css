@@ -1,18 +1,4 @@
 @font-face {
-  font-family: 'sectra-display';
-  src: url('./fonts/GT-Sectra-LCGV-Display-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'sectra-display';
-  src: url('./fonts/GT-Sectra-LCGV-Display-Light-Italic.woff2') format('woff2');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
   font-family: 'FoundersGrotesk';
   src: url('./fonts/FoundersGroteskWeb-Regular.woff2') format('woff2'),
     url('./fonts/FoundersGroteskWeb-Regular.woff') format('woff');
