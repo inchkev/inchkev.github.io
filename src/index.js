@@ -13,6 +13,13 @@ var target = new THREE.Vector3(0, 0, 1000);
 
 window.addEventListener('DOMContentLoaded', main);
 
+$(document).ready(function(event) {
+  $("#test").click(function() {
+    alert("Submit button is clicked!");
+    event.preventDefault();
+  });
+});
+
 function main() {
   init();
   animate();
