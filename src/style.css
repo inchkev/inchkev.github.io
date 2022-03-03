@@ -33,11 +33,11 @@ main {
   width: 40%;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 768px) {
   main {
     font-size: 80%;
-    padding: 1em 1em 1em 1em;
-    width: 65%;
+    /* padding: 1em 1em 1em 1em; */
+    width: 100%;
   }
 }
 
