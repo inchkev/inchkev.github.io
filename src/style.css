@@ -48,6 +48,10 @@ p {
   margin-bottom: 0.5em;
 }
 
+#work p {
+  margin-bottom: 0;
+}
+
 #intro h1 {
   font-size: 3.5em;
   line-height: 1.0em;
