@@ -2,7 +2,8 @@ import * as THREE from 'three';
 import image360 from './assets/dlmfvr_inverted.jpg';
 
 const scene = new THREE.Scene();
-const renderer = new THREE.WebGLRenderer();
+const renderer = new THREE.WebGLRenderer( {alpha: true} );
+renderer.setClearColor( 0xffffff, 0 );
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1100);
 
 var mouseX = 0;
