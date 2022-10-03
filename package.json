@@ -22,5 +22,14 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
-  }
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inchkev/inchkev.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inchkev/inchkev.github.io/issues"
+  },
+  "homepage": "https://github.com/inchkev/inchkev.github.io#readme"
 }
