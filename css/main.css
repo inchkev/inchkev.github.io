@@ -157,12 +157,12 @@ a.color-design:hover > * {
   counter-reset: supernum;
 }
 #projects .el {
-  margin-bottom: 0.15em;
+  margin-bottom: 0.25em;
 }
 #projects .el h3,
 #projects .el p {
   font-weight: normal;
-  margin: 0 0.75em 0 0;
+  margin: 0;
   display: inline;
 }
 #projects .el p, figcaption {
@@ -173,6 +173,7 @@ a.color-design:hover > * {
 }
 #projects .el a {
   display: flex;
+  gap: 0.75em;
   flex-flow: row wrap;
   align-items: center;
 }
@@ -184,7 +185,6 @@ a.color-design:hover > * {
 }
 #projects .el a *:nth-child(3) {
   flex: 3.3 1 0;
-  margin: 0;
 }
 .super {
   counter-increment: supernum;
