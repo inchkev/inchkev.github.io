@@ -38,36 +38,34 @@
 
         <!-- Title -->
         <div id="title">
-          <p><a href="/" class="color-design">Snail Snail</a></p>
-          <p class="color-design">Summer 2022</p>
+          <p><a href="/" class="color-design">Ray tracer & animation</a></p>
+          <p class="color-design">Spring 2021</p>
         </div>
 
-        <p>
-          <em>Snail Snail</em> is a four color 8-page riso-printed zine I designed and printed with my friend <a href="https://ishanashastri.com/">Ishana</a>.
-          Limited initial release of 50 copies. In the process of printing more to distribute and sell.
-          Handled color separation, layout, printing, and binding. Illustration split between the two of us.
-        </p>
+        <p>Developed a ray tracer from scratch in C++.</p>
+        <p>Final project for CPSC 478 at Yale, <em>Computer Graphics</em>.</p>
 
       </div>
 
       <!-- Content -->
       <div class="flex-content y-scrollable auto-padding">
-        <div class="image-grid">
-          <img src="/img/snail_1.jpeg" loading="lazy" alt=""></img>
-          <img src="/img/snail_2.jpeg" loading="lazy" alt=""></img>
-          <img src="/img/snail_3.jpeg" loading="lazy" alt=""></img>
-        </div>
-        <div class="image-grid">
-          <img src="/img/snail-process_1.jpeg" loading="lazy" alt=""></img>
-          <img src="/img/snail-process_2.jpeg" loading="lazy" alt=""></img>
-          <img src="/img/snail-process_3.jpeg" loading="lazy" alt=""></img>
-          <img src="/img/snail-process_4.jpeg" loading="lazy" alt=""></img>
-        </div>
 
+        <div class="text-grid">
         <p>
-          Video flipthrough
+          Implemented diffuse and Phong shading, mirror and glossy reflections, soft shadows, and supersampling anti-aliasing.
+          Also created indexed mesh data structure to store scene geometry and a bounding volume hierarchy (BVH) to accelerate ray intersections.
+          BVH space subdivision based on the surface area heuristic from
+          The Visual Computer 1990 paper <a href="https://dl.acm.org/doi/10.1007/BF01911006"><em>Heuristics for ray tracing using space subdivision</em></a>.
+          My renderer also supported importing .OBJ files, enabling importing models created in other software such as Blender or Fusion.
         </p>
-        <iframe class="video-container-16-9" src="https://www.youtube.com/embed/NGqPx0K7CNI" title="Snail Snail" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>
+        To create the video I used motion capture data from the <a href="http://mocap.cs.cmu.edu/">CMU Motion Capture Database</a> and a provided stick figure class.
+          Other than the mocap motions, the camera motion and scene were lit and modeled entirely by hand
+          (modeled in Blender and imported into my renderer) and rendered using my ray tracer.
+        </p>
+        </div>
+        <br>
+        <iframe class="video-container-16-9" src="https://www.youtube.com/embed/U0YWI-efHEs" title="Hangover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
       </div>
 

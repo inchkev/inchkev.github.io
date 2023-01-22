@@ -11,18 +11,35 @@
   .flex-description {
     flex: 0 0 auto !important;
     padding-bottom: 0em !important;
+    padding-right: 1.25em !important;
+  }
+  .flex-description::after {
+    width: inherit;
+    content: "~";
+    opacity: 0.35;
   }
   .flex-content {
     flex: 0 0 auto !important;
+    padding-top: 1.5em !important;
+    padding-left: 1.25em !important;
+  }
+  .image-grid {
+    margin-top: 0 !important;
+    margin-bottom: 1.25em !important;
+  }
+  .y-scrollable {
+    overflow-y: hidden;
   }
 }
 
 .flex-description {
   flex: 1 1 0;
+  padding-right: 0em;
 }
 .flex-content {
-  padding-top: 4.5em;
   flex: 2 1 0;
+  padding-top: 4.5em;
+  padding-left: 0em;
 }
 
 #title {
@@ -42,11 +59,23 @@
   gap: 1.25em 1.25em;
 
   margin-top: 0.75em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.25em;
 }
 
-.image-grid * {
+.image-grid *,
+.text-grid * {
   flex: 1;
   min-width: 18em;
   max-width: 1fr;
+}
+
+.text-grid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+    -webkit-flex-direction: row;
+  gap: 0em 1.5em;
 }
