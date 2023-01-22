@@ -148,18 +148,19 @@ a.color-design:hover > * {
 #projects .el h3,
 #projects .el p {
   font-weight: normal;
-  margin: 0 1em 0 0;
+  margin: 0 0.75em 0 0;
   display: inline;
-  overflow: hidden;
 }
 #projects .el p, figcaption {
   font-family: sans-serif;
   font-size: 0.75em;
+  line-height: 0.9em;
   letter-spacing: 0.005em;
 }
 #projects .el a {
-  display:flex;
+  display: flex;
   flex-flow: row wrap;
+  align-items: center;
 }
 #projects .el a *:nth-child(1) {
   flex: 6.5 1 0;
