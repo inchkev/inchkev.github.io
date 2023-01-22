@@ -13,10 +13,18 @@ footer {
   position: fixed;
   bottom: 1em;
   left: 1.25em;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+    -webkit-flex-direction: row;
+  gap: 0.5em;
 }
 footer * {
-  display: inline;
-  margin-right: 0.5em;
+  display: inline-block;
   text-shadow: 0 0 0.2em white;
 }
 
@@ -90,6 +98,12 @@ figure {
 
   width: 100vw;
   height: calc(100vh - 2.5em); /* make space for footer */
+}
+/* this hack sucks */
+@media only screen and (max-width: 344px) {
+  .container {
+    height: calc(100vh - 3.625em);
+  }
 }
 
 .y-scrollable {
