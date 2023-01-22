@@ -96,13 +96,13 @@ figure {
   flex-direction: row;
     -webkit-flex-direction: row;
 
-  width: 100vw;
-  height: calc(100vh - 2.5em); /* make space for footer */
+  width: 100%;
+  height: calc(100% - 2.5em); /* make space for footer */
 }
 /* this hack sucks */
 @media only screen and (max-width: 344px) {
   .container {
-    height: calc(100vh - 3.625em);
+    height: calc(100% - 3.625em);
   }
 }
 
