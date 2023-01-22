@@ -61,9 +61,7 @@
   margin-top: 0.75em;
   margin-bottom: 1.25em;
 }
-
-.image-grid *,
-.text-grid * {
+.image-grid * {
   flex: 1;
   min-width: 18em;
   max-width: 1fr;
@@ -78,4 +76,9 @@
   flex-flow: row wrap;
     -webkit-flex-direction: row;
   gap: 0em 1.5em;
+}
+.text-grid * {
+  flex: 1;
+  min-width: 15em;
+  max-width: 1fr;
 }
