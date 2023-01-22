@@ -11,7 +11,7 @@ body {
 
 footer {
   position: fixed;
-  bottom: 1em;
+  bottom: 0.75em;
   left: 1.25em;
 
   display: -webkit-box;
@@ -100,7 +100,7 @@ figure {
   height: calc(100% - 2.5em); /* make space for footer */
 }
 /* this hack sucks */
-@media only screen and (max-width: 344px) {
+@media only screen and (max-width: 343px) {
   .container {
     height: calc(100% - 3.625em);
   }
