@@ -229,7 +229,8 @@ a.color-design:hover > * {
 .box a:hover {
   background-color: transparent;
 }
-#image-grid img {
+#image-grid img,
+#image-grid video {
   width: 100%;
   height: 100%;
   object-fit: contain;
