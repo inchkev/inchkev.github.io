@@ -5,6 +5,7 @@
 *.swp
 node_modules/
 build/
+temp/
 
 # Swap
 [._]*.s[a-v][a-z]

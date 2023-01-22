@@ -1,0 +1,41 @@
+/* Made by hand by Kevin Chen */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+  .flex-description {
+    flex: 0 0 auto !important;
+    padding-bottom: 0em !important;
+  }
+  .flex-content {
+    flex: 0 0 auto !important;
+    padding-top: 0em !important;
+  }
+}
+
+.flex-description {
+  flex: 1 1 0;
+}
+.flex-content {
+  padding-top: 4.5em;
+  flex: 2 1 0;
+}
+
+#title {
+  width: 100vw;
+  display: block;
+  z-index: 1;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1.5em 1.5em;
+  margin-bottom: 1.5em;
+}

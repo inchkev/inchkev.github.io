@@ -22,7 +22,7 @@ footer * {
 
 h1, h2, h3, h4, h5, h6, p, th, td {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.125em;
   letter-spacing: -0.008em;
 }
 
@@ -41,10 +41,15 @@ p {
   margin-bottom: 0.5em;
 }
 
-#work p {
+figure {
+  margin: 0;
+}
+
+.hyphenate {
   hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
+
   /* I'm so sad why don't more browsers support this :( */
   hyphenate-limit-chars: 6 3 3;
     -ms-hyphenate-limit-chars: 6 3 3;
@@ -52,41 +57,53 @@ p {
     -webkit-hyphenate-limit-after: 3;
 }
 
-.container {
-  margin: 0px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-  flex-direction: row;
-    -webkit-flex-direction: row;
-  position: fixed;
-
-  width: 100vw;
-  height: 100vh;
-
-  mask-image: linear-gradient(to bottom, transparent 0, black 1em, black calc(100% - 4em), transparent 100%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 1em, black calc(100% - 4em), transparent 100%);
+@media only screen and (max-width: 600px) {
+  .hidden-600px {
+    display: none;
+  }
 }
 
-.left, .right {
+.auto-padding {
   padding: 1.25em;
+
+  /* from https://stackoverflow.com/a/12034794 */
+  box-sizing: border-box;           /* Opera/IE 8+ */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+}
+
+.edge-fade {
+  mask-image: linear-gradient(to bottom, transparent 0, black 1em, black calc(100% - 2em), transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 1em, black calc(100% - 2em), transparent 100%);
+}
+
+.container {
+  position: fixed;
+  margin: 0px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+    -webkit-flex-direction: row;
+
+  width: 100vw;
+  height: calc(100vh - 2.5em); /* make space for footer */
+}
+
+.y-scrollable {
   overflow-x: hidden;
   overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
 }
-.left {
+
+.flex-left {
+  flex: 3 1 0;
+}
+.flex-right {
   flex: 4 1 0;
-}
-.right {
-  flex: 5 1 0;
-}
-@media only screen and (max-width: 600px) {
-  .hidden-600px {
-    display: none;
-  }
 }
 
 a {
@@ -120,37 +137,37 @@ a.color-design:hover > * {
   color: white;
 }
 
-#work {
+#projects {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
   counter-reset: supernum;
 }
-#work .el {
+#projects .el {
   margin-bottom: 0.15em;
 }
-#work .el h3,
-#work .el p {
+#projects .el h3,
+#projects .el p {
   font-weight: normal;
   margin: 0 1em 0 0;
   display: inline;
   overflow: hidden;
 }
-#work .el p {
+#projects .el p, figcaption {
   font-family: sans-serif;
   font-size: 0.75em;
   letter-spacing: 0.005em;
 }
-#work .el a {
+#projects .el a {
   display:flex;
   flex-flow: row wrap;
 }
-#work .el a *:nth-child(1) {
+#projects .el a *:nth-child(1) {
   flex: 6.5 1 0;
 }
-#work .el a *:nth-child(2) {
+#projects .el a *:nth-child(2) {
   flex: 1.5 1 0;
 }
-#work .el a *:nth-child(3) {
+#projects .el a *:nth-child(3) {
   flex: 3.3 1 0;
   margin: 0;
 }
