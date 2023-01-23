@@ -226,11 +226,6 @@ a.color-design:hover > * {
   grid-gap: 0.5em 1.5em;
   counter-reset: boxes;
 }
-@media only screen and (max-width: 1091px) {
-  #image-grid {
-    grid-auto-rows: auto;
-  }
-}
 #image-grid .box {
   counter-increment: boxes;
   aspect-ratio: 3/4;
@@ -244,6 +239,14 @@ a.color-design:hover > * {
 }
 .box a:hover {
   background-color: transparent;
+}
+@media only screen and (max-width: 1632px) {
+  #image-grid {
+    grid-auto-rows: auto;
+  }
+  #image-grid .box {
+    aspect-ratio: auto;
+  }
 }
 
 img,
