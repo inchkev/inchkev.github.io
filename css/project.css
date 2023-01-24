@@ -48,7 +48,8 @@
   z-index: 1;
 }
 
-.image-grid {
+.image-grid,
+.image-grid-small {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -61,9 +62,16 @@
   margin-top: 0.75em;
   margin-bottom: 1.25em;
 }
+
 .image-grid * {
   flex: 1;
   min-width: 18em;
+  max-width: 1fr;
+}
+
+.image-grid-small * {
+  flex: 1;
+  min-width: 8em;
   max-width: 1fr;
 }
 

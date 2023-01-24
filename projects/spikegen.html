@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kevin Chen</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/project.css">
+
+  <!-- More -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="canonical" href="https://kevinnchen.com">
+  <meta name="author" content="Kevin Chen">
+  <meta name="description" content="Kevin Chen is a designer and programmer.">
+  <meta name="theme-color" content="white">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kevin Chen">
+  <meta property="og:url" content="https://kevinnchen.com">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Kevin Chen is a designer and programmer.">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@inchkev">
+  <meta name="twitter:creator" content="@inchkev">
+</head>
+
+<body>
+  <main>
+    <div class="container edge-fade">
+
+      <!-- Description -->
+      <div class="flex-description y-scrollable auto-padding">
+
+        <!-- Title -->
+        <div id="title">
+          <p><a href="/" class="color-programming">SpikeGen (Blender procedural graphics)</a></p>
+          <p class="color-programming">Fall 2020</p>
+        </div>
+
+        <p>Developed a Blender add-on and other procedurally-generated scene elements to create a short video.</p>
+        <p>Final project for CPSC 479 at Yale, <em>Advanced Topics in Computer Graphics</em>.</p>
+        <p><a href="https://www.youtube.com/watch?v=2A1ELeJMxAM">Link to final video</a></p>
+        <p><a href="">Link to writeup</a></p>
+
+      </div>
+
+      <!-- Content -->
+      <div class="flex-content y-scrollable auto-padding">
+
+        <div class="text-grid">
+          <p>Developed “SpikeGen,” a Blender add-on which procedurally generates spikes on a mesh using the golden ratio as found in natural forms. SpikeGen includes a configuration menu to allow user control over spike length, base size, spread angle, and randomness.
+          </p>
+          <p>Inspired by the SIGGRAPH 1992 paper <a href="https://dl.acm.org/doi/10.1145/142920.134093"><em>A collision-based model of spiral phyllotaxis</em></a>.
+          </p>
+        </div>
+
+        <div class="image-grid-small">
+          <figure>
+            <img src="/img/spikegen_menu.jpeg" alt="Screenshot of a Blender menu for the SpikeGen add-on. The menu says 'SpikeGen Generator'.">
+            <figcaption>Menu for SpikeGen, a Blender add-on.</figcaption>
+          </figure>
+          <figure>
+            <img src="/img/spikegen_2.jpeg" alt="Computer generated image of a sphere dotted with spikes in a pattern similar to spiral patterns found in nature.">
+            <figcaption>Spikes are placed using the golden ratio.</figcaption>
+          </figure>
+          <figure>
+            <img src="/img/spikegen_1.jpeg" alt="Computer generated image of four Blender primitives, a cylinder, a cone, a sphere, and a cube. They are arranged in a 2 by 2 grid and are covered with white spikes.">
+            <figcaption>SpikeGen works on all shapes!</figcaption>
+          </figure>
+        </div>
+
+        <p>The final animation was entirely procedurally generated. In addition to procedural spikes, the fire and snow particle systems, shapes of cactus bodies, as well as plant pots, were also procedurally generated. I modeled, textured, and lit all other elements of the scene.<p>
+        <figure>
+          <iframe class="video-container-16-9" src="https://www.youtube.com/embed/2A1ELeJMxAM" title="Cozy, a Blender animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <figcaption>This took a long time to render! It turned my pc into a space heater.</figcaption>
+        </figure>
+
+        <hr>
+
+        <p>Additional close-up renders of the scene.</p>
+        <div class="image-grid">
+          <img src="/img/cozy_3.jpeg" alt="Computer generated image of three cactus plants on a windowsill.">
+          <img src="/img/cozy_4.jpeg" alt="Computer generated image of the top half of a stone fireplace, a wooden mantel with three light blue cups, and a picture frame with a landscape painting.">
+          <img src="/img/cozy_5.jpeg" alt="Computer generated image of a close-up of a stone fireplace. Three logs sit atop a holder and a bright orange frame fills the chamber.">
+          <img src="/img/cozy_6.jpeg" alt="Computer generated image of a close=up of a window frame. Outside the ground is blanketed with snow and snowflakes are seen falling.">
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <p><a href="/">Back to home</a><p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/project.js" type="text/javascript"></script>
+</body>
+
+</html>

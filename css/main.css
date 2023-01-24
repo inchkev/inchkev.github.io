@@ -254,7 +254,7 @@ a.color-design:hover > * {
 img,
 video {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: contain;
   object-position: 0 0;
 }
@@ -264,7 +264,20 @@ figure {
   height: auto;
 }
 
+figcaption {
+  margin-top: 0.25em;
+  opacity: 0.75;
+}
+
 .video-container-16-9 {
   aspect-ratio: 16 / 9;
+  width: 100%;
+}
+.video-container-square {
+  aspect-ratio: 1;
+  width: 100%;
+}
+.pdf-container-letter {
+  aspect-ratio: 8.5 / 11;
   width: 100%;
 }
