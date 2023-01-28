@@ -23,9 +23,15 @@
     padding-top: 1.5em !important;
     padding-left: 1.25em !important;
   }
-  .image-grid {
+  .image-grid,
+  .image-grid-small {
     margin-top: 0 !important;
     margin-bottom: 1.25em !important;
+  }
+  .media-grid-2 {
+    margin-top: 0 !important;
+    margin-bottom: 1.25em !important;
+    grid-template-columns: 1fr !important;
   }
   .y-scrollable {
     overflow-y: hidden;
@@ -73,6 +79,15 @@
   flex: 1;
   min-width: 8em;
   max-width: 1fr;
+}
+
+.media-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25em 1.25em;
+
+  margin-top: 0.75em;
+  margin-bottom: 1.25em;
 }
 
 .text-grid {
