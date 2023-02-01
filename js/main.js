@@ -9,6 +9,7 @@ $( "[data-project]" ).hover(
     }
     $( "#image-grid" ).find( "[data-project='" + project + "']" ).addClass("selected");
   },
+
   function() {
     const project = $( this ).data( "project" );
     let projects_el = $( "#projects" ).find( "[data-project='" + project + "']" ).first();
