@@ -48,6 +48,10 @@
   padding-left: 0em;
 }
 
+.black {
+  background-color: black;
+}
+
 #title {
   width: 100vw;
   display: block;
