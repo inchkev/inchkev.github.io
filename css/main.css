@@ -282,13 +282,13 @@ a.color-design:hover > * {
 .box a:hover {
   background-color: transparent;
 }
-@media only screen and (max-width: 1632px) {
+@media only screen and (max-width: 1456px) {
   #image-grid {
     grid-auto-rows: auto;
   }
-  /* #image-grid .box { */
-  /*   aspect-ratio: auto; */
-  /* } */
+  #image-grid .box {
+    aspect-ratio: auto;
+  }
 }
 
 img,
