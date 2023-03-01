@@ -1,5 +1,9 @@
 /* Made by hand by Kevin Chen */
 
+.container {
+  height: 100%;
+}
+
 .flex-description {
   flex: 1 1 0;
   padding-right: 0em;
@@ -10,7 +14,7 @@
   padding-left: 0em;
 }
 
-.black {
+.background-black {
   background-color: black;
 }
 
