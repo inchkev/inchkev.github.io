@@ -90,6 +90,11 @@
   padding-left: 15%;
   padding-right: 15%;
 }
+.centered-60 {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+}
 
 .text-grid {
   display: -webkit-box;
@@ -143,7 +148,7 @@
   .y-scrollable {
     overflow-y: hidden;
   }
-  .centered-70 {
+  .centered-70, .centered-60 {
     padding-left: 0;
     padding-right: 0;
   }
