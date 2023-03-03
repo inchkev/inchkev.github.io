@@ -53,12 +53,15 @@
   max-width: 1fr;
 }
 
-.media-grid-2 {
+.media-grid-2, .media-grid-2-narrow {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em 1em;
   margin-top: 0.75em;
   margin-bottom: 1.25em;
+}
+.media-grid-2-narrow {
+  gap: 0 0em;
 }
 
 .media-grid-3 {
@@ -140,7 +143,7 @@
     margin-top: 0;
     margin-bottom: 1.25em;
   }
-  .media-grid-2, .media-grid-3, .media-grid-4, .media-grid-5 {
+  .media-grid-2, .media-grid-2-narrow, .media-grid-3, .media-grid-4, .media-grid-5 {
     margin-top: 0;
     margin-bottom: 1.25em;
     grid-template-columns: 1fr;
