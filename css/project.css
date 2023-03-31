@@ -88,6 +88,11 @@
   margin-bottom: 1.25em;
 }
 
+.centered-90 {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .centered-80 {
   text-align: center;
   padding-left: 10%;
@@ -156,7 +161,7 @@
   .y-scrollable {
     overflow-y: hidden;
   }
-  .centered-80, .centered-70, .centered-60 {
+  .centered-90, .centered-80, .centered-70, .centered-60 {
     padding-left: 0;
     padding-right: 0;
   }
