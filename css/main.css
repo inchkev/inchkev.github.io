@@ -254,11 +254,11 @@ a.color-design:hover > * {
 .super:last-child::after {
   content: ")";
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .super {
     display: none;
   }
-}
+} */
 
 /* * { */
 /*   border: 1px solid blue; */
