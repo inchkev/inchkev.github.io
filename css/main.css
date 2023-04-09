@@ -33,7 +33,7 @@ footer {
 
 footer * {
   display: inline-block;
-  text-shadow: 0 0 0.2em white;
+  background: white;
 }
 
 h1, h2, h3, h4, h5, h6, p, th, td {
@@ -115,7 +115,7 @@ figcaption {
     -webkit-flex-direction: row;
 
   width: 100%;
-  height: calc(100% - 2.5em); /* make space for footer */
+  height: 100%;
 
   column-gap: 1.5em;
 }
@@ -144,10 +144,21 @@ figcaption {
   padding-left: 0;
 }
 @media only screen and (max-width: 600px) {
+  .container {
+    overflow-x: hidden;
+    overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    flex-direction: column;
+      -webkit-flex-direction: column;
+  }
   .flex-left {
+    flex: 0 0 auto;
+    padding-bottom: 0em;
     padding-right: 1.25em;
   }
   .flex-right {
+    flex: 0 0 auto;
     padding-left: 1.25em;
   }
 }
