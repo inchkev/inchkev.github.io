@@ -38,13 +38,11 @@ footer * {
 
 h1, h2, h3, h4, h5, h6, p, th, td {
   font-size: 1em;
+  font-weight: normal;
   line-height: 1.12em;
   letter-spacing: -0.008em;
   margin: 0;
   margin-bottom: 0.5em;
-}
-
-h3 {
 }
 
 hr {
