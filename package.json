@@ -1,0 +1,27 @@
+{
+  "name": "inchkev.github.io",
+  "version": "1.0.0",
+  "description": "Living index of my work",
+  "main": "src/render-pages.js",
+  "scripts": {
+    "build": "node src/render.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inchkev/inchkev.github.io.git"
+  },
+  "author": "Kevin Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inchkev/inchkev.github.io/issues"
+  },
+  "homepage": "https://github.com/inchkev/inchkev.github.io#readme",
+  "type": "module",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "get-video-dimensions": "^1.0.0",
+    "image-size": "^1.0.2",
+    "marked": "^5.1.1",
+    "micromatch": "^4.0.5"
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "title": "Yale Coursework",
+    "slug": "coursework-gd",
+    "type": "design",
+    "tags": "design, misc",
+    "thumbnail": {
+        "src": ""
+    },
+    "date": "2020 – 23",
+    "dateLong": "",
+    "description": "",
+    "descriptionLong": [
+        "Collection of graphic design coursework from my time at Yale."
+    ],
+    "main": [
+        {
+            "class": "",
+            "contents": [
+                "*Division by Zero*",
+                "Spring 2022. 32 pages, 4.75\"x8\", saddle stitch bound.",
+                "Designed and printed *Division by Zero*, a short story by Ted Chiang. Selected spreads below."
+            ]
+        },
+        {
+            "class": "image-grid",
+            "contents": [
+                {"src": "/media/divisionbyzero_2.jpeg"},
+                {"src": "/media/divisionbyzero_1.jpeg"}
+            ]
+        }
+    ]
+}

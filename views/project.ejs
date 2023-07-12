@@ -1,0 +1,98 @@
+<%- include("partials/head", {
+  title: title + " - Kevin Chen",
+  description: "Kevin Chen is a designer and programmer.",
+  styles: ["/css/main.css", "/css/project.css"]}); %>
+</head>
+
+<body>
+  <main>
+    <div id="fullwindow"></div>
+    <div id="content" class="container edge-fade">
+
+      <!-- title, date, long description -->
+      <div class="flex-description y-scrollable auto-padding">
+        <div id="title">
+          <h1><a href="/" class="color-<%= type %>"><%= locals.titleLong ? titleLong : title %></a></h1>
+          <p class="color-<%= type %>"><%= dateLong %></p>
+        </div>
+        <%_ descriptionLong.forEach(function(paragraph) { _%>
+        <p><%- paragraph %></p>
+        <%_ }); _%>
+      </div>
+
+      <!-- main content blocks -->
+      <div class="flex-content y-scrollable auto-padding background-black">
+        <%_ main.forEach(function(section) { _%>
+          <%_ if (section.type === "raw") { _%>
+            <%_ section.contents.forEach(function(paragraph) { _%>
+
+        <%- paragraph %>
+
+            <%_ }); _%>
+          <%_ } else if (section.type === "regular") { _%>
+        <div<% if (section.class) { %> class="<%= section.class %>"<% } %>>
+            <%_ section.contents.forEach(function(media) { _%>
+              <%_ if (media.type === "raw") { _%>
+          <%- media.content %>
+              <%_ } else if (media.type === "text") { _%>
+          <p><%- media.content %></p>
+              <%_ } else if (media.type === "image") { _%>
+          <img src="<%= media.src %>" width="<%= media.width %>" height="<%= media.height %>" alt="<%= media.alt %>">
+              <%_ } else if (media.type === "image-caption") { _%>
+          <figure>
+            <img src="<%= media.src %>" width="<%= media.width %>" height="<%= media.height %>" alt="<%= media.alt %>">
+            <figcaption><%- media.caption %></figcaption>
+          </figure>
+              <%_ } else if (media.type === "video") { _%>
+          <video width="<%= media.width %>" height="<%= media.height %>" controls autoplay muted playsinline>
+            <% if (media.src.webm) { %><source src="<%= media.src.webm %>" type="video/webm"><% } %>
+            <% if (media.src.mp4) { %><source src="<%= media.src.mp4 %>" type="video/mp4"><% } %>
+          </video>
+              <%_ } else if (media.type === "video-caption") { _%>
+         <figure>
+            <video width="<%= media.width %>" height="<%= media.height %>" controls autoplay muted playsinline>
+              <% if (media.src.webm) { %><source src="<%= media.src.webm %>" type="video/webm"><% } %>
+              <% if (media.src.mp4) { %><source src="<%= media.src.mp4 %>" type="video/mp4"><% } %>
+            </video>
+            <figcaption><%- media.caption %></figcaption>
+          </figure>
+              <%_ } else if (media.type === "youtube-embed") { _%>
+          <iframe class="video-container-<%= media.aspectRatio %>" src="https://www.youtube.com/embed/<%= media.videoId %>" title="<%= media.title %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <%_ } else if (media.type === "youtube-embed-caption") { _%>
+          <figure>
+            <iframe class="video-container-<%= media.aspectRatio %>" src="https://www.youtube.com/embed/<%= media.videoId %>" title="<%= media.title %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figcaption><%- media.caption %></figcaption>
+          </figure>
+              <%_ } else if (media.type === "pdf") { _%>
+          <iframe class="pdf-container-<%= media.aspectRatio %>" src="<%= media.src %>"></iframe>
+              <%_ } else if (media.type === "pdf-caption") { _%>
+          <figure>
+            <iframe class="pdf-container-<%= media.aspectRatio %>" src="<%= media.src %>"></iframe>
+            <figcaption><%- media.caption %></figcaption>
+          </figure>
+              <%_ } else if (media.type === "link") { _%>
+          <p><a href="<%= media.src %>"><%= media.src %></a></p>
+              <%_ } else if (media.type === "link-caption") { _%>
+          <figure>
+            <p><a href="<%= media.src %>"><%= media.caption %></a></p>
+            <figcaption class="overflow-ellipsis"><%- media.src %></figcaption>
+          </figure>
+              <%_ } _%>
+            <%_ }); _%>
+        </div>
+          <%_ } _%>
+        <%_ }); _%>
+      </div>
+
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <p><a href="/">Back to home</a><p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/project.js" type="text/javascript"></script>
+</body>
+
+</html>

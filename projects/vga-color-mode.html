@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>font.fish - Kevin Chen</title>
+  <title>VGA 640x480 16-color mode - Kevin Chen</title>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/project.css">
 
@@ -17,7 +17,7 @@
   <meta name="theme-color" content="white">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="font.fish - Kevin Chen">
+  <meta property="og:title" content="VGA 640x480 16-color mode - Kevin Chen">
   <meta property="og:type" content="website">
   <meta property="og:image" content="">
   <meta property="og:url" content="https://kevinnchen.com">
@@ -38,20 +38,22 @@
       <!-- title, date, long description -->
       <div class="flex-description y-scrollable auto-padding">
         <div id="title">
-          <h1><a href="/" class="color-programming">font.fish</a></h1>
-          <p class="color-programming">Spring 2023</p>
+          <h1><a href="/" class="color-programming">VGA 640x480 16-color mode</a></h1>
+          <p class="color-programming">Fall 2021</p>
         </div>
-        <p>font.fish is a browser-based tool for exploring thousands of fonts. My Yale undergraduate thesis advised by Holly Rushmeier.</p>
-        <p>font.fish uses Keras’s Inception v3 bindings to generate a featurization space in 2,048 dimensions. Two dimensionality reduction techniques, Uniform Manifold Approximation and Projection (UMAP) and t-distributed Stochastic Neighbor Embedding (t-SNE), reduce the feature space to 2 dimensions. The 2D space is visualized using Three.js.</p>
-        <p>Inspired by the Yale Digital Humanities Lab’s <a href="https://github.com/YaleDHLab/pix-plot">PixPlot</a>.</p>
-        <p><a href="https://github.com/inchkev/font-fish">Link to project github</a></p>
-        <p><a href="https://font.fish">font.fish</a></p>
+        <p>Implemented a VGA 640×480 16-color mode in <a href="https://flint.cs.yale.edu/certikos/mcertikos.html">mCertiKOS</a>, a fully verified operating system.</p>
+        <p>Implemented a user-space syscall with memory-mapped VGA buffer.</p>
+        <p>The following video showcases the VGA 16-color mode by demoing bitmap font rendering, working 16-color, keyboard input, the Mandelbrot set, and an animated video.</p>
+        <p>Final project for CPSC 422 at Yale, <em>Operating Systems</em>.</p>
       </div>
 
       <!-- main content blocks -->
       <div class="flex-content y-scrollable auto-padding background-black">
-        <div class="centered-80">
-          <img src="/media/font-fish-screenshot.jpg" width="2000" height="1600" alt="Screenshot of font.fish website">
+        <div>
+          <figure>
+            <iframe class="video-container-16-9" src="https://www.youtube.com/embed/WTVVkOwqXO8" title="VGA 640*480 16-color in mCertiKOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figcaption>Demo of the VGA color mode.</figcaption>
+          </figure>
         </div>
       </div>
 

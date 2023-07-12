@@ -1,0 +1,60 @@
+{
+    "title": "Snail Snail",
+    "slug": "snail-snail",
+    "type": "design",
+    "tags": "design, zine",
+    "thumbnail": {
+        "src": "/media/snailsnail-small.jpeg"
+    },
+    "date": "2022",
+    "dateLong": "Summer 2022",
+    "description": "",
+    "descriptionLong": [
+        "*Snail Snail* is a 16 page four-color risograph zine about snails. Created in collaboration with [Ishana Shastri](https://ishanashastri.com/).",
+        "Limited initial release (summer 2022) of 50 copies, second edition (spring 2023) of 30 copies.",
+        "I designed, color-separated, and printed. Illustration split between the two of us.",
+        "This was my first ever risograph project, done a week after I had learned how to use the machine."
+    ],
+    "main": [
+        {
+            "class": "media-grid-2-narrow",
+            "contents": [
+                {"src": "/media/snailsnail/snailsnail-1.webp"},
+                {"src": "/media/snailsnail/snailsnail-2.webp"},
+                {"src": "/media/snailsnail/snailsnail-3.webp"},
+                {"src": "/media/snailsnail/snailsnail-4.webp"},
+                {"src": "/media/snailsnail/snailsnail-5.webp"},
+                {"src": "/media/snailsnail/snailsnail-6.webp"},
+                {"src": "/media/snailsnail/snailsnail-7.webp"},
+                {"src": "/media/snailsnail/snailsnail-8.webp"},
+                {"src": "/media/snailsnail/snailsnail-9.webp"}
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
+        {
+            "class": "centered-80 media-grid-2",
+            "contents": [
+                {"src": "/media/snailsnail/process_1.jpeg"},
+                {"src": "/media/snailsnail/process_2.jpeg"},
+                {"src": "/media/snailsnail/process_3.jpeg"},
+                {"src": "/media/snailsnail/process_4.jpeg"}
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
+        {
+            "class": "centered-80",
+            "contents": [
+                "Video flipthrough",
+                {
+                    "src": "https://www.youtube.com/embed/NGqPx0K7CNI",
+                    "title": "Snail Snail",
+                    "aspectRatio": "16:9"
+                }
+            ]
+        }
+    ]
+}

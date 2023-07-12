@@ -1,0 +1,23 @@
+{
+    "title": "Cardboard information",
+    "slug": "cardboard-information",
+    "type": "design",
+    "tags": "design, zine",
+    "thumbnail": {
+        "src": "/media/cardboard-small.jpeg"
+    },
+    "date": "2022",
+    "dateLong": "Fall 2022",
+    "description": "",
+    "descriptionLong": [
+        "Coming soon... thank you for being patient."
+    ],
+    "main": [
+        {
+            "class": "centered-70",
+            "contents": [
+                {"src": "/media/cardboard-front.jpeg"}
+            ]
+        }
+    ]
+}

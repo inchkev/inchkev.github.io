@@ -1,0 +1,80 @@
+<%- include("partials/head", {
+  title: "Kevin Chen",
+  description: "Kevin Chen is a designer and programmer. This is a living selection of his work.",
+  styles: ["/css/main.css"]}); %>
+  <!-- Credits & inspiration -->
+  <!-- https://laurel.world/ -->
+  <!-- https://mindyseu.com/ -->
+  <!-- https://stuart-bertolotti-bailey.org/ -->
+  <!-- https://chia.design/ -->
+</head>
+
+<body>
+  <main>
+    <div class="container edge-fade">
+
+      <!-- Left -->
+      <div class="flex-left y-scrollable auto-padding">
+        <h1>
+          Kevin Chen is a <span class="color-design">graphic designer</span> and <span class="color-programming">programmer</span>.
+        </h1>
+        <p>
+          I’m interested in creative tooling, printed matter, computer graphics, and open source. I recently graduated this May 2023 with a B.S. in Computer Science.
+        </p>
+        <p>
+          Contact me via <a href="mailto:kevin@kevinnchen.com">email (kevin at kevinnchen dot com)</a>. I‘m on <a href="https://www.are.na/kevin" target="_blank">Are.na</a>, <a href="https://twitter.com/inchkev" target="_blank">twitter</a>, <a href="https://www.linkedin.com/in/kevinnchen/" target="_blank">linkedin</a>, and <a href="https://github.com/inchkev" target="_blank">github</a>.
+        </p>
+        <h2>
+          Selected projects below (<span class="color-programming">programming</span>, <span class="color-design">design</span>).
+        </h2>
+
+        <div id="projects" class="hyphenate">
+
+          <%_ projects.forEach(function(project) { _%>
+          <div class="el" data-project="<%= project.slug %>">
+            <a class="color-<%= project.type %>" href="projects/<%= project.slug %>">
+              <h3><%= project.title %></h3>
+              <p><%= project.date %></p>
+              <p><%= project.tags %><span class="super"></span></p>
+            </a>
+          </div>
+
+          <%_ }); _%>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="flex-right y-scrollable auto-padding">
+        <div id="image-grid">
+
+          <%_ projects.forEach(function(project) { _%>
+          <div class="box color-<%= project.type %>" data-project="<%= project.slug %>">
+            <a href="projects/<%= project.slug %>" aria-label="Visit project: <%= project.title %>">
+              <%_ if (project.thumbnail.type === "image") { _%>
+              <img src="<%= project.thumbnail.src %>" alt=""></img>
+              <%_ } else if (project.thumbnail.type === "video") { _%>
+              <video autoplay loop muted playsinline>
+                <source src="<%= project.thumbnail.src.webm %>" type="video/webm"/>
+                <source src="<%= project.thumbnail.src.mp4 %>" type="video/mp4"/>
+              </video>
+              <%_ } _%>
+            </a>
+          </div>
+
+          <%_ }); _%>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <p><a href="./resume.pdf">Resume (technical)</a><p>
+    <p><a href="https://kevin.garden/">Garden</a><p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>

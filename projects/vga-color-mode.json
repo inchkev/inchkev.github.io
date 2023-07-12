@@ -1,0 +1,34 @@
+{
+    "title": "VGA 640x480 16-color mode",
+    "slug": "vga-color-mode",
+    "type": "programming",
+    "tags": "computer graphics",
+    "thumbnail": {
+        "src": {
+            "webm": "/media/vgacolor.webm",
+            "mp4": "/media/vgacolor.mp4"
+        }
+    },
+    "date": "2021",
+    "dateLong": "Fall 2021",
+    "description": "",
+    "descriptionLong": [
+        "Implemented a VGA 640×480 16-color mode in [mCertiKOS](https://flint.cs.yale.edu/certikos/mcertikos.html), a fully verified operating system.",
+        "Implemented a user-space syscall with memory-mapped VGA buffer.",
+        "The following video showcases the VGA 16-color mode by demoing bitmap font rendering, working 16-color, keyboard input, the Mandelbrot set, and an animated video.",
+        "Final project for CPSC 422 at Yale, *Operating Systems*."
+    ],
+    "main": [
+        {
+            "class": "",
+            "contents": [
+                {
+                    "src": "https://www.youtube.com/embed/WTVVkOwqXO8",
+                    "title": "VGA 640*480 16-color in mCertiKOS",
+                    "aspectRatio": "16:9",
+                    "caption": "Demo of the VGA color mode."
+                }
+            ]
+        }
+    ]
+}

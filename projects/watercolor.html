@@ -18,15 +18,16 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Computer Generated Watercolor - Kevin Chen">
-  <meta property="og:url" content="https://kevinnchen.com">
-  <meta property="og:image" content="">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://kevinnchen.com">
   <meta property="og:description" content="Kevin Chen is a designer and programmer.">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@inchkev">
   <meta name="twitter:creator" content="@inchkev">
+
 </head>
 
 <body>
@@ -34,32 +35,23 @@
     <div id="fullwindow"></div>
     <div id="content" class="container edge-fade">
 
-      <!-- Description -->
+      <!-- title, date, long description -->
       <div class="flex-description y-scrollable auto-padding">
-
-        <!-- Title -->
         <div id="title">
           <h1><a href="/" class="color-programming">Computer Generated Watercolor</a></h1>
           <p class="color-programming">Spring 2022</p>
         </div>
-
         <p>Developed a real-time watercolor simulation with pigment flow effects in C++.</p>
-        <p>
-        I attempted to implement the SIGGRAPH 1997 paper <a href="https://grail.cs.washington.edu/projects/watercolor/paper_small.pdf"><em>Computer-Generated Watercolor</em></a> by Curtis et al. I was able to partially implement 5/6 of the techniques described in the paper: edge darkening, backruns, granulation, wet-on-wet flow effects, and color glazing.
-        </p>
-        <p>
-        Designed a custom staggered grid data structure. Used forward Euler integration to simulate wet pigment flow and the adsorption/desorption mechanics of watercolor pigment on paper.
-        </p>
+        <p>I attempted to implement the SIGGRAPH 1997 paper <a href="https://grail.cs.washington.edu/projects/watercolor/paper_small.pdf"><em>Computer-Generated Watercolor</em></a> by Curtis et al. I was able to partially implement 5/6 of the techniques described in the paper: edge darkening, backruns, granulation, wet-on-wet flow effects, and color glazing.</p>
+        <p>Designed a custom staggered grid data structure. Used forward Euler integration to simulate wet pigment flow and the adsorption/desorption mechanics of watercolor pigment on paper.</p>
         <p>Final project for CPSC 679 at Yale, <em>Physics Simulation for Movies and Games</em>.</p>
         <p><a href="https://github.com/inchkev/watercolor">Link to project github</a></p>
         <p><a href="https://github.com/inchkev/watercolor/blob/main/final_project_report.pdf">Link to writeup</a></p>
-
       </div>
 
-      <!-- Content -->
-      <div class="flex-content y-scrollable auto-padding">
-
-        <div class="image-grid">
+      <!-- main content blocks -->
+      <div class="flex-content y-scrollable auto-padding background-black">
+        <div class="media-grid-3">
           <figure>
             <iframe class="video-container-square" src="https://www.youtube.com/embed/JjEhPoaxUZs" title="Multiple pigment blending" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <figcaption>Multiple pigments blend to form new colors.</figcaption>
@@ -69,14 +61,17 @@
             <figcaption>A single pigment fills a defined wet region.</figcaption>
           </figure>
           <figure>
-            <iframe class="video-container-square" src="https://www.youtube.com/embed/1ohEUe2xzrA" title="User interaction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <figcaption>Interactively place pigments and watch them blend in real time.</figcaption>
+            <iframe class="video-container-square" src="https://www.youtube.com/embed/1ohEUe2xzrA" title="Multiple pigment blending" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figcaption>Pigments blend in real time.</figcaption>
           </figure>
         </div>
 
-        <p>Project writeup below. <a href="https://github.com/inchkev/watercolor/blob/main/final_project_report.pdf">Direct link</a></p>
-        <iframe class="pdf-container-letter" src="/media/final_project_report.pdf#toolbar=0&navpanes=0&zoom=FitW"></iframe>
+        <br><br>
 
+        <div class="centered-80">
+          <p>Project writeup below. <a href="https://github.com/inchkev/watercolor/blob/main/final_project_report.pdf">Direct link</a></p>
+          <iframe class="pdf-container-letter" src="/media/final_project_report.pdf#toolbar=0&amp;navpanes=0&amp;zoom=FitW"></iframe>
+        </div>
       </div>
 
     </div>

@@ -1,0 +1,84 @@
+{
+    "title": "The New Journal",
+    "slug": "the-new-journal",
+    "type": "design",
+    "tags": "design, print",
+    "thumbnail": {
+        "src": "/media/tnj-small.jpeg"
+    },
+    "date": "2022 – 23",
+    "dateLong": "Fall 2022 – Spring 2023",
+    "description": "Creative Director of creative non-fiction magazine *The New Journal*",
+    "descriptionLong": [
+        "Creative Director of *The New Journal*, a student magazine that publishes creative non-fiction about Yale and New Haven. *The New Journal* was named the “Best Student Magazine in the Country” by the Society of Professional Journalists in 2021.",
+        "I revived and redesigned the original serif wordmark, redesigned the entire editorial design system, and designed most spreads in the print magazine. I coordinated layout, illustration, and photography direction, and managed a team of six designers.",
+        "View the full issues here: [issue 1](https://issuu.com/thenewjournal/docs/tnj_sep_final), [issue 2](https://issuu.com/thenewjournal/docs/tnj_nov_final2_pages), [issue 3](https://issuu.com/thenewjournal/docs/tnj_jan_final_pages_issuu), [issue 4](https://issuu.com/thenewjournal/docs/tnj_march_final_issuu), [issue 5](https://issuu.com/thenewjournal/docs/tnj_may_final_issuu).",
+        "[issue.com/thenewjournal](https://issuu.com/thenewjournal)",
+        "[thenewjournalatyale.com](https://thenewjournalatyale.com/)"
+    ],
+    "main": [
+        {
+            "class": "centered",
+            "contents": [
+                {"src": "/media/tnj/tnj-covers-new.webp"}
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
+        {
+            "class": "centered",
+            "contents": ["Selected spreads, issue 4 (March 2023)."]
+        },
+        {
+            "class": "media-grid-2-narrow",
+            "contents": [
+                {"src": "/media/tnj/march/tnj-march-2-3.webp"},
+                {"src": "/media/tnj/march/tnj-march-6-7.webp"},
+                {"src": "/media/tnj/march/tnj-march-42-43.webp"},
+                {"src": "/media/tnj/march/tnj-march-44-45.webp"},
+                {"src": "/media/tnj/march/tnj-march-46-47.webp"},
+                {"src": "/media/tnj/march/tnj-march-52-53.webp"},
+                {"src": "/media/tnj/march/tnj-march-34-35.webp"},
+                {"src": "/media/tnj/march/tnj-march-36-37.webp"},
+                {"src": "/media/tnj/march/tnj-march-16-17.webp"},
+                {"src": "/media/tnj/march/tnj-march-18-19.webp"}
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
+        {
+            "class": "centered",
+            "contents": ["Selected spreads, issue 3 (January 2023)."]
+        },
+        {
+            "class": "media-grid-2-narrow",
+            "contents": [
+                {"src": "/media/tnj/jan/tnj-jan-22-23.webp"},
+                {"src": "/media/tnj/jan/tnj-jan-24-25.webp"},
+                {"src": "/media/tnj/jan/tnj-jan-28-29.webp"},
+                {"src": "/media/tnj/jan/tnj-jan-30-31.webp"},
+                {"src": "/media/tnj/jan/tnj-jan-14-15.webp"},
+                {"src": "/media/tnj/jan/tnj-jan-16-17.webp"},
+                {"src": "/media/tnj/jan/tnj-jan-18-19.webp"},
+                "",
+                {"src": "/media/tnj/jan/tnj-jan-38-39.webp"},
+                {"src": "/media/tnj/jan/tnj-jan-40-41.webp"}
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
+        {
+            "class": "centered",
+            "contents": ["Redesigned wordmark, logo, and tombstone."]
+        },
+        {
+            "class": "centered-70",
+            "contents": [
+                {"src": "/media/tnj/tnj-logo_1.jpeg", "caption": ""}
+            ]
+        }
+    ]
+}

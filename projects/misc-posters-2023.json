@@ -1,0 +1,68 @@
+{
+    "title": "Miscellaneous Posters, 2023",
+    "slug": "misc-posters-2023",
+    "type": "design",
+    "tags": "design, website",
+    "thumbnail": {
+        "src": {
+            "webm": "/media/misc-2023-small.webm",
+            "mp4": "/media/misc-2023-small.mp4"
+        }
+    },
+    "date": "2023",
+    "dateLong": "",
+    "description": "",
+    "descriptionLong": [
+    ],
+    "main": [
+        {
+            "class": "centered",
+            "contents": [
+                "Series of four 18\"x24\" posters about gardens and gardening as a metaphor for society and culture.<br>Inspired after reading Laurie Cluitmans’ [*On the Necessity of Gardening*](https://valiz.nl/en/publications/on-the-necessity-of-gardening)."
+            ]
+        },
+        {
+            "class": "centered-80 media-grid-2",
+            "contents": [
+                {"src": "/media/misc/garden-poster-1.jpeg"},
+                {"src": "/media/misc/garden-poster-2.jpeg"},
+                {"src": "/media/misc/garden-poster-3.jpeg"},
+                {"src": "/media/misc/garden-poster-4.jpeg"}
+            ]
+        },
+        {
+            "contents": ["<br><br><br>"]
+        },
+        {
+            "class": "centered",
+            "contents": [
+                "Tabloid poster and square graphic for WYBC Yale Radio’s senior show. With [Sarah Teng](https://sarahteng.net/)."
+            ]
+        },
+        {
+            "class": "centered-80 media-grid-2",
+            "contents": [
+                {"src": "/media/misc/wybc-seniorshow-tabloid.jpeg"},
+                {"src": "/media/misc/wybc-seniorshow-square.jpeg"}
+            ]
+        },
+        {
+            "contents": ["<br><br><br>"]
+        },
+        {
+            "class": "centered",
+            "contents": [
+                "Set of tabloid posters for the Yale Undergraduate Jazz Collective’s 10th Annual Jazz Festival."
+            ]
+        },
+        {
+            "class": "centered-80 media-grid-4",
+            "contents": [
+                {"src": "/media/misc/jazzfest-tabloid-general.jpeg"},
+                {"src": "/media/misc/jazzfest-tabloid-1.jpeg"},
+                {"src": "/media/misc/jazzfest-tabloid-2.jpeg"},
+                {"src": "/media/misc/jazzfest-tabloid-3.jpeg"}
+            ]
+        }
+    ]
+}

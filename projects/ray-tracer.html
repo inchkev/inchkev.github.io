@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Hangover - Kevin Chen</title>
+  <title>Hangover (ray tracer &amp; animation) - Kevin Chen</title>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/project.css">
 
@@ -17,16 +17,17 @@
   <meta name="theme-color" content="white">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Hangover - Kevin Chen">
-  <meta property="og:url" content="https://kevinnchen.com">
-  <meta property="og:image" content="">
+  <meta property="og:title" content="Hangover (ray tracer &amp; animation) - Kevin Chen">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="https://kevinnchen.com">
   <meta property="og:description" content="Kevin Chen is a designer and programmer.">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@inchkev">
   <meta name="twitter:creator" content="@inchkev">
+
 </head>
 
 <body>
@@ -34,38 +35,26 @@
     <div id="fullwindow"></div>
     <div id="content" class="container edge-fade">
 
-      <!-- Description -->
+      <!-- title, date, long description -->
       <div class="flex-description y-scrollable auto-padding">
-
-        <!-- Title -->
         <div id="title">
-          <h1><a href="/" class="color-programming">Hangover (ray tracer & animation)</a></h1>
+          <h1><a href="/" class="color-programming">Hangover (ray tracer &amp; animation)</a></h1>
           <p class="color-programming">Spring 2021</p>
         </div>
-
         <p>Built a distributed ray tracer in C++.</p>
-        <p>
-          Implemented diffuse and Phong shading, mirror and glossy reflections, soft shadows, and supersampling anti-aliasing.
-          Also created indexed mesh data structure to store scene geometry and a bounding volume hierarchy (BVH) to accelerate ray intersections.
-          BVH space subdivision based on the surface area heuristic from
-          The Visual Computer 1990 paper <a href="https://dl.acm.org/doi/10.1007/BF01911006"><em>Heuristics for ray tracing using space subdivision</em></a>.
-          My renderer also supported importing .OBJ files, enabling importing models created in other software such as Blender or Fusion.
-        </p>
-        <p>
-        To create the video I used motion capture data from the <a href="http://mocap.cs.cmu.edu/">CMU Motion Capture Database</a> and a provided stick figure class.
-          Other than the mocap motions, the camera motion and scene were lit and modeled entirely by hand
-          (modeled in Blender and imported into my renderer) and rendered using my ray tracer.
-        </p>
+        <p>Implemented diffuse and Phong shading, mirror and glossy reflections, soft shadows, and supersampling anti-aliasing. Also created indexed mesh data structure to store scene geometry and a bounding volume hierarchy (BVH) to accelerate ray intersections. BVH space subdivision based on the surface area heuristic from The Visual Computer 1990 paper <a href="https://dl.acm.org/doi/10.1007/BF01911006"><em>Heuristics for ray tracing using space subdivision</em></a>. My renderer also supported importing .OBJ files, enabling importing models created in other software such as Blender or Fusion.</p>
+        <p>To create the video I used motion capture data from the <a href="http://mocap.cs.cmu.edu/">CMU Motion Capture Database</a> and a provided stick figure class. Other than the mocap motions, the camera motion and scene were lit and modeled entirely by hand (modeled in Blender and imported into my renderer) and rendered using my ray tracer.</p>
         <p>Final project for CPSC 478 at Yale, <em>Computer Graphics</em>.</p>
-
       </div>
 
-      <!-- Content -->
-      <div class="flex-content y-scrollable auto-padding">
-        <figure>
-          <iframe class="video-container-16-9" src="https://www.youtube.com/embed/U0YWI-efHEs" title="Hangover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <figcaption>Rendered video.</figcaption>
-        </figure>
+      <!-- main content blocks -->
+      <div class="flex-content y-scrollable auto-padding background-black">
+        <div>
+          <figure>
+            <iframe class="video-container-16-9" src="https://www.youtube.com/embed/U0YWI-efHEs" title="Hangover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figcaption>Rendered video.</figcaption>
+          </figure>
+        </div>
       </div>
 
     </div>

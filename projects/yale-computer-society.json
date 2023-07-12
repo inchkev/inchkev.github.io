@@ -1,0 +1,57 @@
+{
+    "title": "Yale Computer Society",
+    "slug": "yale-computer-society",
+    "type": "design",
+    "tags": "design, direction",
+    "thumbnail": {
+        "src": "/media/ycs-small.jpeg"
+    },
+    "date": "2020 – 22",
+    "dateLong": "2020 – 2022",
+    "description": "",
+    "descriptionLong": [
+        "I was the design chair of [Yale Computer Society](http://yalecompsociety.org/) (y/cs), Yale’s computer science, technology, and entrepreneurship club.",
+        "I redesigned their graphical identity and designed all event graphics and promotional material."
+    ],
+    "main": [
+        {
+            "class": "centered-90 media-grid-2",
+            "contents": [
+                {"src": "/media/ycs/ycs-hacknight-banner.jpeg"},
+                {"src": "/media/ycs/ycs-hacknight2-banner.jpeg"},
+                {"src": "/media/ycs/ycs-basketball-banner.jpeg"},
+                {"src": "/media/ycs/ycs-demoday-banner.jpeg"}
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
+        {
+            "class": "centered-90 image-grid-small",
+            "contents": [
+                {"src": "/media/ycs/ycs-intro-square.jpeg"},
+                {"src": "/media/ycs/ycs-mixer-square.jpeg"}
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
+        {
+            "class": "centered-80",
+            "contents": [
+                "Color system.",
+                {"src": "/media/ycs/ycs-redesign_1.jpeg"}
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
+        {
+            "class": "centered-80",
+            "contents": [
+                "Old logo shown on left, before 2019.",
+                {"src": "/media/ycs/ycs-redesign_2.jpeg"}
+            ]
+        }
+    ]
+}

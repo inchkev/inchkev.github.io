@@ -1,0 +1,68 @@
+{
+    "title": "Digital Library of Mathematical Functions",
+    "slug": "nist-dlmf",
+    "type": "programming",
+    "tags": "website, vr",
+    "thumbnail": {
+        "src": {
+            "webm": "/media/dlmf.webm",
+            "mp4": "/media/dlmf.mp4"
+        }
+    },
+    "date": "2019",
+    "dateLong": "Spring 2019",
+    "description": "",
+    "descriptionLong": [
+        "Developed WebVR demos for researchers at [NIST (National Institute of Standards and Technology)](https://www.nist.gov/) to manipulate and interact with the mathematical surfaces in the [DLMF (Digital Library of Mathematical Formulae)](https://dlmf.nist.gov/) repository. Awarded the 2018 Outstanding Poster Presentation award, work presented at the SIGGRAPH 2018 BOF session [“Immersive Visualization for Research, Science and Art”](https://immersive-visualisation-bof.org/2018.html).",
+        "[Link to project paper](https://docs.google.com/document/d/1MsODzLZLEoAF9-FPnjHTPbq8iJuVAOjlL8HwyfAFI-A/edit#heading=h.smfdcp3c61lm)"
+    ],
+    "main": [
+        {
+            "class": "centered-90",
+            "contents": [
+                {
+                    "src": {
+                        "webm": "/media/dlmf-interaction.webm",
+                        "mp4": "/media/dlmf-interaction.mp4"
+                    },
+                    "caption": "Controller interaction, object scaling, collision, and physics effects."
+                }
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
+        {
+            "class": "centered-90",
+            "contents": [
+                {
+                    "src": {
+                        "webm": "/media/dlmf-vrdemo.webm",
+                        "mp4": "/media/dlmf-vrdemo.mp4"
+                    },
+                    "caption": "A simple fragment shader that sets color based on normalized position."
+                }
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
+        {
+            "class": "centered",
+            "contents": ["Interactive demos"]
+        },
+        {
+            "class": "centered-80 text-grid",
+            "contents": [
+                {
+                    "src": "https://math.nist.gov/~SRessler/knc7/experiments/random/index.html",
+                    "caption": "Enter keys 0–9 to spawn or remove surfaces."
+                },
+                {
+                    "src": "https://math.nist.gov/~SRessler/knc7/experiments/grid/smindex.html",
+                    "caption": "Pan around the entire set of 3D surfaces."
+                }
+            ]
+        }
+    ]
+}

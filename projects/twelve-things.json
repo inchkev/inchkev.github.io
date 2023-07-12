@@ -1,0 +1,36 @@
+{
+    "title": "Twelve (12) things to do with your essay",
+    "titleLong": "Twelve (12) things to do with your essay after you turn it in",
+    "slug": "twelve-things",
+    "type": "design",
+    "tags": "design, zine",
+    "thumbnail": {
+        "src": "/media/twelve-things-small.jpeg"
+    },
+    "date": "2023",
+    "dateLong": "Spring 2023",
+    "description": "",
+    "descriptionLong": [
+        "*Twelve (12) things to do with your essay after you turn it in* is a 20 page single-color risograph zine that presents novel ways to republish and repurpose academic writing. Created in collaboration with [Kaloyan Kolev](https://kaloyankolev.com/).",
+        "I designed, illustrated, and printed; Kalo wrote and edited.",
+        "The design was inspired by [Laurel Schwulst’s](https://laurel.world/) [*Ways to Pass Time Inside This Room*](https://www.are.na/block/6538447)."
+    ],
+    "main": [
+        {
+            "class": "media-grid-2-narrow",
+            "contents": [
+                {"src": "/media/twelve-things/twelve-things_front.jpg"},
+                {"src": "/media/twelve-things/twelve-things_1.jpg"},
+                {"src": "/media/twelve-things/twelve-things_2.jpg"},
+                {"src": "/media/twelve-things/twelve-things_3.jpg"},
+                {"src": "/media/twelve-things/twelve-things_4.jpg"},
+                {"src": "/media/twelve-things/twelve-things_5.jpg"},
+                {"src": "/media/twelve-things/twelve-things_6.jpg"},
+                {"src": "/media/twelve-things/twelve-things_7.jpg"},
+                {"src": "/media/twelve-things/twelve-things_8.jpg"},
+                {"src": "/media/twelve-things/twelve-things_9.jpg"},
+                {"src": "/media/twelve-things/twelve-things_back.jpg"}
+            ]
+        }
+    ]
+}
