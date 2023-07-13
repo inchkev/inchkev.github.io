@@ -42,14 +42,15 @@ async function main() {
   var projects = {};
 
   const projectDir = path.join(__dirname, '..', 'projects');
-  const projectFiles = await fs.readdir(projectDir);
+  const contentDir = path.join(__dirname, '..', 'content');
+  const contentFiles = await fs.readdir(contentDir);
 
   /* render project pages */
 
-  for (const filename of micromatch(projectFiles, ['*.json', '!_*.json', '!home.json'])) {
+  for (const filename of micromatch(contentFiles, ['*.json', '!_*.json', '!home.json'])) {
     console.log('Processing', filename);
-    const projectPath = path.join(projectDir, filename);
-    let data = JSON.parse(await fs.readFile(projectPath, 'utf8'));
+    const contentPath = path.join(contentDir, filename);
+    let data = JSON.parse(await fs.readFile(contentPath, 'utf8'));
     
     // format title
     // data.title = await marked.parseInline(data.title);
@@ -174,7 +175,7 @@ async function main() {
 
   /* render home page */
 
-  const homePath = path.join(projectDir, 'home.json');
+  const homePath = path.join(contentDir, 'home.json');
   const home = JSON.parse(await fs.readFile(homePath, 'utf8'));
 
   let homeData = {};
