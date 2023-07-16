@@ -1,17 +1,28 @@
 /* Made by hand by Kevin Chen */
 
+body {
+  background-color: black;
+  color: white;
+}
+
 .container {
   height: 100%;
 }
 
 .flex-description {
   flex: 1 1 0;
-  padding-right: 0em;
+  background-color: white;
+  color: black;
 }
 .flex-content {
   flex: 3 1 0;
   padding-top: 4.5em;
-  /* padding-left: 0em; */
+}
+.flex-content a {
+  color: #3030ff;
+}
+.flex-content a:hover {
+  color: white;
 }
 .flex-content *:first-child {
   margin-top: 0;
@@ -99,23 +110,19 @@
 }
 .centered-90 {
   text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0 5%;
 }
 .centered-80 {
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0 10%;
 }
 .centered-70 {
   text-align: center;
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding: 0 15%;
 }
 .centered-60 {
   text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding: 0 20%;
 }
 
 .text-grid {
@@ -173,7 +180,11 @@
   .y-scrollable {
     overflow-y: hidden;
   }
-  .centered, .centered-90, .centered-80, .centered-70, .centered-60 {
+  .centered,
+  .centered-90,
+  .centered-80,
+  .centered-70,
+  .centered-60 {
     padding-left: 0;
     padding-right: 0;
   }
@@ -218,13 +229,6 @@
   filter: initial;
   z-index: 1;
   background-color: black;
-}
-
-.background-black {
-  background-color: black;
-}
-.background-black * {
-  color: white;
 }
 
 img {
