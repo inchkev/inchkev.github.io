@@ -226,3 +226,7 @@
 .background-black * {
   color: white;
 }
+
+img {
+  cursor: zoom-in;
+}
