@@ -247,13 +247,12 @@ a.color-design:hover > * {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
   grid-auto-rows: 1fr;
-  grid-gap: 0.5em 1em;
+  grid-gap: 0.25em 1em;
   counter-reset: boxes;
 }
 .box {
   counter-increment: boxes;
-  aspect-ratio: 4/5;
-  /* aspect-ratio: 3/3; */
+  /* aspect-ratio: 4/5; */
 }
 .box * {
   width: 100%;
