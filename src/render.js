@@ -37,6 +37,29 @@ class EJSTemplateStore {
 }
 
 
+async function getSizeOf(src) {
+  if (/\.(jpe?g|png|gif|webp|apng|svg|bmp|ico)$/i.test(src)) {
+    try {
+      const dimensions = await sizeOf(src);
+      if (dimensions.orientation == 6 || dimensions.orientation == 8) {
+        return { width: dimensions.height, height: dimensions.width };
+      }
+      return {width: dimensions.width, height: dimensions.height};
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  if (/\.(mp4|webm|ogg)$/i.test(src)) {
+    try {
+      return await getVideoDimensions(src);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+  return { width: 0, height: 0 };
+}
+
+
 async function main() {
   const templates = new EJSTemplateStore();
   var projects = {};
@@ -65,14 +88,19 @@ async function main() {
 
     // format thumbnail
     if (
-      typeof data.thumbnail.src === 'string' &&
-      /\.(jpe?g|png|webp)$/i.test(data.thumbnail.src)
-    ) {
+        typeof data.thumbnail.src === 'string' &&
+        /\.(jpe?g|png|webp)$/i.test(data.thumbnail.src)) {
       data.thumbnail.type = 'image';
+      const dimensions = await getSizeOf(path.join(__dirname, '..', data.thumbnail.src));
+      data.thumbnail.width = dimensions.width;
+      data.thumbnail.height = dimensions.height;
     } else if (
-      data.thumbnail.src.constructor == Object &&
-      ('webm' in data.thumbnail.src || 'mp4' in data.thumbnail.src)) {
+        data.thumbnail.src.constructor == Object &&
+        ('mp4' in data.thumbnail.src || 'webm' in data.thumbnail.src)) {
       data.thumbnail.type = 'video';
+      const dimensions = await getSizeOf(path.join(__dirname, '..', data.thumbnail.src.webm));
+      data.thumbnail.width = dimensions.width;
+      data.thumbnail.height = dimensions.height;
     }
 
     // format main
@@ -87,29 +115,17 @@ async function main() {
       section.contents = (await Promise.all(
         section.contents.map(async (media) => {
           if (typeof media === 'string') {
-            return {type: 'text', content: await marked.parseInline(media)};
+            return { type: 'text', content: await marked.parseInline(media) };
           }
 
-          if (media.constructor != Object) {
-            return [];
-          }
+          if (media.constructor != Object) return [];
 
           if (typeof media.src === 'string') {
             if (/\.(jpe?g|png|gif|webp|apng|svg|bmp|ico)$/i.test(media.src)) {
               media.type = 'image';
-              try {
-                const dimensions = await sizeOf(path.join(__dirname, '..', media.src));
-                if (dimensions.orientation == 6 || dimensions.orientation == 8) {
-                  media.width = dimensions.height;
-                  media.height = dimensions.width;
-                } else {
-                  media.width = dimensions.width;
-                  media.height = dimensions.height;
-                }
-              } catch (err) {
-                console.error('Error reading image:', media.src);
-                console.error(err);
-              }
+              const dimensions = await getSizeOf(path.join(__dirname, '..', media.src));
+              media.width = dimensions.width;
+              media.height = dimensions.height;
 
             } else if (/^(https?:\/\/)?((www\.|m\.)?youtube\.com|youtu\.be)\/(watch|v|embed(\.php)?(\?.*v=|\/))?[a-zA-Z0-9\_-]+\S*$/.test(media.src)) {
               media.type = 'youtube-embed';
@@ -131,16 +147,12 @@ async function main() {
             }
 
           } else if (media.src.constructor == Object) {
-            if ('webm' in media.src || 'mp4' in media.src) {
+            if ('mp4' in media.src || 'webm' in media.src) {
               media.type = 'video';
-              try {
-                const dimensions = await getVideoDimensions(path.join(__dirname, '..', media.src));
-                media.width = dimensions.height;
-                media.height = dimensions.width;
-              } catch (err) {
-                console.error('Error reading video:', media.src);
-                console.error(err);
-              }
+              const dimensions = await getSizeOf(path.join(__dirname, '..', media.src.webm));
+              media.width = dimensions.width;
+              media.height = dimensions.height;
+
             } else {
               return [];
             }

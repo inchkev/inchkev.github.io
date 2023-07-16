@@ -51,9 +51,9 @@
           <div class="box color-<%= project.type %>" data-project="<%= project.slug %>">
             <a href="projects/<%= project.slug %>" aria-label="Visit project: <%= project.title %>">
               <%_ if (project.thumbnail.type === "image") { _%>
-              <img src="<%= project.thumbnail.src %>" alt=""></img>
+              <img src="<%= project.thumbnail.src %>" width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" alt=""></img>
               <%_ } else if (project.thumbnail.type === "video") { _%>
-              <video autoplay loop muted playsinline>
+              <video width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" autoplay loop muted playsinline>
                 <source src="<%= project.thumbnail.src.webm %>" type="video/webm"/>
                 <source src="<%= project.thumbnail.src.mp4 %>" type="video/mp4"/>
               </video>
