@@ -123,10 +123,11 @@ figcaption {
   flex: 3 1 0;
   max-width: 575px;
   min-width: 375px;
+  padding-right: 0.625em;
 }
 .flex-right {
   flex: 4 1 0;
-  padding-left: 0;
+  padding-left: 0.625em;
 }
 @media only screen and (max-width: 768px) {
   .container {
@@ -141,6 +142,7 @@ figcaption {
     max-width: none;
     min-width: none;
     padding-bottom: 0.75em;
+    padding-right: 1.25em;
   }
   .flex-right {
     flex: 0 0 auto;
@@ -178,6 +180,25 @@ a.color-design:hover > * {
   background-color: var(--green);
   color: white;
 }
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 1em;
+  cursor: pointer;
+}
+/* button.color-programming:hover, */
+button.color-programming.selected {
+  background-color: var(--gray);
+  color: white;
+}
+/* button.color-design:hover, */
+button.color-design.selected {
+  background-color: var(--green);
+  color: white;
+}
+
 
 #projects {
   margin-top: 2em;
