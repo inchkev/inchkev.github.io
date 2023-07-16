@@ -66,7 +66,6 @@ figcaption {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
 
-  /* I'm so sad why don't more browsers support this :( */
   hyphenate-limit-chars: 6 3 3;
     -ms-hyphenate-limit-chars: 6 3 3;
     -webkit-hyphenate-limit-before: 3;
@@ -79,14 +78,8 @@ figcaption {
   text-overflow: ellipsis;
 }
 
-@media only screen and (max-width: 600px) {
-  .hidden-600px {
-    display: none;
-  }
-}
-
 .auto-padding {
-  padding: 1.25em 1.25em 2.5em 1.25em;
+  padding: 1.25em 1.25em 3.5em 1.25em;
 
   /* from https://stackoverflow.com/a/12034794 */
   box-sizing: border-box;           /* Opera/IE 8+ */
@@ -128,30 +121,26 @@ figcaption {
 
 .flex-left {
   flex: 3 1 0;
-  max-width: 635px;
-  min-width: 350px;
-  height: 100%;
-  /* position: sticky; */
-  /* top: 0; */
-  /* bottom: 0; */
+  max-width: 575px;
+  min-width: 375px;
 }
 .flex-right {
   flex: 4 1 0;
   padding-left: 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .container {
     overflow-x: hidden;
     overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
     flex-direction: column;
       -webkit-flex-direction: column;
   }
   .flex-left {
     flex: 0 0 auto;
-    padding-bottom: 0em;
-    padding-right: 1.25em;
+    max-width: none;
+    min-width: none;
+    padding-bottom: 0.75em;
   }
   .flex-right {
     flex: 0 0 auto;
@@ -220,18 +209,17 @@ a.color-design:hover > * {
     -webkit-flex-direction: row;
 
   gap: 0.75em;
-  /* align-items: center; */
 }
 #projects .el a *:nth-child(1) {
-  flex: 6 1 0;
+  flex: 5 1 0;
 }
 #projects .el a *:nth-child(2) {
   padding-top: 0.35em;
-  flex: 1.5 1 0;
+  flex: 1.2 1 0;
 }
 #projects .el a *:nth-child(3) {
   padding-top: 0.35em;
-  flex: 3.3 1 0;
+  flex: 2.3 1 0;
 }
 .super {
   font-size: 0.83em;
@@ -250,11 +238,6 @@ a.color-design:hover > * {
 .super:last-child::after {
   content: ")";
 }
-/* @media only screen and (max-width: 600px) {
-  .super {
-    display: none;
-  }
-} */
 
 /* * { */
 /*   border: 1px solid blue; */

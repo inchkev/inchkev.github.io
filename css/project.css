@@ -124,6 +124,10 @@ body {
   text-align: center;
   padding: 0 20%;
 }
+.centered-50 {
+  text-align: center;
+  padding: 0 25%;
+}
 
 .text-grid {
   display: -webkit-box;
@@ -141,14 +145,13 @@ body {
   max-width: 1fr;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .container {
-    flex-direction: column;
-      -webkit-flex-direction: column;
     overflow-x: hidden;
     overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain;
+    flex-direction: column;
+      -webkit-flex-direction: column;
   }
   .flex-description {
     flex: 0 0 auto;
@@ -184,7 +187,8 @@ body {
   .centered-90,
   .centered-80,
   .centered-70,
-  .centered-60 {
+  .centered-60,
+  .centered-50 {
     padding-left: 0;
     padding-right: 0;
   }
