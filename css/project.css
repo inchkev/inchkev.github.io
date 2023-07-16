@@ -145,13 +145,8 @@
   }
   .flex-description {
     flex: 0 0 auto;
-    padding-bottom: 0em;
+    padding-bottom: 0.75em;
     padding-right: 1.25em;
-  }
-  .flex-description::after {
-    width: inherit;
-    content: "~";
-    opacity: 0.35;
   }
   .flex-content {
     flex: 0 0 auto;
