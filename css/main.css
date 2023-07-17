@@ -35,7 +35,7 @@ footer * {
   background: white;
 }
 
-h1, h2, h3, h4, h5, h6, p, th, td {
+h1, h2, h3, h4, h5, h6, p, th, td, button {
   font-size: 1em;
   font-weight: normal;
   line-height: 1.12em;
@@ -184,6 +184,7 @@ button {
   background: none;
   border: none;
   padding: 0;
+  margin: 0;
   font-family: inherit;
   font-size: 1em;
   cursor: pointer;
