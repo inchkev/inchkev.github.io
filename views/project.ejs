@@ -31,7 +31,7 @@
 
             <%_ }); _%>
           <%_ } else if (section.type === "regular") { _%>
-        <div<% if (section.class) { %> class="<%= section.class %>"<% } %>>
+        <div<% if (section.class) { %> class="<%= section.class %>"<% } %><% if (section.style) { %> style="<%= section.style %>"<% } %>>
             <%_ section.contents.forEach(function(media) { _%>
               <%_ if (media.type === "raw") { _%>
           <%- media.content %>

@@ -45,7 +45,7 @@
             "contents": ["Additional close-up renders."]
         },
         {
-            "class": "media-grid-2",
+            "class": "centered-90 media-grid-2",
             "contents": [
                 {
                     "src": "/media/spikegen/cozy_3.jpeg",

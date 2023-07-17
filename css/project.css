@@ -105,28 +105,43 @@ body {
   gap: 0.5em 0.5em;
 }
 
+.centered,
+.centered-90,
+.centered-80,
+.centered-70,
+.centered-60,
+.centered-50 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .centered {
   text-align: center;
 }
 .centered-90 {
   text-align: center;
-  padding: 0 5%;
+  /* padding: 0 5%; */
+  max-width: 900px;
 }
 .centered-80 {
   text-align: center;
-  padding: 0 10%;
+  /* padding: 0 10%; */
+  max-width: 800px;
 }
 .centered-70 {
   text-align: center;
-  padding: 0 15%;
+  /* padding: 0 15%; */
+  max-width: 700px;
 }
 .centered-60 {
   text-align: center;
-  padding: 0 20%;
+  /* padding: 0 20%; */
+  max-width: 600px;
 }
 .centered-50 {
   text-align: center;
-  padding: 0 25%;
+  /* padding: 0 25%; */
+  max-width: 500px;
 }
 
 .text-grid {
@@ -163,6 +178,9 @@ body {
     padding-top: 1.5em;
     padding-left: 1.25em;
   }
+  .y-scrollable {
+    overflow-y: hidden;
+  }
   .image-grid,
   .image-grid-small {
     margin-top: 0;
@@ -180,17 +198,15 @@ body {
     grid-template-columns: 1fr;
     grid-auto-flow: row;
   }
-  .y-scrollable {
-    overflow-y: hidden;
-  }
   .centered,
   .centered-90,
   .centered-80,
   .centered-70,
   .centered-60,
   .centered-50 {
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
   }
 }
 

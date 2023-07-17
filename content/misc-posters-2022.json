@@ -23,6 +23,7 @@
         },
         {
             "class": "centered-90 media-grid-3-rows",
+            "style": "row-gap: 0.5em",
             "contents": [
                 {"src": "/media/misc/vansinderen-1-banner.jpeg"},
                 {"src": "/media/misc/vansinderen-1-poster.jpeg"},
