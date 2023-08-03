@@ -24,7 +24,7 @@
             "contents": ["Selected photos from *Nuclear Landscapes*."]
         },
         {
-            "class": "centered-70 media-grid-2",
+            "class": "centered-4 media-grid-2",
             "contents": [
                 {"src": "/media/nuclear-landscapes/example-1.webp", "alt": "“HOW WOULD A HOUSE WITHSTAND NUCLEAR WIND?”"},
                 {"src": "/media/nuclear-landscapes/example-2.webp", "alt": "“POTENTIAL NUCLEAR WASTE AREA”"}
@@ -34,11 +34,11 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "",
+            "class": "centered",
             "contents": ["Set of flyers, 8.5\"x11\"."]
         },
         {
-            "class": "media-grid-3",
+            "class": "media-grid-3 centered",
             "contents": [
                 {"src": "/media/nuclear-landscapes/collection-flyer-1.jpg"},
                 {"src": "/media/nuclear-landscapes/collection-flyer-2.jpg"},
@@ -52,11 +52,11 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "",
+            "class": "centered",
             "contents": ["Set of postcards, 9\"x6\"."]
         },
         {
-            "class": "media-grid-2",
+            "class": "media-grid-2 centered",
             "contents": [
                 {"src": "/media/nuclear-landscapes/collection-postcard-1-front.jpg"},
                 {"src": "/media/nuclear-landscapes/collection-postcard-1-back.jpg"},
@@ -68,11 +68,11 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "",
+            "class": "centered",
             "contents": ["Gallery."]
         },
         {
-            "class": "media-grid-5",
+            "class": "media-grid-5 centered",
             "contents": [
                 {"src": "/media/nuclear-landscapes/collection-gallery-1.jpg"},
                 {"src": "/media/nuclear-landscapes/collection-gallery-2.jpg"},
@@ -85,11 +85,11 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "",
+            "class": "centered",
             "contents": ["Exhibition brochure, 11\"x8.5\"."]
         },
         {
-            "class": "media-grid-2",
+            "class": "media-grid-2 centered",
             "contents": [
                 {"src": "/media/nuclear-landscapes/collection-pamphlet-1.jpg"},
                 {"src": "/media/nuclear-landscapes/collection-pamphlet-2.jpg"}
@@ -99,14 +99,14 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "",
+            "class": "centered",
             "contents": ["Project installation proposal on the facade of the Beinecke Library."]
         },
         {
-            "class": "centered-70",
+            "class": "centered-4 no-max",
             "contents": [
                 {"src": "/media/nuclear-landscapes/collection-installation.jpg"},
-                "The Beinecke Rare Book and Manuscript Library, for reference.",
+                "The Beinecke Rare Book and Manuscript Library.",
                 {"src": "/media/nuclear-landscapes/beinecke.jpeg",
                  "caption": "Image from https://beinecke.library.yale.edu/article/beinecke-library-fellowships-built-back-bigger-and-better"}
             ]

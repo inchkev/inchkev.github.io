@@ -15,7 +15,7 @@
     ],
     "main": [
         {
-            "class": "centered-90 media-grid-2",
+            "class": "media-grid-2 centered",
             "contents": [
                 {"src": "/media/ycs/ycs-hacknight-banner.jpeg"},
                 {"src": "/media/ycs/ycs-hacknight2-banner.jpeg"},
@@ -27,7 +27,7 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "centered-90 image-grid-small",
+            "class": "media-grid-2 centered",
             "contents": [
                 {"src": "/media/ycs/ycs-intro-square.jpeg"},
                 {"src": "/media/ycs/ycs-mixer-square.jpeg"}
@@ -37,7 +37,7 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "centered-80",
+            "class": "centered-3",
             "contents": [
                 "Color system.",
                 {"src": "/media/ycs/ycs-redesign_1.jpeg"}
@@ -47,7 +47,7 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "centered-80",
+            "class": "centered-3",
             "contents": [
                 "Old logo shown on left, before 2019.",
                 {"src": "/media/ycs/ycs-redesign_2.jpeg"}

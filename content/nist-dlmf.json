@@ -18,7 +18,7 @@
     ],
     "main": [
         {
-            "class": "centered-90",
+            "class": "centered-2",
             "contents": [
                 {
                     "src": {
@@ -33,7 +33,7 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "centered-90",
+            "class": "centered-2",
             "contents": [
                 {
                     "src": {
@@ -52,7 +52,7 @@
             "contents": ["Interactive demos"]
         },
         {
-            "class": "centered-80 text-grid",
+            "class": "text-grid centered-3",
             "contents": [
                 {
                     "src": "https://math.nist.gov/~SRessler/knc7/experiments/random/index.html",

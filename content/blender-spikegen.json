@@ -18,7 +18,7 @@
     ],
     "main": [
         {
-            "class": "image-grid-small",
+            "class": "image-grid-small centered",
             "contents": [
                 {
                     "src": "/media/spikegen/spikegen_menu.jpeg",
@@ -45,7 +45,7 @@
             "contents": ["Additional close-up renders."]
         },
         {
-            "class": "centered-90 media-grid-2",
+            "class": "media-grid-2 centered",
             "contents": [
                 {
                     "src": "/media/spikegen/cozy_3.jpeg",

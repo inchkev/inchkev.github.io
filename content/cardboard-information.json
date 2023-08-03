@@ -14,7 +14,7 @@
     ],
     "main": [
         {
-            "class": "centered-60",
+            "class": "centered-3",
             "contents": [
                 {"src": "/media/cardboard-front.jpeg"}
             ]

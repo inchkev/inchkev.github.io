@@ -17,7 +17,7 @@
     ],
     "main": [
         {
-            "class": "media-grid-2-narrow",
+            "class": "media-grid-2-narrow centered",
             "contents": [
                 {"src": "/media/snailsnail/snailsnail-1.webp"},
                 {"src": "/media/snailsnail/snailsnail-2.webp"},
@@ -34,7 +34,11 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "centered-80 media-grid-2",
+            "class": "centered",
+            "contents": ["Process photos"]
+        },
+        {
+            "class": "media-grid-2 centered-3",
             "contents": [
                 {"src": "/media/snailsnail/process_1.jpeg"},
                 {"src": "/media/snailsnail/process_2.jpeg"},
@@ -46,7 +50,7 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "centered-80",
+            "class": "centered-3",
             "contents": [
                 "Video flipthrough",
                 {

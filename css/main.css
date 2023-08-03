@@ -265,7 +265,7 @@ button.color-design.selected {
 
 #image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12.5em, 1fr));
   grid-auto-rows: 1fr;
   grid-gap: 0.25em 1em;
   counter-reset: boxes;

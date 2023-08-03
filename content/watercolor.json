@@ -22,25 +22,22 @@
     ],
     "main": [
         {
-            "class": "media-grid-3",
+            "class": "media-grid-3 centered",
             "contents": [
                 {
                     "src": "https://www.youtube.com/embed/JjEhPoaxUZs",
                     "title": "Multiple pigment blending",
-                    "aspectRatio": "square",
-                    "caption": "Multiple pigments blend to form new colors."
+                    "aspectRatio": "square"
                 },
                 {
                     "src": "https://www.youtube.com/embed/ic56LUOM6j0",
                     "title": "Single pigment, on paper",
-                    "aspectRatio": "square",
-                    "caption": "A single pigment fills a defined wet region."
+                    "aspectRatio": "square"
                 },
                 {
                     "src": "https://www.youtube.com/embed/1ohEUe2xzrA",
                     "title": "Multiple pigment blending",
-                    "aspectRatio": "square",
-                    "caption": "Pigments blend in real time."
+                    "aspectRatio": "square"
                 }
             ]
         },
@@ -48,7 +45,7 @@
             "contents": ["<br><br>"]
         },
         {
-            "class": "centered-80",
+            "class": "centered-5",
             "contents": [
                 "Project writeup below. [Direct link](https://github.com/inchkev/watercolor/blob/main/final_project_report.pdf)",
                 {

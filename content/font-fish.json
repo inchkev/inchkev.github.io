@@ -21,7 +21,7 @@
     ],
     "main": [
         {
-            "class": "centered-80",
+            "class": "centered-3",
             "contents": [
                 {"src": "/media/font-fish-screenshot.jpg", "alt": "Screenshot of font.fish website"}
             ]

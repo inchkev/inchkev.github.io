@@ -17,7 +17,7 @@
     ],
     "main": [
         {
-            "class": "media-grid-2-narrow",
+            "class": "media-grid-2-narrow centered",
             "contents": [
                 {"src": "/media/twelve-things/twelve-things_front.jpg"},
                 {"src": "/media/twelve-things/twelve-things_1.jpg"},
