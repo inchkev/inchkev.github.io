@@ -79,7 +79,7 @@ img {
 }
 
 .media-grid-2,
-.media-grid-2-narrow,
+.media-grid-2-nogap,
 .media-grid-2-rows,
 .media-grid-3,
 .media-grid-3-rows,
@@ -90,12 +90,11 @@ img {
   margin-bottom: 1.25em;
 }
 
-.media-grid-2, .media-grid-2-narrow {
+.media-grid-2, .media-grid-2-nogap {
   grid-template-columns: repeat(2, fit-content(100%));
   gap: 1em 1em;
 }
-.media-grid-2-narrow {
-  grid-template-columns: repeat(2, fit-content(100%));
+.media-grid-2-nogap {
   gap: 0 0;
 }
 .media-grid-2-rows {
@@ -199,7 +198,7 @@ img {
     margin-bottom: 1.25em;
   }
   .media-grid-2,
-  .media-grid-2-narrow,
+  .media-grid-2-nogap,
   .media-grid-2-rows,
   .media-grid-3,
   .media-grid-3-rows,

@@ -10,13 +10,19 @@
     "dateLong": "Fall 2022",
     "description": "",
     "descriptionLong": [
-        "Coming soon... thank you for being patient."
+        "*Cardboard Information* spotlights and exposes the overlooked graphical elements found on packaging. When made legible, these elements reveal not only personal buying habits but also the patterns and symbols that facilitate global shipping.",
+        "*Cardboard Information* was curated from a 14-week project where I collected the graphical elements from every package I received in the mail. The entire collection consists of over 170 individual pieces of cardboard, plastic, and paper."
     ],
     "main": [
         {
-            "class": "centered-3",
+            "class": "media-grid-2-nogap centered",
             "contents": [
-                {"src": "/media/cardboard-front.jpeg"}
+                {"src": "/media/cardboard/cardboard-b-misc-3.webp"},
+                {"src": "/media/cardboard/cardboard-b-2.webp"},
+                {"src": "/media/cardboard/cardboard-b-6.webp"},
+                {"src": "/media/cardboard/cardboard-b-8.webp"},
+                {"src": "/media/cardboard/cardboard-b-7.webp"},
+                {"src": "/media/cardboard/cardboard-b-11.webp"}
             ]
         }
     ]
