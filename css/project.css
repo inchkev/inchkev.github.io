@@ -1,4 +1,4 @@
-/* Made by hand by Kevin Chen */
+/* Kevin Chen */
 
 body {
   background-color: black;
@@ -14,13 +14,13 @@ body {
 }
 
 .flex-description {
-  flex: 0 0 20em;
+  flex: 0 0 22em;
   background-color: white;
   color: black;
 }
 .flex-content {
   flex: 1 1 0;
-  padding-top: 4.5em;
+  padding-top: calc(1.25em + 1.5em);
 }
 .flex-content a {
   color: #3030ff;
@@ -36,6 +36,10 @@ body {
 #title {
   display: block;
   z-index: 1;
+  margin-bottom: 1.5em;
+}
+#title h2 {
+  margin-bottom: 0.3em;
 }
 
 .image-grid,
@@ -47,7 +51,7 @@ body {
     display: -webkit-flex;
   flex-flow: row wrap;
     -webkit-flex-direction: row;
-  gap: 1.25em 1.25em;
+  gap: 1em 1em;
 
   margin-top: 0.75em;
   margin-bottom: 1.25em;
@@ -68,7 +72,7 @@ body {
 }
 
 img {
-  max-height: 90vh;
+  max-height: 85vh;
 }
 .no-max img {
   max-height: none;
@@ -168,7 +172,7 @@ img {
   max-width: 1fr;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   .container {
     overflow-x: hidden;
     overflow-y: scroll;

@@ -12,9 +12,10 @@
 
       <!-- title, date, long description -->
       <div class="flex-description y-scrollable auto-padding">
+        <h1><a href="/">Kevin Chen</a></h1>
         <div id="title">
-          <h1><a href="/" class="color-<%= type %>"><%= locals.titleLong ? titleLong : title %></a></h1>
-          <p class="color-<%= type %>"><%= dateLong %></p>
+          <h2 class="color-<%= type %>"><%= locals.titleLong ? titleLong : title %></h2>
+          <p class="small color-<%= type %>"><%= dateLong %></p>
         </div>
         <%_ descriptionLong.forEach(function(paragraph) { _%>
         <p><%- paragraph %></p>

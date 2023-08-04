@@ -1,23 +1,15 @@
+/* Kevin Chen */
+
 $( "[data-project]" ).hover(
   function() {
     const project = $( this ).data( "project" );
-    let projects_el = $( "#projects" ).find( "[data-project='" + project + "']" ).first();
-    if (this !== projects_el[0]) {
-      let a = projects_el.find( "a" );
-      a.css("background-color", a.css("color"));
-      projects_el.find( "a > *").css("color", "white");
-    }
+    $( "#projects" ).find( "[data-project='" + project + "']" ).addClass("selected");
     $( "#image-grid" ).find( "[data-project='" + project + "']" ).addClass("selected");
   },
 
   function() {
     const project = $( this ).data( "project" );
-    let projects_el = $( "#projects" ).find( "[data-project='" + project + "']" ).first();
-    if (this !== projects_el[0]) {
-      let a = projects_el.find( "a" );
-      projects_el.find( "a > *").css("color", "");
-      a.css("background-color", "");
-    }
+    $( "#projects" ).find( "[data-project='" + project + "']" ).removeClass("selected");
     $( "#image-grid" ).find( "[data-project='" + project + "']" ).removeClass("selected");
   }
 );

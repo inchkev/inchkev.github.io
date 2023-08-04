@@ -1,5 +1,5 @@
 {
-    "title": "VGA 640x480 16-color mode",
+    "title": "640x480 VGA 16-color Mode",
     "slug": "vga-color-mode",
     "type": "programming",
     "tags": "computer graphics",
@@ -26,7 +26,7 @@
                     "src": "https://www.youtube.com/embed/WTVVkOwqXO8",
                     "title": "VGA 640*480 16-color in mCertiKOS",
                     "aspectRatio": "16:9",
-                    "caption": "Demo of the VGA color mode."
+                    "caption": "Demo of VGA 16-color mode"
                 }
             ]
         }

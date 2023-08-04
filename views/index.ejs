@@ -16,37 +16,39 @@
       <!-- Left -->
       <div class="flex-left y-scrollable auto-padding">
         <h1>
-          Kevin Chen (b. 2001) is a <span class="color-design">designer</span> and <span class="color-programming">programmer</span>.
+          Kevin Chen is a <span class="color-design">designer</span> and <span class="color-programming">programmer</span>.
         </h1>
         <p>
-          I’m interested in creative tooling, printed matter, computer graphics, and open source. I graduated May 2023 with a B.S. in Computer Science.
+          I’m interested in systems, tool-making, infrastructure, visibility, gathering, gardening, printed matter, websites, computer graphics, and open source.
         </p>
         <p>
-          Contact me via <a href="mailto:kevin@kevinnchen.com">email (kevin at kevinnchen dot com)</a>. I’m on <a href="https://www.are.na/kevin" target="_blank">Are.na</a>, <a href="https://twitter.com/inchkev" target="_blank">twitter</a>, <a href="https://www.linkedin.com/in/kevinnchen/" target="_blank">linkedin</a>, and <a href="https://github.com/inchkev" target="_blank">github</a>.
+          I hold a BS in Computer Science from Yale University.
         </p>
         <p>
-          Selected projects below (<button name="design" class="color-design">design</button>, <button name="programming" class="color-programming">programming</button>).
+          <a href="mailto:k@kevinnchen.com">Email</a>, <a href="https://www.are.na/kevin" target="_blank">Are.na</a>, <a href="https://twitter.com/inchkev" target="_blank">Twitter</a>, <a href="https://github.com/inchkev" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/kevinnchen/" target="_blank">LinkedIn</a>.
+        </p>
+        <p>
+          Filter projects by (<button name="design" class="color-design">design</button>, <button name="programming" class="color-programming">programming</button>).
         </p>
 
         <div id="projects" class="hyphenate">
-
-          <%_ projects.forEach(function(project) { _%>
-          <div class="el" data-project="<%= project.slug %>">
-            <a class="color-<%= project.type %>" href="projects/<%= project.slug %>">
-              <h3><%= project.title %></h3>
-              <p><%= project.date %></p>
-              <p><%= project.tags %><span class="super"></span></p>
-            </a>
-          </div>
-
-          <%_ }); _%>
+          <ol>
+            <%_ projects.forEach(function(project) { _%>
+            <li class="el color-<%= project.type %>" data-project="<%= project.slug %>">
+              <a href="projects/<%= project.slug %>">
+                <p class="title"><%= project.title %></h3>
+                <p class="date"><%= project.date %></p>
+                <!-- <p class="tag"><%= project.tags %></p> -->
+              </a>
+            </li>
+            <%_ }); _%>
+          </ol>
         </div>
       </div>
 
       <!-- Right -->
       <div class="flex-right y-scrollable auto-padding">
         <div id="image-grid">
-
           <%_ projects.forEach(function(project) { _%>
           <div class="box color-<%= project.type %>" data-project="<%= project.slug %>">
             <a href="projects/<%= project.slug %>" aria-label="Visit project: <%= project.title %>">
@@ -60,7 +62,6 @@
               <%_ } _%>
             </a>
           </div>
-
           <%_ }); _%>
         </div>
       </div>

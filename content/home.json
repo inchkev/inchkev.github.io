@@ -15,6 +15,6 @@
         "ray-tracer",
         "vga-color-mode",
         "blender-spikegen",
-        "nist-dlmf"
+        "--nist-dlmf"
     ]
 }
