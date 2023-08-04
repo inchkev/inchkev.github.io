@@ -247,9 +247,6 @@ ol li {
   line-height: 0.9em;
   letter-spacing: 0.01em;
 }
-.el p.date {
-  letter-spacing: 0.025em;
-}
 .el a::before {
   letter-spacing: -0.01em;
 }
