@@ -74,7 +74,7 @@ body {
 img {
   max-height: 85vh;
 }
-.no-max img {
+.nomaxheight img {
   max-height: none;
 }
 

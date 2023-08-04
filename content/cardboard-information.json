@@ -10,10 +10,19 @@
     "dateLong": "Fall 2022",
     "description": "",
     "descriptionLong": [
-        "*Cardboard Information* spotlights and exposes the overlooked graphical elements found on packaging. When made legible, these elements reveal not only personal buying habits but also the patterns and symbols that facilitate global shipping.",
-        "*Cardboard Information* was curated from a 14-week project where I collected the graphical elements from every package I received in the mail. The entire collection consists of over 170 individual pieces of cardboard, plastic, and paper."
+        "*Cardboard Information* is a 24-page chapbook that spotlights the overlooked graphical elements found on packaging. When made legible, these elements reveal not only personal buying habits but also the patterns and codes that facilitate global shipping.",
+        "*Cardboard Information* was curated from a 14-week project where I collected the graphical elements from every package I received in the mail. The entire collection consists of over 170 pieces of cardboard, plastic, and paper."
     ],
     "main": [
+        {
+            "class": "centered nomaxheight",
+            "contents": [
+                {"src": "/media/cardboard/collection-collage.webp"}
+            ]
+        },
+        {
+            "contents": ["<br><br>"]
+        },
         {
             "class": "media-grid-2-nogap centered",
             "contents": [

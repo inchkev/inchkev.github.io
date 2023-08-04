@@ -103,7 +103,7 @@
             "contents": ["Project installation proposal on the facade of the Beinecke Library."]
         },
         {
-            "class": "centered-4 no-max",
+            "class": "centered-4 nomaxheight",
             "contents": [
                 {"src": "/media/nuclear-landscapes/collection-installation.jpg"},
                 "The Beinecke Rare Book and Manuscript Library.",
