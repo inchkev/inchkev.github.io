@@ -19,7 +19,7 @@
         {
             "class": "centered",
             "contents": [
-                "Set of three design proposals (letter poster and digital banner) to announce the 2023 [Van Sinderen Book Collecting Prizes](https://vansinderen.yale.edu/).<br>The first entry was awarded honorable mention. [Link](https://vansinderen.yale.edu/poster-competition/winning-posters/2021-2030)"
+                "Set of two design proposals (letter poster and digital banner) to announce the 2023 [Van Sinderen Book Collecting Prizes](https://vansinderen.yale.edu/).<br>The first entry was awarded honorable mention. [Link](https://vansinderen.yale.edu/poster-competition/winning-posters/2021-2030)"
             ]
         },
         {
@@ -28,9 +28,6 @@
             "contents": [
                 {"src": "/media/misc/vansinderen-1-banner.jpeg"},
                 {"src": "/media/misc/vansinderen-1-poster.jpeg"},
-                "<br>",
-                {"src": "/media/misc/vansinderen-2-banner.jpeg"},
-                {"src": "/media/misc/vansinderen-2-poster.jpeg"},
                 "<br>",
                 {"src": "/media/misc/vansinderen-3-banner.jpeg"},
                 {"src": "/media/misc/vansinderen-3-poster.jpeg"},
