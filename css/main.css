@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6, p, th, td, button {
   font-size: 1em;
   font-weight: normal;
   line-height: 1.12em;
-  letter-spacing: -0.008em;
+  letter-spacing: -0.005em;
   margin: 0;
   margin-bottom: 0.5em;
 }
@@ -257,9 +257,9 @@ ol li {
 
 #image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14em, 1fr));
   grid-auto-rows: auto;
-  grid-gap: 1em;
+  grid-gap: 1.25em;
   counter-reset: boxes;
 }
 .box {

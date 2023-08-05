@@ -1,8 +1,6 @@
 /*
  * Kevin Chen
  *
- * This code is so bad lol
- * TODO: make it better
  * portions copied from windowfull.js from https://www.stuart-bertolotti-bailey.org/
 */
 
@@ -28,9 +26,9 @@
       const imgTop = imgRect.top;
       const imgWidth = imgRect.width;
       const imgHeight = imgRect.height;
-      const aspectRatio = imgWidth / imgHeight;
+      const aspectRatio = element.width / element.height;
 
-      element.style.opacity = '0';
+      element.style.opacity = 0;
       fullwindowDiv.appendChild(img);
       fullwindowDiv.classList.add('fullscreen', 'nomaxheight');
       fullwindowDiv.style.cursor = 'zoom-out';
@@ -42,24 +40,15 @@
       img.style.top = `${imgTop}px`;
       img.style.width = `${imgWidth}px`;
       img.style.height = `${imgHeight}px`;
-      img.style.transition = 'transform 0.25s cubic-bezier(.4,0,.22,1)';
-
-      // trigger reflow
-      void(img.offsetHeight);
 
       const windowAspectRatio = window.innerWidth / window.innerHeight;
       const scale = (windowAspectRatio > aspectRatio) ?
         window.innerHeight / imgHeight : window.innerWidth / imgWidth;
-
-      var translateX = imgWidth * (scale - 1) / 2 - imgLeft;
-      var translateY = imgHeight * (scale - 1) / 2 - imgTop;
-      if (windowAspectRatio > aspectRatio) {
-        translateX += (window.innerWidth - imgWidth * scale) / 2;
-      } else {
-        translateY += (window.innerHeight - imgHeight * scale) / 2;
-      }
+      const translateX = (window.innerWidth - imgWidth) / 2 - imgLeft;
+      const translateY = (window.innerHeight - imgHeight) / 2 - imgTop;
 
       setTimeout(() => {
+        img.style.transition = 'transform 0.25s cubic-bezier(.4,0,.22,1)';
         img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
         fullwindowDiv.classList.add('fade');
         setTimeout(() => {
@@ -83,6 +72,7 @@
     exit: function (element) {
       const img = fullwindowDiv.querySelector('img');
 
+      // set initial position
       const srcImgRect = img.getBoundingClientRect();
       img.style.position = 'fixed';
       img.style.left = `${srcImgRect.left}px`;
@@ -91,34 +81,27 @@
       img.style.height = `${srcImgRect.height}px`;
       img.style.maxWidth = '';
       img.style.maxHeight = '';
-      img.style.transition = 'transform 0.2s cubic-bezier(.4,0,.22,1)';
 
       const dstImgRect = element.getBoundingClientRect();
-      const imgRect = dstImgRect;
-      const imgLeft = imgRect.left;
-      const imgTop = imgRect.top;
-      const imgWidth = imgRect.width;
-      const imgHeight = imgRect.height;
-      const aspectRatio = imgWidth / imgHeight;
+      const imgLeft = dstImgRect.left;
+      const imgTop = dstImgRect.top;
+      const imgWidth = dstImgRect.width;
+      const imgHeight = dstImgRect.height;
+      const aspectRatio = element.width / element.height;
 
       const windowAspectRatio = window.innerWidth / window.innerHeight;
       const scale = (windowAspectRatio > aspectRatio) ?
-        window.innerHeight / imgHeight : window.innerWidth / imgWidth;
-
-      var translateX = imgWidth * (scale - 1) / 2 - imgLeft;
-      var translateY = imgHeight * (scale - 1) / 2 - imgTop;
-      if (windowAspectRatio > aspectRatio) {
-        translateX += (window.innerWidth - imgWidth * scale) / 2;
-      } else {
-        translateY += (window.innerHeight - imgHeight * scale) / 2;
-      }
+        imgHeight / window.innerHeight : imgWidth / window.innerWidth;
+      const translateX = (window.innerWidth - imgWidth) / 2 - imgLeft;
+      const translateY = (window.innerHeight - imgHeight) / 2 - imgTop;
 
       fullwindowDiv.style.backgroundColor = 'transparent';
-      img.style.transform = `translate(${-translateX}px, ${-translateY}px) scale(${1/scale})`;
+      img.style.transition = 'transform 0.2s cubic-bezier(.4,0,.22,1)';
+      img.style.transform = `translate(${-translateX}px, ${-translateY}px) scale(${scale})`;
       setTimeout(() => {
         document.body.removeChild(fullwindowDiv);
         fullwindowDiv = undefined;
-        element.style.opacity = '1';
+        element.style.opacity = '';
       }, 200);
     },
     
