@@ -150,22 +150,6 @@ img {
   }
 }
 
-.text-grid {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-    -webkit-flex-direction: row;
-  gap: 0em 1.5em;
-}
-.text-grid * {
-  flex: 1;
-  min-width: 15em;
-  max-width: 1fr;
-}
-
 @media only screen and (max-width: 576px) {
   .container {
     overflow-x: hidden;
