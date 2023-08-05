@@ -27,9 +27,6 @@
         <p>
           <a href="mailto:k@kevinnchen.com">Email</a>, <a href="https://www.are.na/kevin" target="_blank">Are.na</a>, <a href="https://twitter.com/inchkev" target="_blank">Twitter</a>, <a href="https://github.com/inchkev" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/kevinnchen/" target="_blank">LinkedIn</a>.
         </p>
-        <p>
-          Filter projects by (<button name="design" class="color-design">design</button>, <button name="programming" class="color-programming">programming</button>).
-        </p>
 
         <div id="projects" class="hyphenate">
           <ol>
@@ -38,13 +35,18 @@
               <a href="projects/<%= project.slug %>">
                 <p class="title"><%= project.title %></h3>
                 <p class="date"><%= project.date %></p>
-                <!-- <p class="tag"><%= project.tags %></p> -->
+                <!-- <p class="tags"><%= project.tags %></p> -->
               </a>
             </li>
             <%_ }); _%>
           </ol>
         </div>
+
+        <p>
+          Filter projects by (<button name="design" class="color-design">design</button>, <button name="programming" class="color-programming">programming</button>).
+        </p>
       </div>
+
 
       <!-- Right -->
       <div class="flex-right y-scrollable auto-padding">
