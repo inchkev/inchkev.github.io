@@ -80,16 +80,12 @@
             ]
         },
         {
-            "contents": ["<br><br>"]
+            "contents": ["<br><br><br>"]
         },
         {
-            "class": "centered",
-            "contents": ["Redesigned wordmark, logo, and tombstone."]
-        },
-        {
-            "class": "centered-4",
+            "class": "centered-3",
             "contents": [
-                {"src": "/media/tnj/tnj-logo_1.jpeg", "caption": ""}
+                {"src": "/media/tnj/TNJ_Solid.webp", "caption": "Wordmark."}
             ]
         }
     ]
