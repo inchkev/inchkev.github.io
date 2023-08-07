@@ -1,6 +1,6 @@
 {
     "title": "Miscellaneous Posters",
-    "slug": "misc-posters-2023",
+    "slug": "misc-posters",
     "type": "design",
     "tags": "design, posters",
     "thumbnail": {
@@ -9,12 +9,30 @@
             "mp4": "/media/misc-2023-small.mp4"
         }
     },
-    "date": "2023",
-    "dateLong": "2023",
+    "date": "2022–23",
+    "dateLong": "2022 – 2023",
     "description": "",
     "descriptionLong": [
     ],
     "main": [
+        {
+            "class": "centered",
+            "contents": [
+                "Set of tabloid posters for the Yale Undergraduate Jazz Collective’s 10th Annual Jazz Festival."
+            ]
+        },
+        {
+            "class": "media-grid-2 centered",
+            "contents": [
+                {"src": "/media/misc/jazzfest-tabloid-general.jpeg"},
+                {"src": "/media/misc/jazzfest-tabloid-1.jpeg"},
+                {"src": "/media/misc/jazzfest-tabloid-2.jpeg"},
+                {"src": "/media/misc/jazzfest-tabloid-3.jpeg"}
+            ]
+        },
+        {
+            "contents": ["<br><br><br>"]
+        },
         {
             "class": "centered",
             "contents": [
@@ -34,16 +52,19 @@
         {
             "class": "centered",
             "contents": [
-                "Set of tabloid posters for the Yale Undergraduate Jazz Collective’s 10th Annual Jazz Festival."
+                "Set of two design proposals (letter poster and digital banner) to announce the 2023 [Van Sinderen Book Collecting Prizes](https://vansinderen.yale.edu/).<br>The first entry was awarded honorable mention. [Link](https://vansinderen.yale.edu/poster-competition/winning-posters/2021-2030)"
             ]
         },
         {
-            "class": "media-grid-2 centered",
+            "class": "media-grid-3-rows centered no-max",
+            "style": "row-gap: 0.5em",
             "contents": [
-                {"src": "/media/misc/jazzfest-tabloid-general.jpeg"},
-                {"src": "/media/misc/jazzfest-tabloid-1.jpeg"},
-                {"src": "/media/misc/jazzfest-tabloid-2.jpeg"},
-                {"src": "/media/misc/jazzfest-tabloid-3.jpeg"}
+                {"src": "/media/misc/vansinderen-1-banner.jpeg"},
+                {"src": "/media/misc/vansinderen-1-poster.jpeg"},
+                "<br>",
+                {"src": "/media/misc/vansinderen-3-banner.jpeg"},
+                {"src": "/media/misc/vansinderen-3-poster.jpeg"},
+                "<br>"
             ]
         }
     ]
