@@ -1,0 +1,28 @@
+{
+    "title": "What is the garden?",
+    "slug": "garden-posters",
+    "type": "design",
+    "tags": "design, posters",
+    "thumbnail": {
+        "src": "/media/garden/garden-1-small.webp"
+    },
+    "date": "2023",
+    "dateLong": "Spring 2023",
+    "description": "",
+    "descriptionLong": [
+        "Series of four 18\"x24\" posters about gardens and gardening as a metaphor for society and culture.",
+        "Inspired after reading Laurie Cluitmans’ [*On the Necessity of Gardening*](https://valiz.nl/en/publications/on-the-necessity-of-gardening)."
+    ],
+    "main": [
+        {
+            "class": "media-grid-1 centered-2",
+            "contents": [
+                {"src": "/media/garden/garden-poster-1-3000x2000.webp"},
+                {"src": "/media/garden/garden-poster-2-3000x2000.webp"},
+                {"src": "/media/garden/garden-photo-1-3000x2000.webp"},
+                {"src": "/media/garden/garden-photo-2-3000x2000.webp"},
+                {"src": "/media/garden/garden-photo-3-3000x2000.webp"}
+            ]
+        }
+    ]
+}

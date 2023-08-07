@@ -1,26 +1,31 @@
-/* Kevin Chen */
+/*
+ * Kevin Chen
+ * 2023
+ *
+ * TODO: add proper vendor prefixes
+ */
 
 body {
   background-color: black;
   color: white;
 }
 
-* {
-  /* border: 1px solid blue; */
-}
+/* * { */
+/*   border: 1px solid blue; */
+/* } */
 
 .container {
   height: 100%;
 }
 
 .flex-description {
-  flex: 0 0 22em;
+  flex: 0 0 21.5em;
   background-color: white;
   color: black;
 }
 .flex-content {
   flex: 1 1 0;
-  padding-top: calc(1.25em + 1.5em);
+  padding-top: 2.87em; /* 1.25em + 1.12em + 0.5em */
 }
 .flex-content a {
   color: #3030ff;
@@ -35,11 +40,22 @@ body {
 
 #title {
   display: block;
-  z-index: 1;
   margin-bottom: 1.5em;
 }
 #title h2 {
   margin-bottom: 0.3em;
+}
+#metadata {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+img {
+  max-height: 90vh;
+}
+.nomaxheight img {
+  max-height: none;
 }
 
 .image-grid,
@@ -52,14 +68,9 @@ body {
   flex-flow: row wrap;
     -webkit-flex-direction: row;
   gap: 1em 1em;
-
   margin-top: 0.75em;
   margin-bottom: 1.25em;
 }
-* {
-  /* border: 1px solid blue; */
-}
-
 .image-grid * {
   flex: 1;
   min-width: 18em;
@@ -71,13 +82,7 @@ body {
   max-width: 1fr;
 }
 
-img {
-  max-height: 85vh;
-}
-.nomaxheight img {
-  max-height: none;
-}
-
+.media-grid-1,
 .media-grid-2,
 .media-grid-2-nogap,
 .media-grid-2-rows,
@@ -90,6 +95,10 @@ img {
   margin-bottom: 1.25em;
 }
 
+.media-grid-1 {
+  grid-template-columns: fit-content(100%);
+  gap: 1em 1em;
+}
 .media-grid-2, .media-grid-2-nogap {
   grid-template-columns: repeat(2, fit-content(100%));
   gap: 1em 1em;
@@ -176,6 +185,7 @@ img {
     margin-top: 0;
     margin-bottom: 1.25em;
   }
+  .media-grid-1,
   .media-grid-2,
   .media-grid-2-nogap,
   .media-grid-2-rows,

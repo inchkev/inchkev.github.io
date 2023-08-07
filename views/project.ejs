@@ -14,7 +14,10 @@
         <h1><a href="/">Kevin Chen</a></h1>
         <div id="title">
           <h2 class="color-<%= type %>"><%= locals.titleLong ? titleLong : title %></h2>
-          <p class="small color-<%= type %>"><%= dateLong %></p>
+          <div id="metadata" class="color-<%= type %> small">
+            <p><%= dateLong %></p>
+            <p>tags: <%= tags %></p>
+          </div>
         </div>
         <%_ descriptionLong.forEach(function(paragraph) { _%>
         <p><%- paragraph %></p>

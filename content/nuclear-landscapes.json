@@ -4,10 +4,7 @@
     "type": "design",
     "tags": "design, direction",
     "thumbnail": {
-        "src": {
-            "webm": "/media/nuclearlandscapes_1.webm",
-            "mp4": "/media/nuclearlandscapes_1.mp4"
-        }
+        "src": "/media/nuclear-landscapes/collage-small.webp"
     },
     "date": "2022",
     "dateLong": "Fall 2022",
@@ -108,7 +105,7 @@
                 {"src": "/media/nuclear-landscapes/collection-installation.jpg"},
                 "The Beinecke Rare Book and Manuscript Library.",
                 {"src": "/media/nuclear-landscapes/beinecke.jpeg",
-                 "caption": "Image from https://beinecke.library.yale.edu/article/beinecke-library-fellowships-built-back-bigger-and-better"}
+                 "caption": "From https://beinecke.library.yale.edu/article/beinecke-library-fellowships-built-back-bigger-and-better"}
             ]
         }
     ]

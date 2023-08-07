@@ -4,7 +4,10 @@
     "type": "design",
     "tags": "design, zine",
     "thumbnail": {
-        "src": "/media/snailsnail-small.webp"
+        "src": {
+            "webm": "/media/snailsnail/flipthrough.webm",
+            "mp4": "/media/snailsnail/flipthrough.mp4"
+        }
     },
     "date": "2022",
     "dateLong": "Summer 2022",
@@ -31,11 +34,7 @@
             ]
         },
         {
-            "contents": ["<br><br>"]
-        },
-        {
-            "class": "centered",
-            "contents": ["Process photos"]
+            "contents": ["<br><br><br>"]
         },
         {
             "class": "media-grid-2 centered-3",

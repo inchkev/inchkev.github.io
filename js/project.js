@@ -31,7 +31,6 @@
       element.style.opacity = 0;
       fullwindowDiv.appendChild(img);
       fullwindowDiv.classList.add('fullscreen', 'nomaxheight');
-      fullwindowDiv.style.cursor = 'zoom-out';
       document.body.appendChild(fullwindowDiv);
 
       // set initial position and size for image
@@ -51,6 +50,8 @@
         img.style.transition = 'transform 0.25s cubic-bezier(.4,0,.22,1)';
         img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
         fullwindowDiv.classList.add('fade');
+        img.style.cursor = 'zoom-out';
+        fullwindowDiv.style.cursor = 'zoom-out';
         setTimeout(() => {
           img.style.position = '';
           img.style.left = '';

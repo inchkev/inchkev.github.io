@@ -2,7 +2,7 @@
     "title": "Miscellaneous Posters",
     "slug": "misc-posters-2023",
     "type": "design",
-    "tags": "design, website",
+    "tags": "design, posters",
     "thumbnail": {
         "src": {
             "webm": "/media/misc-2023-small.webm",
@@ -15,24 +15,6 @@
     "descriptionLong": [
     ],
     "main": [
-        {
-            "class": "centered",
-            "contents": [
-                "Series of four 18\"x24\" posters about gardens and gardening as a metaphor for society and culture.<br>Inspired after reading Laurie Cluitmans’ [*On the Necessity of Gardening*](https://valiz.nl/en/publications/on-the-necessity-of-gardening)."
-            ]
-        },
-        {
-            "class": "media-grid-2 centered",
-            "contents": [
-                {"src": "/media/misc/garden-poster-1.jpeg"},
-                {"src": "/media/misc/garden-poster-2.jpeg"},
-                {"src": "/media/misc/garden-poster-3.jpeg"},
-                {"src": "/media/misc/garden-poster-4.jpeg"}
-            ]
-        },
-        {
-            "contents": ["<br><br><br>"]
-        },
         {
             "class": "centered",
             "contents": [

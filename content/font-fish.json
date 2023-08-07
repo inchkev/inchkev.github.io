@@ -13,7 +13,7 @@
     "dateLong": "Spring 2023",
     "description": "",
     "descriptionLong": [
-        "font.fish is a browser-based tool for exploring thousands of fonts. My Yale undergraduate thesis advised by Holly Rushmeier.",
+        "font.fish is a browser-based tool for exploring thousands of fonts. My Yale undergraduate thesis, advised by Holly Rushmeier.",
         "font.fish uses Keras’s Inception v3 bindings to generate a featurization space in 2,048 dimensions. Two dimensionality reduction techniques, Uniform Manifold Approximation and Projection (UMAP) and t-distributed Stochastic Neighbor Embedding (t-SNE), reduce the feature space to 2 dimensions. The 2D space is visualized using Three.js.",
         "Inspired by the Yale Digital Humanities Lab’s [PixPlot](https://github.com/YaleDHLab/pix-plot).",
         "[Link to project github](https://github.com/inchkev/font-fish)",

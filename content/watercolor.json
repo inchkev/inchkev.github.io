@@ -5,8 +5,8 @@
     "tags": "computer graphics",
     "thumbnail": {
         "src": {
-            "webm": "/media/watercolor.webm",
-            "mp4": "/media/watercolor.mp4"
+            "webm": "/media/watercolor/small.webm",
+            "mp4": "/media/watercolor/small.mp4"
         }
     },
     "date": "2022",

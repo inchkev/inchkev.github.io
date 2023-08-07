@@ -1,11 +1,14 @@
 {
-    "title": "Twelve (12) things to do with your essay",
+    "title": "Twelve (12) things to do with your essay after you turn it in",
     "titleLong": "Twelve (12) things to do with your essay after you turn it in",
     "slug": "twelve-things",
     "type": "design",
     "tags": "design, zine",
     "thumbnail": {
-        "src": "/media/twelve-things-small.webp"
+        "src": {
+            "webm": "/media/twelve-things/flipthrough.webm",
+            "mp4": "/media/twelve-things/flipthrough.mp4"
+        }
     },
     "date": "2023",
     "dateLong": "Spring 2023",
@@ -30,6 +33,18 @@
                 {"src": "/media/twelve-things/twelve-things_8.jpg"},
                 {"src": "/media/twelve-things/twelve-things_9.jpg"},
                 {"src": "/media/twelve-things/twelve-things_back.jpg"}
+            ]
+        },
+        {
+            "contents": ["<br><br><br>"]
+        },
+        {
+            "class": "centered-3",
+            "contents": [
+                {
+                    "src": "/media/twelve-things/photo-1.webp",
+                    "caption": "Fresh off the press"
+                }
             ]
         }
     ]
