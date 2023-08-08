@@ -22,17 +22,17 @@
         {
             "class": "media-grid-2-nogap centered",
             "contents": [
-                {"src": "/media/twelve-things/twelve-things_front.jpg"},
-                {"src": "/media/twelve-things/twelve-things_1.jpg"},
-                {"src": "/media/twelve-things/twelve-things_2.jpg"},
-                {"src": "/media/twelve-things/twelve-things_3.jpg"},
-                {"src": "/media/twelve-things/twelve-things_4.jpg"},
-                {"src": "/media/twelve-things/twelve-things_5.jpg"},
-                {"src": "/media/twelve-things/twelve-things_6.jpg"},
-                {"src": "/media/twelve-things/twelve-things_7.jpg"},
-                {"src": "/media/twelve-things/twelve-things_8.jpg"},
-                {"src": "/media/twelve-things/twelve-things_9.jpg"},
-                {"src": "/media/twelve-things/twelve-things_back.jpg"}
+                {"src": "/media/twelve-things/twelve-things-front.jpg"},
+                {"src": "/media/twelve-things/twelve-things-1.jpg"},
+                {"src": "/media/twelve-things/twelve-things-2.jpg"},
+                {"src": "/media/twelve-things/twelve-things-3.jpg"},
+                {"src": "/media/twelve-things/twelve-things-4.jpg"},
+                {"src": "/media/twelve-things/twelve-things-5.jpg"},
+                {"src": "/media/twelve-things/twelve-things-6.jpg"},
+                {"src": "/media/twelve-things/twelve-things-7.jpg"},
+                {"src": "/media/twelve-things/twelve-things-8.jpg"},
+                {"src": "/media/twelve-things/twelve-things-9.jpg"},
+                {"src": "/media/twelve-things/twelve-things-back.jpg"}
             ]
         },
         {

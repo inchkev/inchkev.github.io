@@ -39,10 +39,10 @@
         {
             "class": "media-grid-2 centered-3",
             "contents": [
-                {"src": "/media/snailsnail/process_1.jpeg"},
-                {"src": "/media/snailsnail/process_2.jpeg"},
-                {"src": "/media/snailsnail/process_3.jpeg"},
-                {"src": "/media/snailsnail/process_4.jpeg"}
+                {"src": "/media/snailsnail/process-1.jpeg"},
+                {"src": "/media/snailsnail/process-2.jpeg"},
+                {"src": "/media/snailsnail/process-3.jpeg"},
+                {"src": "/media/snailsnail/process-4.jpeg"}
             ]
         },
         {
