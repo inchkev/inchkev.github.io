@@ -1,4 +1,4 @@
-// render-pages.js by Kevin Chen
+// render.js by Kevin Chen
 
 import ejs from 'ejs';
 import { promises as fs } from 'fs';
@@ -16,9 +16,8 @@ marked.use({
 
 // get __filename and __dirname
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __dirname = path.dirname(__filename);
 
 
 class EJSTemplateStore {
@@ -141,7 +140,7 @@ async function main() {
               media.type = 'pdf';
               media.src += "#toolbar=0&navpanes=0&zoom=FitW";
               media.aspectRatio = media.aspectRatio.replace(/[\/:]/, '-');
-            
+
             } else {
               media.type = 'link';
             }

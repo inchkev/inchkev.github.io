@@ -1,7 +1,7 @@
 /*
  * Kevin Chen
  *
- * portions copied from windowfull.js from https://www.stuart-bertolotti-bailey.org/
+ * portions from windowfull.js from https://www.stuart-bertolotti-bailey.org/
 */
 
 (function () {
