@@ -12,6 +12,7 @@
       <!-- title, date, long description -->
       <div class="flex-description y-scrollable auto-padding">
         <h1><a href="/">Kevin Chen</a></h1>
+        
         <div id="title">
           <h2 class="color-<%= type %>"><%= locals.titleLong ? titleLong : title %></h2>
           <div id="metadata" class="color-<%= type %> small">
@@ -19,6 +20,7 @@
             <p>tags: <%= tags %></p>
           </div>
         </div>
+
         <%_ descriptionLong.forEach(function(paragraph) { _%>
         <p><%- paragraph %></p>
         <%_ }); _%>
@@ -53,7 +55,7 @@
             <% if (media.src.mp4) { %><source src="<%= media.src.mp4 %>" type="video/mp4"><% } %>
           </video>
               <%_ } else if (media.type === "video-caption") { _%>
-         <figure>
+          <figure>
             <video width="<%= media.width %>" height="<%= media.height %>" controls autoplay muted playsinline>
               <% if (media.src.webm) { %><source src="<%= media.src.webm %>" type="video/webm"><% } %>
               <% if (media.src.mp4) { %><source src="<%= media.src.mp4 %>" type="video/mp4"><% } %>

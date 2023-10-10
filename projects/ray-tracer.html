@@ -27,7 +27,6 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@inchkev">
   <meta name="twitter:creator" content="@inchkev">
-
 </head>
 
 <body>
@@ -37,6 +36,7 @@
       <!-- title, date, long description -->
       <div class="flex-description y-scrollable auto-padding">
         <h1><a href="/">Kevin Chen</a></h1>
+        
         <div id="title">
           <h2 class="color-programming">Ray Tracer and Animation</h2>
           <div id="metadata" class="color-programming small">
@@ -44,6 +44,7 @@
             <p>tags: computer graphics</p>
           </div>
         </div>
+
         <p>Built a distributed ray tracer in C++.</p>
         <p>Implemented diffuse and Phong shading, mirror and glossy reflections, soft shadows, and supersampling anti-aliasing. Also created indexed mesh data structure to store scene geometry and a bounding volume hierarchy (BVH) to accelerate ray intersections. BVH space subdivision based on the surface area heuristic from The Visual Computer 1990 paper <a href="https://dl.acm.org/doi/10.1007/BF01911006"><em>Heuristics for ray tracing using space subdivision</em></a>. My renderer also supported importing .OBJ files, enabling importing models created in other software such as Blender or Fusion.</p>
         <p>To create the video I used motion capture data from the <a href="http://mocap.cs.cmu.edu/">CMU Motion Capture Database</a> and a provided stick figure class. Other than the mocap motions, the camera motion and scene were lit and modeled entirely by hand (modeled in Blender and imported into my renderer) and rendered using my ray tracer.</p>
