@@ -87,11 +87,6 @@ figcaption {
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
 }
 
-.edge-fade {
-  /* mask-image: linear-gradient(to bottom, transparent 0, black 1em, black calc(100% - 2em), transparent 100%); */
-  /*   -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 1em, black calc(100% - 2em), transparent 100%); */
-}
-
 .container {
   display: -webkit-box;
   display: -moz-box;
@@ -268,7 +263,7 @@ ol li {
 }
 .box * {
   width: 100%;
-  height: auto
+  height: auto;
   object-fit: contain;
 }
 .box a::after {
