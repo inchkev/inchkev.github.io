@@ -1,4 +1,4 @@
-### [https://kevinnchen.com](https://kevinnchen.com) and [https://inchkev.com](https://inchkev.com) and [https://terrible.day](https://terrible.day)
+### [kevinnchen.com](https://kevinnchen.com) and [inchkev.com](https://inchkev.com) and [terrible.day](https://terrible.day)
 
 Create pages as json in `content/`, link them in `content/home.json`,
 media goes in `media/`, edit templates in `views/`, render everything to
