@@ -4,7 +4,8 @@
     "type": "design",
     "tags": "design, posters",
     "thumbnail": {
-        "src": "/media/garden/garden-1-small.webp"
+        "src": "/media/garden/garden-1-small.webp",
+        "alt": "Close-up corner of the poster, with leaves"
     },
     "date": "2023",
     "dateLong": "Spring 2023",

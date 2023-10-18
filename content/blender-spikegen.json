@@ -4,7 +4,8 @@
     "type": "programming",
     "tags": "computer graphics",
     "thumbnail": {
-        "src": "/media/spikegen-small.webp"
+        "src": "/media/spikegen-small.webp",
+        "alt": "Blender render of a cylinder, cone, sphere, and cube with cactus-like spines"
     },
     "date": "2020",
     "dateLong": "Fall 2020",

@@ -1,44 +1,65 @@
 /* Kevin Chen */
 
-$( "[data-project]" ).hover(
-  function() {
-    const project = $( this ).data( "project" );
-    $( "#projects" ).find( "[data-project='" + project + "']" ).addClass("selected");
-    $( "#image-grid" ).find( "[data-project='" + project + "']" ).addClass("selected");
-  },
+const projects = document.getElementById("projects");
+const imageGrid = document.getElementById("image-grid");
 
-  function() {
-    const project = $( this ).data( "project" );
-    $( "#projects" ).find( "[data-project='" + project + "']" ).removeClass("selected");
-    $( "#image-grid" ).find( "[data-project='" + project + "']" ).removeClass("selected");
-  }
-);
-
+document.querySelectorAll("[data-project]").forEach((element) => {
+  element.addEventListener("mouseenter", function (event) {
+    const project = event.target.dataset.project;
+    projects.querySelector(`[data-project='${project}']`).classList.add("selected");
+    imageGrid.querySelector(`[data-project='${project}']`).classList.add("selected");
+  });
+  element.addEventListener("mouseleave", function (event) {
+    const project = event.target.dataset.project;
+    projects.querySelector(`[data-project='${project}']`).classList.remove("selected");
+    imageGrid.querySelector(`[data-project='${project}']`).classList.remove("selected");
+  });
+});
 
 const buttonNames = ["design", "programming"];
 
-$( "button" ).on("click", function(event) {
-  const numSelected = $( "button.selected" ).length;
-  const element = $( this );
-  const buttonName = element.attr("name");
+document.querySelectorAll("button").forEach((button) => {
+  button.addEventListener("click", function (_) {
+    const numSelected = document.querySelectorAll("button.selected").length;
+    const element = this;
+    const buttonName = element.getAttribute("name");
 
-  if (numSelected == 1 && element.hasClass("selected")) {
-    console.log("hi");
-    element.removeClass("selected");
-    $( "#projects, #image-grid" ).find("*").css({ "opacity": "", "filter": "" });
-    return;
-  }
-
-  element.addClass("selected");
-
-  for (const name of buttonNames) {
-    if (name === buttonName) {
-      $( "#projects, #image-grid" ).find(`.color-${name}`).css({ "opacity": "", "filter": "" });
-    } else {
-      $( "button[name='" + name + "']" ).removeClass("selected");
-      $( "#projects" ).find(`.color-${name}`).css({ "opacity": "0.25", "filter": "blur(2px)" });
-      $( "#image-grid" ).find(`.color-${name}`).css({ "opacity": "0.1", "filter": "blur(4px)" });
+    if (numSelected == 1 && element.classList.contains("selected")) {
+      element.classList.remove("selected");
+      projects.querySelectorAll("*").forEach((el) => {
+        el.style.opacity = "";
+        el.style.filter = "";
+      });
+      imageGrid.querySelectorAll("*").forEach((el) => {
+        el.style.opacity = "";
+        el.style.filter = "";
+      });
+      return;
     }
-  }
-});
 
+    element.classList.add("selected");
+
+    for (const name of buttonNames) {
+      if (name === buttonName) {
+        projects.querySelectorAll(`.color-${name}`).forEach((el) => {
+          el.style.opacity = "";
+          el.style.filter = "";
+        });
+        imageGrid.querySelectorAll(`.color-${name}`).forEach((el) => {
+          el.style.opacity = "";
+          el.style.filter = "";
+        });
+      } else {
+        document.querySelector(`button[name='${name}']`).classList.remove("selected");
+        projects.querySelectorAll(`.color-${name}`).forEach((el) => {
+          el.style.opacity = "0.25";
+          el.style.filter = "blur(2px)";
+        });
+        imageGrid.querySelectorAll(`.color-${name}`).forEach((el) => {
+          el.style.opacity = "0.1";
+          el.style.filter = "blur(4px)";
+        });
+      }
+    }
+  });
+});

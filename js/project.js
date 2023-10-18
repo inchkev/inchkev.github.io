@@ -119,9 +119,8 @@
 })();
 
 
-var imgs = document.querySelectorAll('img');
-for (const img of imgs) {
+document.querySelectorAll('img').forEach((img) => {
   img.addEventListener('click', function () {
     windowfull.toggle(this);
   });
-}
+});

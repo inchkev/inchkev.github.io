@@ -64,7 +64,7 @@
           <div class="box color-<%= project.type %>" data-project="<%= project.slug %>">
             <a href="projects/<%= project.slug %>" aria-label="Visit project: <%= project.title %>">
               <%_ if (project.thumbnail.type === "image") { _%>
-              <img src="<%= project.thumbnail.src %>" width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" alt=""></img>
+              <img src="<%= project.thumbnail.src %>" width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" alt="<%= project.thumbnail.alt %>"></img>
               <%_ } else if (project.thumbnail.type === "video") { _%>
               <video width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" autoplay loop muted playsinline>
                 <source src="<%= project.thumbnail.src.webm %>" type="video/webm"/>
@@ -82,10 +82,9 @@
 
   <footer role="contentinfo">
     <p><a href="resume.pdf">resume.pdf (technical)</a><p>
-    <p><a href="https://kevin.garden">https://kevin.garden</a><p>
+    <p><a href="https://kevin.garden">kevin.garden</a><p>
   </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" type="text/javascript"></script>
   <script src="/js/main.js" type="text/javascript"></script>
 </body>
 

@@ -4,7 +4,8 @@
     "type": "design",
     "tags": "design, zine",
     "thumbnail": {
-        "src": "/media/cardboard/thumbnail-3.webp"
+        "src": "/media/cardboard/thumbnail-3.webp",
+        "alt": "Photoscanned spread from Cardboard Information"
     },
     "date": "2022",
     "dateLong": "Fall 2022",
