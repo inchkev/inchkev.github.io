@@ -1,6 +1,8 @@
 <%- include("partials/head", {
   title: title + " - Kevin Chen",
   description: "Kevin Chen is a designer and programmer.",
+  // themeColor: "#ffffff",
+  themeColor: "#008400",
   slug: slug,
   styles: ["/css/main.css", "/css/project.css"]}); %>
 </head>
@@ -10,7 +12,7 @@
     <div class="container">
 
       <!-- Left (title, date, long description) -->
-      <div class="flex-description y-scrollable auto-padding">
+      <section class="flex-description y-scrollable auto-padding">
         <h1><a href="/">Kevin Chen</a></h1>
         
         <div id="title">
@@ -24,10 +26,10 @@
         <%_ descriptionLong.forEach(function(paragraph) { _%>
         <p><%- paragraph %></p>
         <%_ }); _%>
-      </div>
+      </section>
 
       <!-- Right (main content blocks) -->
-      <div class="flex-content y-scrollable auto-padding">
+      <section class="flex-content y-scrollable auto-padding">
         <%_ main.forEach(function(section) { _%>
           <%_ if (section.type === "raw") { _%>
             <%_ section.contents.forEach(function(paragraph) { _%>
@@ -88,7 +90,7 @@
         </div>
           <%_ } _%>
         <%_ }); _%>
-      </div>
+      </section>
 
     </div>
   </main>

@@ -84,9 +84,9 @@
             "contents": ["<br><br><br>"]
         },
         {
-            "class": "centered-3",
+            "class": "centered-2",
             "contents": [
-                {"src": "/media/tnj/TNJ_Solid.webp", "caption": "Wordmark."}
+                {"src": "/media/tnj/TNJ_Solid-inverted.webp", "caption": "Wordmark."}
             ]
         }
     ]

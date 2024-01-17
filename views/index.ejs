@@ -1,6 +1,8 @@
 <%- include("partials/head", {
   title: "Kevin Chen",
   description: "Kevin Chen is a designer and programmer. This is a living selection of his work.",
+  // themeColor: "#f9f8f8",
+  themeColor: "#008400",
   styles: ["/css/main.css"]}); %>
   
   <!-- Credits & inspiration
@@ -16,7 +18,7 @@
     <div class="container">
 
       <!-- Left -->
-      <div class="flex-left y-scrollable auto-padding">
+      <section class="flex-left y-scrollable auto-padding">
         <h1>
           Kevin Chen is a <span class="color-design">designer</span> and
           <span class="color-programming">programmer</span>.
@@ -54,10 +56,10 @@
           Filter projects by <button name="design" class="color-design">design</button>,
           <button name="programming" class="color-programming">programming</button>.
         </p>
-      </div>
+      </section>
 
       <!-- Right -->
-      <div class="flex-right y-scrollable auto-padding">
+      <section class="flex-right y-scrollable auto-padding">
         <div id="image-grid">
           <%_ projects.forEach(function(project) { _%>
           <div class="box color-<%= project.type %>" data-project="<%= project.slug %>">
@@ -65,7 +67,7 @@
               <%_ if (project.thumbnail.type === "image") { _%>
               <img src="<%= project.thumbnail.src %>" width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" alt="<%= project.thumbnail.alt %>"></img>
               <%_ } else if (project.thumbnail.type === "video") { _%>
-              <video width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" autoplay loop muted playsinline>
+              <video width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" muted autoplay loop playsinline>
                 <source src="<%= project.thumbnail.src.webm %>" type="video/webm"/>
                 <source src="<%= project.thumbnail.src.mp4 %>" type="video/mp4"/>
               </video>
@@ -74,7 +76,7 @@
           </div>
           <%_ }); _%>
         </div>
-      </div>
+      </section>
 
     </div>
   </main>

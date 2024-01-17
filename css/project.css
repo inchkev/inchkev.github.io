@@ -1,9 +1,4 @@
-/*
- * Kevin Chen
- * 2023
- *
- * TODO: add proper vendor prefixes
- */
+/* Kevin Chen, 2024 */
 
 body {
   background-color: black;
@@ -46,9 +41,14 @@ body {
   margin-bottom: 0.3em;
 }
 #metadata {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
   display: flex;
-  width: 100%;
+
   justify-content: space-between;
+  width: 100%;
 }
 
 img {
@@ -60,13 +60,18 @@ img {
 
 .image-grid,
 .image-grid-small {
-  display: flex;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-  flex-flow: row wrap;
+  display: flex;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
     -webkit-flex-direction: row;
+  flex-direction: row;
+    -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+
   gap: 1em 1em;
   margin-top: 0.75em;
   margin-bottom: 1.25em;
@@ -90,6 +95,7 @@ img {
 .media-grid-3-rows,
 .media-grid-4,
 .media-grid-5 {
+    display: -ms-grid;
   display: grid;
   margin-top: 0.75em;
   margin-bottom: 1.25em;
@@ -159,26 +165,26 @@ img {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 690px) {
   .container {
-    overflow-x: hidden;
-    overflow-y: scroll;
-      -webkit-overflow-scrolling: touch;
-    flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
       -webkit-flex-direction: column;
+    flex-direction: column;
   }
   .flex-description {
-    flex: 0 0 auto;
+    flex: 0 0 0px;
+    height: 100%;
     padding-bottom: 0.75em;
     padding-right: 1.25em;
   }
   .flex-content {
-    flex: 0 0 auto;
+    flex: 0 0 0px;
     padding-top: 1.5em;
     padding-left: 1.25em;
   }
   .y-scrollable {
-    overflow-y: hidden;
+    overflow-y: visible;
   }
   .image-grid,
   .image-grid-small {
@@ -186,17 +192,25 @@ img {
     margin-bottom: 1.25em;
   }
   .media-grid-1,
-  .media-grid-2,
-  .media-grid-2-nogap,
-  .media-grid-2-rows,
-  .media-grid-3,
-  .media-grid-3-rows,
+  .media-grid-2, .media-grid-2-rows, .media-grid-2-nogap,
+  .media-grid-3, .media-grid-3-rows,
   .media-grid-4,
   .media-grid-5 {
     margin-top: 0;
     margin-bottom: 1.25em;
-    grid-template-columns: 1fr;
-    grid-auto-flow: row;
+    /* grid-template-columns: 1fr; */
+    /* grid-auto-flow: row; */
+  }
+  .media-grid-1,
+  .media-grid-2,
+  .media-grid-2-rows,
+  .media-grid-3,
+  .media-grid-3-rows {
+    gap: 0.75em 0.75em;
+  }
+  .media-grid-4,
+  .media-grid-5 {
+    gap: 0.375em 0.375em;
   }
   .centered,
   .centered-1,
@@ -231,7 +245,13 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
   display: flex;
+
   align-items: center;
   justify-content: center;
 }

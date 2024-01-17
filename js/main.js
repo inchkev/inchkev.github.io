@@ -4,15 +4,19 @@ const projects = document.getElementById("projects");
 const imageGrid = document.getElementById("image-grid");
 
 document.querySelectorAll("[data-project]").forEach((element) => {
-  element.addEventListener("mouseenter", function (event) {
-    const project = event.target.dataset.project;
-    projects.querySelector(`[data-project='${project}']`).classList.add("selected");
-    imageGrid.querySelector(`[data-project='${project}']`).classList.add("selected");
+  ["mouseenter", "touchstart"].forEach((type) => {
+    element.addEventListener(type, (event) => {
+      const project = event.target.dataset.project;
+      projects.querySelector(`[data-project='${project}']`).classList.add("selected");
+      imageGrid.querySelector(`[data-project='${project}']`).classList.add("selected");
+    })
   });
-  element.addEventListener("mouseleave", function (event) {
-    const project = event.target.dataset.project;
-    projects.querySelector(`[data-project='${project}']`).classList.remove("selected");
-    imageGrid.querySelector(`[data-project='${project}']`).classList.remove("selected");
+  ["mouseleave", "touchend", "touchcancel"].forEach((type) => {
+    element.addEventListener(type, (event) => {
+      const project = event.target.dataset.project;
+      projects.querySelector(`[data-project='${project}']`).classList.remove("selected");
+      imageGrid.querySelector(`[data-project='${project}']`).classList.remove("selected");
+    });
   });
 });
 
