@@ -20,7 +20,7 @@ body {
 }
 .flex-content {
   flex: 1 1 0;
-  padding-top: 2.87em; /* 1.25em + 1.12em + 0.5em */
+  padding-top: 2.97em; /* 1.35em + 1.12em + 0.5em */
 }
 .flex-content a {
   color: #3030ff;
