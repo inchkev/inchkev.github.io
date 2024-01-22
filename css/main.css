@@ -101,7 +101,7 @@ figcaption {
   height: 100%;
 }
 /* this hack sucks */
-@media only screen and (max-width: 343px) {
+@media only screen and (max-width: 21.5em /* 344px */) {
   .container {
     height: calc(100% - 3.625em);
   }
@@ -121,7 +121,7 @@ figcaption {
   flex: 1 1 0;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 43em /* 688px */) {
   .container {
       -moz-flex-direction: column;
       -ms-flex-direction: column;
@@ -262,7 +262,7 @@ ol li {
   gap: 1em;
   counter-reset: boxes;
 }
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 43em /* 688px */) {
   #image-grid {
     grid-template-columns: 1fr 1fr;
       grid-gap: 0.65em 0.75em;
