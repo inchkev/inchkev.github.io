@@ -14,8 +14,8 @@
     "description": "",
     "descriptionLong": [
         "Built a distributed ray tracer in C++.",
-        "Implemented diffuse and Phong shading, mirror and glossy reflections, soft shadows, and supersampling anti-aliasing. Also created indexed mesh data structure to store scene geometry and a bounding volume hierarchy (BVH) to accelerate ray intersections. BVH space subdivision based on the surface area heuristic from The Visual Computer 1990 paper [*Heuristics for ray tracing using space subdivision*](https://dl.acm.org/doi/10.1007/BF01911006). My renderer also supported importing .OBJ files, enabling importing models created in other software such as Blender or Fusion.",
-        "To create the video I used motion capture data from the [CMU Motion Capture Database](http://mocap.cs.cmu.edu/) and a provided stick figure class. Other than the mocap motions, the camera motion and scene were lit and modeled entirely by hand (modeled in Blender and imported into my renderer) and rendered using my ray tracer.",
+        "Implemented diffuse and Phong shading, mirror and glossy reflections, soft shadows, and supersampling anti-aliasing. I created an indexed mesh data structure to store scene geometry and a bounding volume hierarchy (BVH) to accelerate ray intersections. BVH space subdivision was based on the surface area heuristic from The Visual Computer 1990 paper [*Heuristics for ray tracing using space subdivision*](https://dl.acm.org/doi/10.1007/BF01911006). I also implemented .OBJ file parsing for my renderer, enabling the import of models created in 3D modeling software like Blender or Maya.",
+        "I used motion capture data from the [CMU Motion Capture Database](http://mocap.cs.cmu.edu/). The final scene was lit and modeled by myself (re: done in Blender and imported into my renderer) and rendered using my ray tracer.",
         "Final project for CPSC 478 at Yale, *Computer Graphics*."
     ],
     "main": [

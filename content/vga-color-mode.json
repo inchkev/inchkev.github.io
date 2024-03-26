@@ -15,7 +15,7 @@
     "descriptionLong": [
         "Implemented a VGA 640×480 16-color mode in [mCertiKOS](https://flint.cs.yale.edu/certikos/mcertikos.html), a fully verified operating system.",
         "Implemented a user-space syscall with memory-mapped VGA buffer.",
-        "The following video showcases the VGA 16-color mode by demoing bitmap font rendering, working 16-color, keyboard input, the Mandelbrot set, and an animated video.",
+        "The following video showcases the VGA 16-color mode by demoing bitmap font rendering, working 16-color support, keyboard input, the Mandelbrot set, and an animation.",
         "Final project for CPSC 422 at Yale, *Operating Systems*."
     ],
     "main": [

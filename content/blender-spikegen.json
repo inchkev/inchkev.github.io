@@ -11,9 +11,9 @@
     "dateLong": "Fall 2020",
     "description": "",
     "descriptionLong": [
-        "Developed “SpikeGen,” a Blender add-on which procedurally generates spikes on a mesh using the golden ratio as found in natural forms. SpikeGen includes a configuration menu to allow user control over spike length, base size, spread angle, and randomness.",
+        "Developed “SpikeGen,” a Blender add-on for procedural spike generation on a mesh. With controls for length, base size, divergence angle, spread distance, and jitter, SpikeGen can emulate [phyllotactic spirals](https://en.wikipedia.org/wiki/Phyllotaxis) found in plant leaves and arrangements of spines and glochids on cacti.",
         "SpikeGen was inspired by the SIGGRAPH 1992 paper [*A collision-based model of spiral phyllotaxis*](https://dl.acm.org/doi/10.1145/142920.134093).",
-        "I animated a cozy winter scene using SpikeGen and a variety of other procedural methods in Blender. In addition to procedural spikes using SpikeGen, the fire and snow particle systems, shapes of cactus bodies, and plant pots were also procedurally generated. I modeled, textured, and lit the scene.",
+        "Shown are four close-up renders from a looping indoor animation that I modeled, textured, lit, and rendered in Blender. SpikeGen was used to add spines to my partner’s procedural cactus bodies, who also procedurally generated the clay pots. I also used procedural techniques to create the fire and snow particle systems.",
         "Final project for CPSC 479 at Yale, *Advanced Topics in Computer Graphics*.",
         "[Link to writeup](https://docs.google.com/document/d/1x77p6YtkmbgTR6E4v7X_IVnZ6aW7NpognrPyQsuuHsU/edit?usp=sharing)"
     ],
@@ -24,17 +24,17 @@
                 {
                     "src": "/media/spikegen/spikegen_menu.jpeg",
                     "alt": "Screenshot of a Blender menu for the SpikeGen add-on. The menu says 'SpikeGen Generator'.",
-                    "caption": "Menu for SpikeGen."
+                    "caption": "SpikeGen menu"
                 },
                 {
                     "src": "/media/spikegen/spikegen_2.jpeg",
                     "alt": "Computer generated image of a sphere dotted with spikes in a pattern similar to spiral patterns found in nature.",
-                    "caption": "Spikes are placed using the golden ratio."
+                    "caption": "The default divergence angle is the golden ratio"
                 },
                 {
                     "src": "/media/spikegen/spikegen_1.jpeg",
                     "alt": "Computer generated image of four Blender primitives, a cylinder, a cone, a sphere, and a cube. They are arranged in a 2 by 2 grid and are covered with white spikes.",
-                    "caption": "SpikeGen works on a variety of meshes."
+                    "caption": "SpikeGen applied to a variety of meshes"
                 }
             ]
         },
