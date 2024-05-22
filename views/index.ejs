@@ -65,11 +65,11 @@
           <div class="box color-<%= project.type %>" data-project="<%= project.slug %>">
             <a href="projects/<%= project.slug %>" aria-label="Visit project: <%= project.title %>">
               <%_ if (project.thumbnail.type === "image") { _%>
-              <img src="<%= project.thumbnail.src %>" width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" alt="<%= project.thumbnail.alt %>"></img>
+              <img src="<%= project.thumbnail.src %>" width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" alt="<%= project.thumbnail.alt %>">
               <%_ } else if (project.thumbnail.type === "video") { _%>
               <video width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" muted autoplay loop playsinline>
-                <source src="<%= project.thumbnail.src.webm %>" type="video/webm"/>
-                <source src="<%= project.thumbnail.src.mp4 %>" type="video/mp4"/>
+                <source src="<%= project.thumbnail.src.webm %>" type="video/webm">
+                <source src="<%= project.thumbnail.src.mp4 %>" type="video/mp4">
               </video>
               <%_ } _%>
             </a>
@@ -81,7 +81,7 @@
     </div>
   </main>
 
-  <footer role="contentinfo">
+  <footer>
     <p><a href="resume.pdf">Resume (technical)</a><p>
     <p><a href="https://kevin.garden">kevin.garden</a><p>
   </footer>
