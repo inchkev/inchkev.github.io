@@ -1,0 +1,31 @@
+{
+    "title": "Miscellaneous Posters",
+    "slug": "misc-posters-2024",
+    "type": "design",
+    "tags": "design, posters",
+    "thumbnail": {
+        "src": {
+            "webm": "/media/misc-2023-small.webm",
+            "mp4": "/media/misc-2023-small.mp4"
+        }
+    },
+    "date": "2024",
+    "dateLong": "2024",
+    "description": "",
+    "descriptionLong": [
+    ],
+    "main": [
+        {
+            "class": "centered",
+            "contents": [
+                "Poster for my friend [Sharon](https://linktr.ee/noremi)’s senior thesis album."
+            ]
+        },
+        {
+            "class": "media-grid-2 centered",
+            "contents": [
+                {"src": "/media/misc/sharon-thesis_tabloid.jpeg"}
+            ]
+        }
+    ]
+}

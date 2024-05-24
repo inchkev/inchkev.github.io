@@ -115,10 +115,10 @@ figcaption {
 .flex-left {
   flex: 0 0 21.5em;
   position: sticky;
-  background-color: #f9f8f8;
 }
 .flex-right {
   flex: 1 1 0;
+  background-color: #f9f8f8;
 }
 
 @media only screen and (max-width: 43em /* 688px */) {
@@ -183,12 +183,12 @@ button {
   font-size: 1em;
   cursor: pointer;
 }
-/* button.color-programming:hover, */
+button.color-programming:hover,
 button.color-programming.selected {
   background-color: var(--gray);
   color: white;
 }
-/* button.color-design:hover, */
+button.color-design:hover,
 button.color-design.selected {
   background-color: var(--green);
   color: white;
