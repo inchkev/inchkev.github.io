@@ -1,8 +1,8 @@
 /* Kevin Chen, 2024 */
 
 :root {
-  --green: #008400;
-  --gray: #727272;
+  --color-design: #008400;
+  --color-programming: #b06200;
 }
 
 html, body, main {
@@ -43,7 +43,7 @@ footer * {
 h1, h2, h3, h4, h5, h6, p, th, td, button {
   font-size: 1em;
   font-weight: normal;
-  line-height: 1.12em;
+  line-height: 1.14em;
   letter-spacing: -0.005em;
   margin: 0;
   margin-bottom: 0.5em;
@@ -153,25 +153,33 @@ a:hover {
 
 .color-programming,
 .color-programming > * {
-  color: var(--gray);
+  color: var(--color-programming);
+}
+a::before {
+  color: #a6a6a6;
+}
+a:hover::before,
+.color-programming.selected a::before,
+.color-design.selected a::before {
+  color: white;
 }
 .box.color-programming.selected a::after,
 ol li.color-programming.selected *,
 .color-programming a:hover,
 a.color-programming:hover,
 a.color-programming:hover * {
-  background-color: var(--gray);
+  background-color: var(--color-programming);
   color: white;
 }
 .color-design, .color-design > * {
-  color: var(--green);
+  color: var(--color-design);
 }
 .box.color-design.selected a::after,
 ol li.color-design.selected *,
 .color-design a:hover,
 a.color-design:hover,
 a.color-design:hover * {
-  background-color: var(--green);
+  background-color: var(--color-design);
   color: white;
 }
 button {
@@ -185,12 +193,12 @@ button {
 }
 button.color-programming:hover,
 button.color-programming.selected {
-  background-color: var(--gray);
+  background-color: var(--color-programming);
   color: white;
 }
 button.color-design:hover,
 button.color-design.selected {
-  background-color: var(--green);
+  background-color: var(--color-design);
   color: white;
 }
 
@@ -208,7 +216,7 @@ ol li {
 }
 .el a::before {
   display: inline-block;
-  content: counter(list-item) ".";
+  content: counter(list-item);
   width: 1.25em;
   padding-top: 0.35em;
 }
