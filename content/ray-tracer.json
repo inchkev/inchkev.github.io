@@ -9,6 +9,7 @@
             "mp4": "/media/hangover.mp4"
         }
     },
+    "backgroundColor": "rgb(224,220,217)",
     "date": "2021",
     "dateLong": "Spring 2021",
     "description": "",

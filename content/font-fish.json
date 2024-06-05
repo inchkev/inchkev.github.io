@@ -9,6 +9,7 @@
             "mp4": "/media/font-fish-small.mp4"
         }
     },
+    "backgroundColor": "black",
     "date": "2023",
     "dateLong": "Spring 2023",
     "description": "",

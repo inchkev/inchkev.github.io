@@ -7,6 +7,8 @@
         "src": "/media/garden/garden-1-small.webp",
         "alt": "Close-up corner of the poster, with leaves"
     },
+    "backgroundColor": "rgb(37,55,34)",
+    "textColor": "white",
     "date": "2023",
     "dateLong": "Spring 2023",
     "description": "",

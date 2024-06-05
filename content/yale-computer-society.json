@@ -6,6 +6,8 @@
     "thumbnail": {
         "src": "/media/ycs-small.webp"
     },
+    "backgroundColor": "black",
+    "textColor": "white",
     "date": "2020–22",
     "dateLong": "2020 – 2022",
     "description": "",

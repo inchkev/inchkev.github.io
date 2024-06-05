@@ -9,6 +9,8 @@
             "mp4": "/media/snailsnail/flipthrough.mp4"
         }
     },
+    "backgroundColor": "black",
+    "textColor": "white",
     "date": "2022",
     "dateLong": "Summer 2022",
     "description": "",

@@ -11,7 +11,7 @@
     "dateLong": "Fall 2020",
     "description": "",
     "descriptionLong": [
-        "Developed “SpikeGen,” a Blender add-on for procedural spike generation on a mesh. With controls for length, base size, divergence angle, spread distance, and jitter, SpikeGen can emulate [phyllotactic spirals](https://en.wikipedia.org/wiki/Phyllotaxis) found in plant leaves and arrangements of spines and glochids on cacti.",
+        "“SpikeGen,” is a Blender add-on for procedural spike generation on a mesh. With controls for length, base size, divergence angle, spread distance, and jitter, SpikeGen can emulate [phyllotactic spirals](https://en.wikipedia.org/wiki/Phyllotaxis) found in plant leaves and arrangements of spines and glochids on cacti.",
         "SpikeGen was inspired by the SIGGRAPH 1992 paper [*A collision-based model of spiral phyllotaxis*](https://dl.acm.org/doi/10.1145/142920.134093).",
         "Shown are four close-up renders from a looping indoor animation that I modeled, textured, lit, and rendered in Blender. SpikeGen was used to add spines to my partner’s procedural cactus bodies, who also procedurally generated the clay pots. I also used procedural techniques to create the fire and snow particle systems.",
         "Final project for CPSC 479 at Yale, *Advanced Topics in Computer Graphics*.",

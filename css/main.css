@@ -13,6 +13,8 @@ html, body, main {
   width: 100%;
   height: 100%;
   -webkit-font-smoothing: antialiased;
+  background-color: #f9f8f8;
+  color: black;
 }
 
 footer {
@@ -115,10 +117,10 @@ figcaption {
 .flex-left {
   flex: 0 0 21.5em;
   position: sticky;
+  background-color: white;
 }
 .flex-right {
   flex: 1 1 0;
-  background-color: #f9f8f8;
 }
 
 @media only screen and (max-width: 43em /* 688px */) {

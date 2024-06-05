@@ -29,7 +29,7 @@
       </section>
 
       <!-- Right (main content blocks) -->
-      <section class="flex-content y-scrollable auto-padding">
+      <section class="flex-content y-scrollable auto-padding"<% if (locals.backgroundColor) { %> style="background-color:<%= backgroundColor %><% if (locals.textColor) { %>;color:<%= textColor %><% } %>"<% } %>>
         <%_ main.forEach(function(section) { _%>
           <%_ if (section.type === "raw") { _%>
             <%_ section.contents.forEach(function(paragraph) { _%>

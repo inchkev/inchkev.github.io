@@ -7,6 +7,8 @@
         "src": "/media/cardboard/thumbnail-3.webp",
         "alt": "Photoscanned spread from Cardboard Information"
     },
+    "backgroundColor": "black",
+    "textColor": "white",
     "date": "2022",
     "dateLong": "Fall 2022",
     "description": "",

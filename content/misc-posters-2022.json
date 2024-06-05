@@ -9,6 +9,8 @@
             "mp4": "/media/misc-2022-small.mp4"
         }
     },
+    "backgroundColor": "black",
+    "textColor": "white",
     "date": "2022",
     "dateLong": "2022",
     "description": "",

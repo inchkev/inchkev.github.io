@@ -10,6 +10,8 @@
             "mp4": "/media/twelve-things/flipthrough.mp4"
         }
     },
+    "backgroundColor": "black",
+    "textColor": "white",
     "date": "2023",
     "dateLong": "Spring 2023",
     "description": "",
