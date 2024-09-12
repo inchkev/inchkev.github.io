@@ -267,7 +267,7 @@ ol li {
 #image-grid {
     display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(26em, 1fr));
     grid-gap: 1em;
   gap: 1em;
   counter-reset: boxes;
