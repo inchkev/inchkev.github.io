@@ -1,6 +1,7 @@
 {
     "description": "Kevin Chen is a designer and programmer. This is a living selection of his work.",
     "projects": [
+        "i-am-very-young-and-i-am-learning-how-to-live",
         "font-fish",
         "the-new-journal",
         "garden-posters",
@@ -14,7 +15,7 @@
         "--coursework-gd",
         "--yale-computer-society",
         "ray-tracer",
-        "vga-color-mode",
+        "--vga-color-mode",
         "blender-spikegen",
         "--nist-dlmf"
     ]

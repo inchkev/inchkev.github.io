@@ -267,14 +267,14 @@ ol li {
 #image-grid {
     display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
     grid-gap: 1em;
   gap: 1em;
   counter-reset: boxes;
 }
-@media only screen and (max-width: 43em /* 688px */) {
+@media only screen and (max-width: 688px) {
   #image-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
       grid-gap: 0.65em 0.75em;
     gap: 0.65em 0.75;
   }

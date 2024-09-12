@@ -1,0 +1,56 @@
+{
+    "title": "i am very young and i am learning how to live",
+    "slug": "i-am-very-young-and-i-am-learning-how-to-live",
+    "type": "design",
+    "tags": "design, print, direction",
+    "thumbnail": {
+        "src": "/media/iamveryyoung/thumbnail.webp",
+        "alt": "Flyer and playbill for the performance i am very young and i am learning how to live"
+    },
+    "date": "2024",
+    "dateLong": "Spring 2024",
+    "description": "Creative Director of creative non-fiction magazine *The New Journal*",
+    "descriptionLong": [
+        "Posters, programs, and graphics for my friend Sharon Ahn&rsquo;s ([@noremi](https://linktr.ee/noremi)) multimedia performance, _i am very young and i am learning how to live_.",
+        "_i am very young and i am learning how to live_ was a performance of their thesis album, written for their senior project in music at Yale."
+    ],
+    "main": [
+        {
+            "class": "centered",
+            "contents": [""]
+        },
+        {
+            "class": "centered-2",
+            "contents": [
+                {"src": "/media/iamveryyoung/tabloid-1650x2550.webp"}
+            ]
+        },
+        {
+            "contents": ["<br><br><br>"]
+        },
+        {
+            "class": "centered",
+            "contents": ["Program"]
+        },
+        {
+            "class": "media-grid-2 centered-3",
+            "contents": [
+                {"src": "/media/iamveryyoung/program-front-1320x2040.webp"},
+                {"src": "/media/iamveryyoung/program-back-1320x2040.webp"}
+            ]
+        },
+        {
+            "contents": ["<br><br><br>"]
+        },
+        {
+            "class": "centered",
+            "contents": ["Banner"]
+        },
+        {
+            "class": "centered-4",
+            "contents": [
+                {"src": "/media/iamveryyoung/banner-2000x1000.webp"}
+            ]
+        }
+    ]
+}
