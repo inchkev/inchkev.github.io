@@ -16,12 +16,12 @@
         "Visual campaign for *Nuclear Landscapes*, a portfolio of 45 captioned inkjet prints of photographs by Peter Goin.",
         "Part of a hypothetical focus by Yale University to promote its archives and collections. Extended the University’s visual system.",
         "Project done in *Graphic Design Methodologies* at Yale. Instructor: Pamela Hovland.",
-        "[petergoin.com/nuclear-landscapes](https://www.petergoin.com/nuclear-landscapes)"
+        "Image source: [petergoin.com/nuclear-landscapes](https://www.petergoin.com/nuclear-landscapes)"
     ],
     "main": [
         {
             "class": "centered",
-            "contents": ["Selected photos from *Nuclear Landscapes*."]
+            "contents": ["From *Nuclear Landscapes*."]
         },
         {
             "class": "centered-4 media-grid-2",
@@ -31,7 +31,7 @@
             ]
         },
         {
-            "contents": ["<br><br>"]
+            "contents": ["<br><br><br>"]
         },
         {
             "class": "centered",
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "contents": ["<br><br>"]
+            "contents": ["<br><br><br>"]
         },
         {
             "class": "centered",
@@ -65,7 +65,7 @@
             ]
         },
         {
-            "contents": ["<br><br>"]
+            "contents": ["<br><br><br>"]
         },
         {
             "class": "centered",
@@ -82,7 +82,7 @@
             ]
         },
         {
-            "contents": ["<br><br>"]
+            "contents": ["<br><br><br>"]
         },
         {
             "class": "centered",
@@ -96,7 +96,7 @@
             ]
         },
         {
-            "contents": ["<br><br>"]
+            "contents": ["<br><br><br>"]
         },
         {
             "class": "centered",
