@@ -34,7 +34,9 @@ footer {
     -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  gap: 0.5em;
+  max-width: 21.5em;
+
+  column-gap: 0.5em;
 }
 
 footer * {
