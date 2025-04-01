@@ -3,6 +3,7 @@
 :root {
   --color-design: #008400;
   --color-programming: #b06200;
+  --color-other: #bd1c90;
 }
 
 html, body, main {
@@ -164,7 +165,8 @@ a::before {
 }
 a:hover::before,
 .color-programming.selected a::before,
-.color-design.selected a::before {
+.color-design.selected a::before,
+.color-other.selected a::before {
   color: white;
 }
 .box.color-programming.selected a::after,
@@ -186,6 +188,17 @@ a.color-design:hover * {
   background-color: var(--color-design);
   color: white;
 }
+.color-other, .color-other > * {
+  color: var(--color-other);
+}
+.box.color-other.selected a::after,
+ol li.color-other.selected *,
+.color-other a:hover,
+a.color-other:hover,
+a.color-other:hover * {
+  background-color: var(--color-other);
+  color: white;
+}
 button {
   background: none;
   border: none;
@@ -203,6 +216,11 @@ button.color-programming.selected {
 button.color-design:hover,
 button.color-design.selected {
   background-color: var(--color-design);
+  color: white;
+}
+button.color-other:hover,
+button.color-other.selected {
+  background-color: var(--color-other);
   color: white;
 }
 

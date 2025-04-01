@@ -49,10 +49,15 @@
         </h1>
         <p>
           I’m interested in tool-making, infrastructure, visibility, gathering, gardening,
-          archiving, printing, printed matter, websites, systems, computer graphics, and open source.
+          hosting, archiving, printing, printed matter, websites, systems, engines, and open source.
         </p>
         <p>
-          I hold a BS in Computer Science from Yale University. Currently in San Francisco.
+          I tend my garden at <a class="color-design" href="https://kevin.garden">kevin.garden</a>, where I arrange files,
+          create directories, and grow herbs & vegetables. Mostly photos.
+        </p>
+        <p>
+          I work for <a class="color-programming" href="https://airtable.com">Airtable</a> as an engineer on performance.
+          Currently in San Francisco.
         </p>
         <p>
           Links... 
@@ -64,6 +69,12 @@
 
         <div id="projects">
           <ol>
+            <li class="el color-other" data-project="calico">
+              <a href="projects/calico">
+                <p class="title">calico</p>
+                <p class="date">2024–25</p>
+              </a>
+            </li>
             <li class="el color-design" data-project="i-am-very-young-and-i-am-learning-how-to-live">
               <a href="projects/i-am-very-young-and-i-am-learning-how-to-live">
                 <p class="title">i am very young and i am learning how to live</p>
@@ -141,13 +152,19 @@
 
         <p>
           Filter projects by <button name="design" class="color-design">design</button>,
-          <button name="programming" class="color-programming">programming</button>.
+          <button name="programming" class="color-programming">programming</button>, or
+          <button name="other" class="color-other">a bit of both</button>.
         </p>
       </section>
 
       <!-- Right -->
       <section class="flex-right y-scrollable auto-padding">
         <div id="image-grid">
+          <div class="box color-other" data-project="calico">
+            <a href="projects/calico" aria-label="Visit project: calico">
+              <img src="/media/calico/thumbnail.webp" width="1000" height="668" alt="Two halves of a split keyboard on a saturated green grassy background">
+            </a>
+          </div>
           <div class="box color-design" data-project="i-am-very-young-and-i-am-learning-how-to-live">
             <a href="projects/i-am-very-young-and-i-am-learning-how-to-live" aria-label="Visit project: i am very young and i am learning how to live">
               <img src="/media/iamveryyoung/thumbnail.webp" width="1000" height="800" alt="Flyer and playbill for the performance i am very young and i am learning how to live">
@@ -233,10 +250,10 @@
   </main>
 
   <footer>
-    <p>See also...</p>
-    <p><a href="https://kevin.garden">kevin.garden</a></p>
+    <p>See also..</p>
+    <p><a href="https://file.gallery">file.gallery</a></p>
     <p><a href="https://font.fish">font.fish</a></p>
-    <p><a href="https://blog.kevin.garden">blog</a></p>
+    <p><a href="https://blog.kevin.garden">blog (wip)</a></p>
   </footer>
 
   <script src="/js/index.min.js"></script>

@@ -20,7 +20,7 @@ document.querySelectorAll("[data-project]").forEach((element) => {
   });
 });
 
-const buttonNames = ["design", "programming"];
+const buttonNames = ["design", "programming", "other"];
 
 document.querySelectorAll("button").forEach((button) => {
   button.addEventListener("click", function (_) {

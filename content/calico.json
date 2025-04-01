@@ -1,0 +1,29 @@
+{
+    "title": "calico",
+    "slug": "calico",
+    "type": "other",
+    "tags": "hardware, pcb",
+    "thumbnail": {
+        "src": "/media/calico/thumbnail.webp",
+        "alt": "Two halves of a split keyboard on a saturated green grassy background"
+    },
+    "date": "2024–25",
+    "dateLong": "Dec 2024 – Jan 2025",
+    "description": "",
+    "descriptionLong": [
+        "calico is a 54-key (6x4+3 split) column-staggered choc-spaced split ergonomic keyboard with freehanded traces and diode sprinkles.",
+        "calico uses a Pro Micro style controller and its pcb is designed to be reversible.",
+        "build one yourself! [link to project github](https://github.com/inchkev/calico)"
+    ],
+    "main": [
+        {
+            "class": "media-grid-1 centered-2",
+            "contents": [
+                {"src": "/media/calico/calico-grass-1.webp"},
+                {"src": "/media/calico/calico-grass-2.webp"},
+                {"src": "/media/calico/calico-grass-3.webp"},
+                {"src": "/media/calico/calico-grass-4.webp"}
+            ]
+        }
+    ]
+}
