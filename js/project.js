@@ -1,8 +1,8 @@
-/*
+/**
  * Kevin Chen
  *
  * portions from windowfull.js from https://www.stuart-bertolotti-bailey.org/
-*/
+ */
 
 (function () {
   'use strict';

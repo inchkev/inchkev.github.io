@@ -4,7 +4,7 @@ Create pages as json in `content/`, link them in `content/home.json`,
 media goes in `media/`, edit templates in `views/`, render everything to
 html using `npm run build` which calls `node src/render.js` under the hood.
 
-`src/render.js` parses the jsons and uses ejs to fill in the relevant templates.
+`src/render.js` parses the jsons and uses ejs to fill in the relevant templates. `render.js` is licensed under [GPL-3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
 The ejs templates can be found in `views/`.
 
 `js/main.js` is in `index.html` and does some hover highlighting (it doesn't work well on mobile, sorry). `js/project.js`
