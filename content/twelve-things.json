@@ -45,10 +45,7 @@
         {
             "class": "centered-3",
             "contents": [
-                {
-                    "src": "/media/twelve-things/photo-1.webp",
-                    "caption": "Fresh off the press"
-                }
+                {"src": "/media/twelve-things/photo-1.webp"}
             ]
         }
     ]

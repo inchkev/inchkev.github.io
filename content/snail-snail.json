@@ -39,26 +39,12 @@
             "contents": ["<br><br><br>"]
         },
         {
-            "class": "media-grid-2 centered-3",
+            "class": "media-grid-2 centered-2",
             "contents": [
                 {"src": "/media/snailsnail/process-1.jpeg"},
                 {"src": "/media/snailsnail/process-2.jpeg"},
                 {"src": "/media/snailsnail/process-3.jpeg"},
                 {"src": "/media/snailsnail/process-4.jpeg"}
-            ]
-        },
-        {
-            "contents": ["<br><br><br>"]
-        },
-        {
-            "class": "centered-3",
-            "contents": [
-                "Video flipthrough",
-                {
-                    "src": "https://www.youtube.com/embed/NGqPx0K7CNI",
-                    "title": "Snail Snail",
-                    "aspectRatio": "16:9"
-                }
             ]
         }
     ]
