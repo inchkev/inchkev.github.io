@@ -29,6 +29,16 @@ marked.use({
   headerIds: false,
 });
 
+// Pre-compiled regexes
+const IMAGE_EXT_RE = /\.(jpe?g|png|gif|webp|apng|svg|bmp|ico)$/i;
+const IMAGE_THUMB_EXT_RE = /\.(jpe?g|png|webp)$/i;
+const VIDEO_EXT_RE = /\.(mp4|webm|ogg)$/i;
+const PDF_EXT_RE = /\.pdf$/i;
+const YOUTUBE_RE = /^(?:https?:\/\/)?(?:(?:www\.|m\.)?youtube\.com|youtu\.be)\/(?:(?:watch|v|embed)(?:\.php)?(?:\?.*v=|\/))?([a-zA-Z0-9_-]+)(?:\S*)$/;
+
+// Directory names
+const CONTENT_DIRNAME = 'content';
+const PROJECTS_DIRNAME = 'projects';
 
 // get __filename and __dirname
 import { fileURLToPath } from 'url';
@@ -52,26 +62,29 @@ class EJSTemplateStore {
 }
 
 
-async function getSizeOf(src) {
-  if (/\.(jpe?g|png|gif|webp|apng|svg|bmp|ico)$/i.test(src)) {
-    try {
-      const dimensions = await sizeOf(src);
-      if (dimensions.orientation == 6 || dimensions.orientation == 8) {
-        return { width: dimensions.height, height: dimensions.width };
-      }
-      return {width: dimensions.width, height: dimensions.height};
-    } catch (err) {
-      console.error(err);
+function getSizeOfImg(src) {
+  try {
+    const dimensions = sizeOf(src);
+    if (dimensions.orientation == 6 || dimensions.orientation == 8) {
+      return { width: dimensions.height, height: dimensions.width };
     }
+    return { width: dimensions.width, height: dimensions.height };
+  } catch (err) {
+    console.error(err);
+    return { width: 0, height: 0 };
   }
-  if (/\.(mp4|webm|ogg)$/i.test(src)) {
-    try {
-      return await getVideoDimensions(src);
-    } catch (err) {
-      console.error(err);
-    }
+}
+
+async function getSizeOfVideo(src) {
+  if (!VIDEO_EXT_RE.test(src)) {
+    return { width: 0, height: 0 };
   }
-  return { width: 0, height: 0 };
+  try {
+    return await getVideoDimensions(src);
+  } catch (err) {
+    console.error(err);
+    return { width: 0, height: 0 };
+  }
 }
 
 
@@ -79,14 +92,14 @@ async function main() {
   const templates = new EJSTemplateStore();
   var projects = {};
 
-  const projectDir = path.join(__dirname, '..', 'projects');
-  const contentDir = path.join(__dirname, '..', 'content');
+  const projectDir = path.join(__dirname, '..', PROJECTS_DIRNAME);
+  const contentDir = path.join(__dirname, '..', CONTENT_DIRNAME);
   const contentFiles = await fs.readdir(contentDir);
 
   /* render project pages */
 
   for (const filename of micromatch(contentFiles, ['*.json', '!_*.json', '!home.json'])) {
-    console.log('Processing', filename);
+    console.log(`READ ${CONTENT_DIRNAME}/${filename}`);
     const contentPath = path.join(contentDir, filename);
     let data = JSON.parse(await fs.readFile(contentPath, 'utf8'));
     
@@ -98,22 +111,22 @@ async function main() {
 
     // format descriptionLong
     data.descriptionLong = await Promise.all(
-      data.descriptionLong.map(async (raw) => await marked.parseInline(raw))
+      data.descriptionLong.map(raw => marked.parseInline(raw))
     );
 
     // format thumbnail
     if (
         typeof data.thumbnail.src === 'string' &&
-        /\.(jpe?g|png|webp)$/i.test(data.thumbnail.src)) {
+        IMAGE_THUMB_EXT_RE.test(data.thumbnail.src)) {
       data.thumbnail.type = 'image';
-      const dimensions = await getSizeOf(path.join(__dirname, '..', data.thumbnail.src));
+      const dimensions = getSizeOfImg(path.join(__dirname, '..', data.thumbnail.src));
       data.thumbnail.width = dimensions.width;
       data.thumbnail.height = dimensions.height;
     } else if (
         data.thumbnail.src.constructor == Object &&
         ('mp4' in data.thumbnail.src || 'webm' in data.thumbnail.src)) {
       data.thumbnail.type = 'video';
-      const dimensions = await getSizeOf(path.join(__dirname, '..', data.thumbnail.src.webm));
+      const dimensions = await getSizeOfVideo(path.join(__dirname, '..', data.thumbnail.src.webm));
       data.thumbnail.width = dimensions.width;
       data.thumbnail.height = dimensions.height;
     }
@@ -136,26 +149,25 @@ async function main() {
           if (media.constructor != Object) return [];
 
           if (typeof media.src === 'string') {
-            if (/\.(jpe?g|png|gif|webp|apng|svg|bmp|ico)$/i.test(media.src)) {
+            if (IMAGE_EXT_RE.test(media.src)) {
               media.type = 'image';
-              const dimensions = await getSizeOf(path.join(__dirname, '..', media.src));
+              const dimensions = getSizeOfImg(path.join(__dirname, '..', media.src));
               media.width = dimensions.width;
               media.height = dimensions.height;
 
-            } else if (/^(https?:\/\/)?((www\.|m\.)?youtube\.com|youtu\.be)\/(watch|v|embed(\.php)?(\?.*v=|\/))?[a-zA-Z0-9\_-]+\S*$/.test(media.src)) {
+            } else if (YOUTUBE_RE.test(media.src)) {
               media.type = 'youtube-embed';
-              const re = /^(?:https?:\/\/)?(?:(?:www\.|m\.)?youtube\.com|youtu\.be)\/(?:(?:watch|v|embed)(?:\.php)?(?:\?.*v=|\/))?([a-zA-Z0-9\_-]+)(?:\S*)$/;
-              const matches = media.src.match(re);
+              const matches = media.src.match(YOUTUBE_RE);
               media.videoId = matches[1];
               // console.log(media.videoId);
 
               // TODO: auto get youtube video title and aspect ratio
-              media.aspectRatio = media.aspectRatio.replace(/[\/:]/, '-');
+              media.aspectRatio = media.aspectRatio.replace(/[/:]/, '-');
 
-            } else if (/\.(pdf)$/i.test(media.src)) {
+            } else if (PDF_EXT_RE.test(media.src)) {
               media.type = 'pdf';
               media.src += "#toolbar=0&navpanes=0&zoom=FitW";
-              media.aspectRatio = media.aspectRatio.replace(/[\/:]/, '-');
+              media.aspectRatio = media.aspectRatio.replace(/[/:]/, '-');
 
             } else {
               media.type = 'link';
@@ -164,7 +176,7 @@ async function main() {
           } else if (media.src.constructor == Object) {
             if ('mp4' in media.src || 'webm' in media.src) {
               media.type = 'video';
-              const dimensions = await getSizeOf(path.join(__dirname, '..', media.src.webm));
+              const dimensions = await getSizeOfVideo(path.join(__dirname, '..', media.src.webm));
               media.width = dimensions.width;
               media.height = dimensions.height;
 
@@ -190,9 +202,9 @@ async function main() {
     try {
       await fs.writeFile(outputPath, html);
       if (data.slug in projects) {
-        console.log(`Duplicate project \t${data.slug}, skipping`);
+        console.log(`Duplicate project ${data.slug}, skipping`);
       } else {
-        console.log(`\tWrote ${outputPath}`);
+        console.log(`  WRITE ${PROJECTS_DIRNAME}/${data.slug}.html`);
         projects[data.slug] = data;
       }
     } catch (err) {
@@ -205,25 +217,23 @@ async function main() {
   const homePath = path.join(contentDir, 'home.json');
   const home = JSON.parse(await fs.readFile(homePath, 'utf8'));
 
-  let homeData = {};
-  homeData.projects = (await Promise.all(
-    home.projects.map(async (project) => {
-      if (project in projects) {
-        return projects[project];
-      }
-      return [];
-    })
-  )).flat();
+  const homeData = {
+    projects: home.projects
+      .filter(slug => slug in projects)
+      .map(slug => projects[slug])
+  };
   const html = (await templates.get('index'))(homeData);
   const outputPath = path.join('index.html');
   try {
     await fs.writeFile(outputPath, html);
-    console.log(`\nWrote ${outputPath}`);
+    console.log(`WRITE ${outputPath}`);
   } catch (err) {
     console.error(err);
   }
-
 }
 
 
-main();
+const start = performance.now();
+main().then(() => {
+  console.log(`Took ${(performance.now() - start).toFixed(2)}ms`);
+});
