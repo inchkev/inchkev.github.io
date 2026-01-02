@@ -1,6 +1,6 @@
 /**
  * render.js for https://kevinnchen.com
- * Copyright (C) 2023-2025  Kevin Chen
+ * Copyright (C) 2023-2026  Kevin N. Chen
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

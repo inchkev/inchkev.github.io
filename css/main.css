@@ -1,5 +1,3 @@
-/* Kevin Chen, 2024–2025 */
-
 :root {
   --color-design: #008400;
   --color-programming: #b06200;
@@ -48,7 +46,7 @@ footer * {
 h1, h2, h3, h4, h5, h6, p, th, td, button {
   font-size: 1em;
   font-weight: normal;
-  line-height: 1.14em;
+  line-height: 1.1875em;
   letter-spacing: -0.005em;
   margin: 0;
   margin-bottom: 0.5em;
