@@ -1,0 +1,16 @@
+{
+    "title": "file.gallery",
+    "slug": "file-gallery",
+    "type": "other",
+    "tags": "tool, website",
+    "thumbnail": {
+        "src": "/media/file-gallery-small.webp",
+        "alt": "Screenshot of file.gallery website"
+    },
+    "date": "2025–",
+    "dateLong": "2025 – Present",
+    "directLink": "https://file.gallery/",
+    "description": "",
+    "descriptionLong": [],
+    "main": []
+}

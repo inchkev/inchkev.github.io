@@ -1,0 +1,16 @@
+{
+    "title": "mackerel",
+    "slug": "mackerel",
+    "type": "other",
+    "tags": "hardware, pcb",
+    "thumbnail": {
+        "src": "/media/mackerel-pcb-small.webp",
+        "alt": "KiCad PCB layout of the 'mackerel' split keyboard half"
+    },
+    "date": "2025",
+    "dateLong": "2025",
+    "directLink": "https://github.com/inchkev/mackerel",
+    "description": "",
+    "descriptionLong": [],
+    "main": []
+}

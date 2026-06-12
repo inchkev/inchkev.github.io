@@ -1,6 +1,9 @@
 {
     "description": "Kevin N. Chen is a designer and programmer. This is a living selection of his work.",
     "projects": [
+        "file-gallery",
+        "kevin-garden",
+        "mackerel",
         "calico",
         "i-am-very-young-and-i-am-learning-how-to-live",
         "font-fish",

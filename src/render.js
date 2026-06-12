@@ -197,6 +197,12 @@ async function main() {
       )).flat();
     }
 
+    if (data.directLink !== undefined) {
+      console.log(`  DIRECTLINK ${data.slug} -> ${data.directLink}`);
+      projects[data.slug] = data;
+      continue;
+    }
+
     const html = (await templates.get('project'))(data);
     const outputPath = path.join(projectDir, data.slug + '.html');
     try {

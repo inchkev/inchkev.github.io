@@ -59,7 +59,11 @@
           <ol>
             <%_ projects.forEach(function(project) { _%>
             <li class="el color-<%= project.type %>" data-project="<%= project.slug %>">
+              <%_ if (project.directLink) { _%>
+              <a href="<%= project.directLink %>">
+              <%_ } else { _%>
               <a href="projects/<%= project.slug %>">
+              <%_ } _%>
                 <p class="title"><%= project.title %></p>
                 <p class="date"><%= project.date %></p>
               </a>
@@ -80,7 +84,11 @@
         <div id="image-grid">
           <%_ projects.forEach(function(project) { _%>
           <div class="box color-<%= project.type %>" data-project="<%= project.slug %>">
+            <%_ if (project.directLink) { _%>
+            <a href="<%= project.directLink %>" aria-label="Visit project link: <%= project.title %>">
+            <%_ } else { _%>
             <a href="projects/<%= project.slug %>" aria-label="Visit project: <%= project.title %>">
+            <%_ } _%>
               <%_ if (project.thumbnail.type === "image") { _%>
               <img src="<%= project.thumbnail.src %>" width="<%= project.thumbnail.width %>" height="<%= project.thumbnail.height %>" alt="<%= project.thumbnail.alt %>">
               <%_ } else if (project.thumbnail.type === "video") { _%>
