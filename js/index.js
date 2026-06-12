@@ -1,4 +1,4 @@
-/* Kevin Chen */
+/* Kevin N Chen */
 
 const projects = document.getElementById("projects");
 const imageGrid = document.getElementById("image-grid");

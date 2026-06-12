@@ -1,5 +1,5 @@
 /**
- * Kevin Chen
+ * Kevin N Chen
  *
  * portions from windowfull.js from https://www.stuart-bertolotti-bailey.org/
  */
