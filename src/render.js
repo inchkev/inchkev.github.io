@@ -197,8 +197,8 @@ async function main() {
       )).flat();
     }
 
-    if (data.directLink !== undefined) {
-      console.log(`  DIRECTLINK ${data.slug} -> ${data.directLink}`);
+    if (data.externalLink !== undefined) {
+      console.log(`  externalLink ${data.slug} -> ${data.externalLink}`);
       projects[data.slug] = data;
       continue;
     }
